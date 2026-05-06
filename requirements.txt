@@ -1,0 +1,3 @@
+do pobrania te:
+uv add bertopic sentence-transformers spacy umap-learn hdbscan plotly dash dash-bootstrap-components transformers torch pdfplumber pandas numpy scikit-learn openai
+uv run python -m spacy download en_core_web_sm

@@ -1,0 +1,5674 @@
+{
+  "dialogues": [
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "G-Man",
+      "is_main_character": true,
+      "text": "Rise and shine Mr. Freeman, rise and shine. Not that I wish to imply that you have been sleeping on the job. No one is more deserving of a rest than you. And all the effort in the world would have gone to waste until.... Well lets just say your hour has come again. The right man in the wrong place can make all the difference in the world. So wake up Mr. Freeman, wake up and smell the ashes.",
+      "line_index": 0
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "I didnt see you get on. This is my third transfer this year.",
+      "line_index": 1
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "No matter how many times I get relocated I never get used to it.",
+      "line_index": 2
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Well, end of the line.",
+      "line_index": 3
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Welcome, welcome to city 17, you have chosen or been chosen to relocate to one of our finest remaining urban centers. I thought so much of city 17 that I elected to establish my administration here, in the citadel so thoughtfully provided by our benefactors. I have been proud to call city 17 my home. So whether you are here to stay, or passing through on your way to parts unkown, welcome to city 17, it is safer here.",
+      "line_index": 4
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "First warning move away.",
+      "line_index": 5
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "It, Its all I have left.",
+      "line_index": 6
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "Move it.",
+      "line_index": 7
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Alright, alright I am moving, jeez.",
+      "line_index": 8
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Were you the only ones on that train? Overwatch stopped our train in the woods and took my husband for questioning. They said he would be on the next train, I am not sure when that was. They are being nice and letting me wait though.",
+      "line_index": 9
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Dont drink the water, they, they put something in it to make you forget, I dont even remember how I got here.",
+      "line_index": 10
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Dr. Breen again? I was hoping I had seen the last of him in city 14.",
+      "line_index": 11
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "I wouldnt say that to loud, this is his base of operations.",
+      "line_index": 12
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "You, Citizen come with me.",
+      "line_index": 13
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Wai, Wait a minute where are you...",
+      "line_index": 14
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "GET IN HERE!",
+      "line_index": 15
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "Go on!",
+      "line_index": 16
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "ME?",
+      "line_index": 17
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "I SAID MOVE!",
+      "line_index": 18
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "Dont move, hold it",
+      "line_index": 19
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "You citizen, come with me.",
+      "line_index": 20
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "This must be a mistake, I got a standard relocation coupon just like everyone else.",
+      "line_index": 21
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "Get in! Need any help with this one?",
+      "line_index": 22
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "No I am good",
+      "line_index": 23
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "Back up!",
+      "line_index": 24
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "Yeah I am gonna need me some privacy for this",
+      "line_index": 25
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "Now...",
+      "line_index": 26
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "About that beer I owed ya. Its me Gordon, barney from black mesa. Sorry for the scare I had to put on a show for the cameras. I have been working undercover with civil protection, I cant take too long or they will get suspicious, I am way behind on my beating quota",
+      "line_index": 27
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Yes barney what is it? I am in the middle of a critical test.",
+      "line_index": 28
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Sorry doc, but look whos here.",
+      "line_index": 29
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Great Scott! Gordon Freeman! I expected more warning.",
+      "line_index": 30
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Yeah you and me both doc. He was about to board the express train to Nova Prospekt.",
+      "line_index": 31
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Well, Barney what do you intend to do?",
+      "line_index": 32
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Im thinking, Im thinking.",
+      "line_index": 33
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Alyx is around here somewhere, she would have an idea of how to get him here.",
+      "line_index": 34
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Well, as long as he stays away from checkpoints we should be okay. Listen I gotta go doc, we are taking enough chances as it is.",
+      "line_index": 35
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Very well. And eh Gordon? Its good to see you.",
+      "line_index": 36
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Okay Gordon your going to have to make your way to Dr. Klieners lab.",
+      "line_index": 37
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Oh man! That is what I was afraid of! Get in here Gordon! Before you blow my cover!",
+      "line_index": 38
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Pile up some stuff to get to that window and keep going till your in the plaza. I will meet up with you later.",
+      "line_index": 39
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "Pick up that can. Now put it in the trash can.",
+      "line_index": 40
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "Alright you can go.",
+      "line_index": 41
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "This is how it always starts, first one building, then the entire block.",
+      "line_index": 42
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "They have no reason to come to our place.",
+      "line_index": 43
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Dont worry, they will find one.",
+      "line_index": 44
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Oh, I thought you were a cop.",
+      "line_index": 45
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Dont worry he is one of us.",
+      "line_index": 46
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Look at them down there.",
+      "line_index": 47
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "I told you they would be coming for us next!",
+      "line_index": 48
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Just this once I hope you are wrong.",
+      "line_index": 49
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Announcer",
+      "is_main_character": false,
+      "text": "Attention residents, miscount detected in your sector",
+      "line_index": 50
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Psst! Hey you! In here! Head for the roof! There is no time to lose!",
+      "line_index": 51
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Run for your life!",
+      "line_index": 52
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Civil Protection!",
+      "line_index": 53
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "CPs!",
+      "line_index": 54
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Here they come!",
+      "line_index": 55
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Get in here quick!",
+      "line_index": 56
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Head for the roof! I will keep them busy!",
+      "line_index": 57
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Over Here! Ha! No you dont!",
+      "line_index": 58
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dr. Freeman I presume? We better hurry, the combine can be slow to wake, but once they are up you will have a hard time taking them down.",
+      "line_index": 59
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dr. Kliener said you might be coming this way. I dont think it occurred to him that you might not have a map.",
+      "line_index": 60
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Im Alyx Vance, my father worked with you back in black mesa, but im sure you dont remember him.",
+      "line_index": 61
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Man of few words arent you?",
+      "line_index": 62
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Remember him from black mesa? Your old administrator?",
+      "line_index": 63
+    },
+    {
+      "chapter_id": "2a",
+      "chapter_name": "Point Insertion",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Ha! Dont get my dad started on Dr. Breen.",
+      "line_index": 64
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Funny you showing up on this day in particular.",
+      "line_index": 65
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "We have been helping people escape the city on foot. Its a dangerous route to my fathers lab through the old canals, today we are finally on the verge of having a better way.",
+      "line_index": 66
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Here lemme buy you a drink",
+      "line_index": 67
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Oh and by the way, nice to finally meet you.",
+      "line_index": 68
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Blast that little.. where did she get to? Llamar? Come out of there.",
+      "line_index": 69
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Uh-oh, everything alright Dr. Kliener?",
+      "line_index": 70
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Oh, hello Alyx. Well almost alright, Llamar has gotten out of her crate again. If I didnt know better, I would suspect barney of trapping and.. My goodness, Gordon Freeman, It really is you isnt it?",
+      "line_index": 71
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "I found him wandering around outside, bit of a troublemaker isnt he?",
+      "line_index": 72
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "We owe a great deal to Dr. Freeman, even if trouble does seem to follow in his wake.",
+      "line_index": 73
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "I must say Gordon you have come at a very opportune time, Alyx has just installed the final piece in the resurrected teleport!",
+      "line_index": 74
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "I cant take any credit for the breakthrough doctor.",
+      "line_index": 75
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Nonsense, your talents surpass your loveliness.",
+      "line_index": 76
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Lets just see if this thing works ok?",
+      "line_index": 77
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Well is he here? There you are! Man Gordon you stirred up the hive!",
+      "line_index": 78
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "We cant keep him here long doc, It will jeporadize everything we have worked for.",
+      "line_index": 79
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dont worry he is coming with me.",
+      "line_index": 80
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Thats right Barney, this is a red letter day, we will inaugurate the new teleport with a double transmission.",
+      "line_index": 81
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "You mean its working? For real this time? Because I still have nightmares about that cat.",
+      "line_index": 82
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "What cat?",
+      "line_index": 83
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Now now there is nothing to be worried about, we have made major strides since then. Major strides.",
+      "line_index": 84
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "What cat?",
+      "line_index": 85
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Doc, since he is not taking the streets you might as well get him out of his civvies.",
+      "line_index": 86
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "What? Oh dear you are right, I almost forgot. Barney I will give you the honor.",
+      "line_index": 87
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "I have gotta get back on my shift but ok.",
+      "line_index": 88
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Here we go.. Awahh!",
+      "line_index": 89
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Damn it! Get it off me!",
+      "line_index": 90
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Llamar! There you are!",
+      "line_index": 91
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "I though you got rid of that pest!",
+      "line_index": 92
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Certainly not. Never fear Gordon, she is de-beaked and completely harmless. The worst she might try to do is couple with your head. Fruitlessly.",
+      "line_index": 93
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Llamar",
+      "is_main_character": false,
+      "text": "Guwakkh!",
+      "line_index": 94
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Get that thing away from me!",
+      "line_index": 95
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Here my pet. Hop up!",
+      "line_index": 96
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "No not up there!",
+      "line_index": 97
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "No, No! Careful Llamar those are quite fragile.",
+      "line_index": 98
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Oh fie! It will be another week before I can coax here out of there!",
+      "line_index": 99
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Yeah. Longer if we are lucky.",
+      "line_index": 100
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Barney.. You are not an animal person?",
+      "line_index": 101
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Ugh.",
+      "line_index": 102
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Well Gordon go ahead, slip into your suit now.",
+      "line_index": 103
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Well Gordon I see your HEV suit still fits you like a glove, at least the glove parts do.",
+      "line_index": 104
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "I have made a few modifications, but I will just acquaint you with the essentials, now lets see..",
+      "line_index": 105
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "The Mark V Hazardous Environment Suit has been redesigned for comfort and utility..",
+      "line_index": 106
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Oh dear!",
+      "line_index": 107
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Doc we dont have time for this. At least get that suit juiced up Gordon.",
+      "line_index": 108
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Good idea, there is a charger on the wall. I have modified your suit to draw power from combine energy outlets, which are plentiful wherever they patrol.",
+      "line_index": 109
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Meanwhile, lets get this show on the road.",
+      "line_index": 110
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Gordon, why dont you position yourself near the panel over there and wait for my word?",
+      "line_index": 111
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Issac are you there?",
+      "line_index": 112
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kiener",
+      "is_main_character": false,
+      "text": "Yes, yes, Eli, a bit of a hold up on this end. You will never guess who found his way into our lab this morning.",
+      "line_index": 113
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Thats not who I think it is, is it?",
+      "line_index": 114
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Indeed it is, and its our intention to send him packing straight away, in the company of your lovely daughter.",
+      "line_index": 115
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Are you ready for us dad?",
+      "line_index": 116
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "We are all set on this end.",
+      "line_index": 117
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Then lets do it",
+      "line_index": 118
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Lets see, the massless field flux should self-limit and I have clamped the manifold parameters to include CY Hilbert and GC orbitfold inclusive. Conditions could not be more ideal.",
+      "line_index": 119
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Thats what you said last time.",
+      "line_index": 120
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Hey, uh, yeah, about that cat..",
+      "line_index": 121
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Initializing in three.. two.. one.. Oh fiddlesticks what now?",
+      "line_index": 122
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Uh, doctor the plug.",
+      "line_index": 123
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Dear me, you are right, Gordon would you mind plugging us in.",
+      "line_index": 124
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "You gonna let Gordon throw the switch?",
+      "line_index": 125
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Gordon, go right ahead.",
+      "line_index": 126
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Very good, final sequence commencing..now.",
+      "line_index": 127
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "I cant look.",
+      "line_index": 128
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Uh, ok, oh ah ohhh!",
+      "line_index": 129
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Well, did it work?",
+      "line_index": 130
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "See for yourself",
+      "line_index": 131
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Hey doc!",
+      "line_index": 132
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Thank goodness, my relief is almost palpable",
+      "line_index": 133
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Fantastic work Izzy",
+      "line_index": 134
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Well I cant take all the credit, Dr. Freeman proved an able assistant",
+      "line_index": 135
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Lets go ahead and bring Gordon through now.",
+      "line_index": 136
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Right you are, speak to you again in a few moments.",
+      "line_index": 137
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Good job Gordon, throwing that switch and all, I can see your M.I.T. education really pays off.",
+      "line_index": 138
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Alright Barney, your turn.",
+      "line_index": 139
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Gee thanks",
+      "line_index": 140
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Gordon, as soon as you are in position we will send you to Eli.",
+      "line_index": 141
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "And not a moment too soon",
+      "line_index": 142
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Excellent, initializing, in three.. two.. one.., eh Barney if you would be so kind?",
+      "line_index": 143
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Good luck out there Gordon",
+      "line_index": 144
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Yes indeed, we are ready to project you Gordon, best of luck in your future endeavors, and bon voyage, final sequence.",
+      "line_index": 145
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "What the hell?",
+      "line_index": 146
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "What is it?",
+      "line_index": 147
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Its your pet the freaking head humper!",
+      "line_index": 148
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Llamar? Hedy! No!",
+      "line_index": 149
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Look out!",
+      "line_index": 150
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "There he is!",
+      "line_index": 151
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Is Llamar with him?",
+      "line_index": 152
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Forget about that thing!",
+      "line_index": 153
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "He is coming through dad!",
+      "line_index": 154
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "What is going on Judith?",
+      "line_index": 155
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Im not sure, it seems to be some kind of interference.",
+      "line_index": 156
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Gordon stay put we will get ya out of there.",
+      "line_index": 157
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Something is drawing him away.",
+      "line_index": 158
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "What is the meaning of this? Who are you? How did you get in here?",
+      "line_index": 159
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "He is back, Im getting him outta there.",
+      "line_index": 160
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "You cant just wade into the field! It will peel you apart!",
+      "line_index": 161
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "We just lost Gordon what is going on?",
+      "line_index": 162
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "I wish I knew, Im encountering unexpected interference",
+      "line_index": 163
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Dont worry Gordon we will..",
+      "line_index": 164
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "There he is!",
+      "line_index": 165
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Ah! We are losing him again!",
+      "line_index": 166
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "The man I saw, im all but certaint it was... Gordon Freeman",
+      "line_index": 167
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "What do you mean he is not there?",
+      "line_index": 168
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "He didnt come through.",
+      "line_index": 169
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Then where is he?",
+      "line_index": 170
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Behind you.",
+      "line_index": 171
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Ahh!",
+      "line_index": 172
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Shut it down! Shut it down!",
+      "line_index": 173
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Gordon run! You must get out of here!",
+      "line_index": 174
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Get down outta sight I will come find you!",
+      "line_index": 175
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Gordon! I have never seen the citadel on full alert like that! Take the old canals out of city 17 to Eli, its dangerous but there is a whole network of resistance members who run the underground railroad. I would come with you but I have to look after Dr. Kliener. Oh and before I forget, I think you dropped this back at black mesa.",
+      "line_index": 176
+    },
+    {
+      "chapter_id": "2b",
+      "chapter_name": "A Red Letter Day",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Good luck out there buddy, you are gonna need it.",
+      "line_index": 177
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Help me! Stop we didnt do anything!",
+      "line_index": 178
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "They will be looking for you now. You should run there is nothing else you can do here.",
+      "line_index": 179
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Good god! Guess those sirens are for you huh? Good thing you found us, you are not the first to come through by a..",
+      "line_index": 180
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Vortigaunt",
+      "is_main_character": true,
+      "text": "This is the freeman, the reckoning of the combine has come.",
+      "line_index": 181
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Look we are just a lookout for the underground railroad. Main station is right around the corner. They will get you started on the right foot. Meanwhile let my vorigaunt friend here give you a jolt to get going.",
+      "line_index": 182
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Vortigaunt",
+      "is_main_character": true,
+      "text": "That is all we can spare.",
+      "line_index": 183
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Be careful now, we REALLY cant afford to get noticed. Civil protection catches you down here, its bad news for the whole railroad.",
+      "line_index": 184
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Vortigaunt",
+      "is_main_character": true,
+      "text": "We serve the same mystery.",
+      "line_index": 185
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Get outta here.",
+      "line_index": 186
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Wait. what are you.. no.. please.. dont shoot! Ahhh!",
+      "line_index": 187
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Radio",
+      "is_main_character": false,
+      "text": "Station 12 come in. Station 12 do you read?",
+      "line_index": 188
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Radio",
+      "is_main_character": false,
+      "text": "This is station 8! We heard 12 go down and out! Surgical strike units are targeting the railway stations! Repeat Civil Protection is coming down on the stations! We are already getting refuges from 9 and outlying, looks like..(static)",
+      "line_index": 189
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Radio",
+      "is_main_character": false,
+      "text": "Station 8 do you copy? Station 8 are you there? We have confirmed reports of manhacks. Repeat they are filling the underground with manhacks.",
+      "line_index": 190
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Over here! Keep going friend that station was raided but there are still others up ahead. I am gonna stay here in case any others come through. Gotta keep the railway alive.",
+      "line_index": 191
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "Anyone else get a 647-E reading?",
+      "line_index": 192
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "Check for miscount.",
+      "line_index": 193
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "Still getting that 647-E reading.",
+      "line_index": 194
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Civil Patrol",
+      "is_main_character": false,
+      "text": "There he is!",
+      "line_index": 195
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Get in here, hurry! Civil protection is on to us. We are tearing up the railroad, covering up our tracks. Looks like you are going to be the last one through. Be glad you are not the guy they are looking for. Poor bastard does not stand a chance. Sounds like they are calling in every CP unit in city 17. Now they are flooding the areas up ahead with manhacks. You better get going before they sweep through here",
+      "line_index": 196
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Oh shit!",
+      "line_index": 197
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Thanks for your help. Look it isnt safe here, I will give you some supplies to get you going but then you have to leave. Good luck out there!",
+      "line_index": 198
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Hey! You are Freeman arent you? We got word that you were coming. You got here at a bad time.",
+      "line_index": 199
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Black Mesa East to station 6 do you read? Dr. Freeman is on his way downriver. Lend him the airboat and give him all the help you can. Repeat Gordon Freeman has returned, it is critical he reaches Black Mesa East.",
+      "line_index": 200
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "You better get going now.",
+      "line_index": 201
+    },
+    {
+      "chapter_id": "2c",
+      "chapter_name": "Route Kanal",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Hey, Dr. Freeman I had been hoping you would show up, got this airboat all gassed up and ready to go. Its gonna be tough dodging civil protection out there in the open, but drive hard and you will make it. You will find more help at station 7, just up the river, its the red barn. Climb on in, and fire her up. You had better get going now!",
+      "line_index": 202
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Hey! You down there! Supplies!",
+      "line_index": 203
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Look out below!",
+      "line_index": 204
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "We now have direct confirmation of a disruptor in our midst, one who has acquired an almost meesianic reputation in the minds of certain citizens. His figure is synonymous with the darkest urges of instinct, ignorance, and decay. Some of the worst excesses of the Black Mesa incident have been laid directly at his feet. And yet unsophisticated minds continue to imbue him with romantic power. Giving him such labels as, the one free man, or the opener of the way. Let me remind all citizens of the dangers of magical thinking. We have scarcely begun to climb from the dark pit of our the evolution of our species. Let us not slide backward into oblivion, just as we have finally",
+      "line_index": 205
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Begun To See The Light. If You See This So Called Free",
+      "is_main_character": false,
+      "text": "man, report him.",
+      "line_index": 206
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Civic Deeds Do Not Go Un",
+      "is_main_character": false,
+      "text": "rewarded and likewise complicity with his cause will",
+      "line_index": 207
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Not Go Un",
+      "is_main_character": false,
+      "text": "punished. Be wise. Be safe. Be aware.",
+      "line_index": 208
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Hey! You are freeman arent you?",
+      "line_index": 209
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Well! I wouldnt believe it if I couldnt see it with my own eyes. Dr. Gordon Freeman himself!",
+      "line_index": 210
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "You are just in time doc, we have gotta move out before the combine picks us up, we are getting ready to pull out.",
+      "line_index": 211
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "We better hurry, we have to tear down this camp before the combine gets here.",
+      "line_index": 212
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Vortigaunt",
+      "is_main_character": true,
+      "text": "Greetings to the Freeman.",
+      "line_index": 213
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Come on in, I will show you what you are up against.",
+      "line_index": 214
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Here take a look at this. This here is the dam just up ahead.",
+      "line_index": 215
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "The hideout is here, a stones throw away from the apron and nestled in the old hydro plant. But getting there, with that hunter chopper on your ass, next to impossible. Good news is, the vorigaunt is working his magic on your airboat, so you will have a little more firepower going forward. I think he is just finishing up now. Go on out.",
+      "line_index": 216
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "There we are. That gun came off of one of the same hunter choppers that you are up against. I always like to bring a little irony to a firefight.",
+      "line_index": 217
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Vortigaunt",
+      "is_main_character": true,
+      "text": "The freeman will accept this weapon, or suffer greatly on the road ahead.",
+      "line_index": 218
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Farwell Dr. Freeman.",
+      "line_index": 219
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Vortigaunt",
+      "is_main_character": true,
+      "text": "For Freedom!",
+      "line_index": 220
+    },
+    {
+      "chapter_id": "2d",
+      "chapter_name": "Water Hazard",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Give them hell doc.",
+      "line_index": 221
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "We have got something. Okay, its human. Hello? Take it easy in there you are safe now. You will have to forgive the scanning process we cant take any chances.",
+      "line_index": 222
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Dr. Freeman? Gordon Freeman?! Is that you? You made it here this quickly? Well is Eli is going to be amazed, not to mention relieved. I am Dr. Mossman, Dr. Judith Mossman. I have been hearing about you since long before the Black Mesa incident. Oh! Black Mesa. I do so envy you working with Eli and Dr. Kliener when they were at the top of their field. Ah! There we go you can come through now.",
+      "line_index": 223
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "I will take you down to Eli right away. He would never forgive me if I kept you waiting.",
+      "line_index": 224
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "We could certainly use the extra help around here. We have covered a lot of ground in the last few months, but things would go much more faster if we had more people with your training. We are closing in on a reliable local teleport technology, something even the combine has not mastered. Eli thinks their portals are string based, similar to our Calabi-Yau model, but they have failed to factor in the dark energy equations. They can tunnel through from their universe, but once they are here they are dependent on local transportation. If they knew what we were doing with entanglement...",
+      "line_index": 225
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Oh listen to me, I sound like a post-doc. I am just so excited to think that we will finally get the chance to work together.",
+      "line_index": 226
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Were was I? Oh yes, Dr. Kliener compressed the xen relay far beyond anything he imagined at Black Mesa. We figured out how to use xen as an unexpressed axis, effectively a dimensional slingshot so we can swing around the borderworld and come back in local space without having to pass through.",
+      "line_index": 227
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Oh! Here is Eli now.",
+      "line_index": 228
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Alright good you keep right on it.",
+      "line_index": 229
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Eli! Look who I found in the airlock.",
+      "line_index": 230
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Gordon Freeman! Let me get a look at you man! My god man you havent changed one iota. How do you do it? Now lets see the last time I saw you, I sent you up for help after the resonance cascade. I never thought it would take you this long to get back to me. Welcome to the lab anyway, its not Black Mesa but it serves us well enough.",
+      "line_index": 231
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Its going to be a lot more like Black Mesa with Gordon here to help.",
+      "line_index": 232
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Right you are, M.I.T. graduates are few and far between these days. We will get you out of that hazard suit and back into your lab coat where you belong.",
+      "line_index": 233
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Lemme just finish up some work and I will see what I can dig up. Dr. Freeman? It has been a real honor. I am looking forward to working together.",
+      "line_index": 234
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Feel free to look around.",
+      "line_index": 235
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Ah! Gordon, the vorigaunts said you were here. I cannot believe you made it so quickly on foot.",
+      "line_index": 236
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "I believe he broke your record honey.",
+      "line_index": 237
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Well he earned it. I guess you proved you can handle yourself out there.",
+      "line_index": 238
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "There is nothing Gordon cannot handle..with the possible exception of you.",
+      "line_index": 239
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dad!",
+      "line_index": 240
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Haaaa",
+      "line_index": 241
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Take a look at this Gordon.",
+      "line_index": 242
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Alyx I though you were on watch?",
+      "line_index": 243
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "The vorigaunts relieved me show I could come see Gordon. Anyway I should be in here working on the portal.",
+      "line_index": 244
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "I have the repairs well in hand. Someone misjudged the capacity of the combine thyristor..",
+      "line_index": 245
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Are you blaming me?",
+      "line_index": 246
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "No it was a calculation error not a mechanical problem.",
+      "line_index": 247
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Then maybe you should let me do the calculations next time, as well as the installing.",
+      "line_index": 248
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Alyx really, sometimes I think you deliberately misunderstand me.",
+      "line_index": 249
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Ahem. Alyx why dont you take Gordon and show him the gravity gun.",
+      "line_index": 250
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Sure, come on Gordon, lets go have some fun.",
+      "line_index": 251
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "The zero point field energy manipulator is not a toy Alyx",
+      "line_index": 252
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Lets get out of here.",
+      "line_index": 253
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "So I seen you met Dr. Mossman, she is one of the main reasons I spend so much time outside. You should hear her drone on about how it should have been her in the Black Mesa test chamber that day. I am sorry I shouldnt be talking behind her back, it just gets a bit cluastraphobic down here.",
+      "line_index": 254
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Thats the old passage to Ravenholm. We dont go there anymore. Come on.",
+      "line_index": 255
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "So here we are, the scrapyard. This is the gravity gun my father was talking about, you can call it the zero point energy field manipulator if you really want to.",
+      "line_index": 256
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Its designed for handling hazardous materials, but we mainly use it for heavy lifting. Give it a try. The primary trigger emits a charge, you can punt stuff and send it flying. I found it handy for clearing minefields. The secondary trigger lets you grab things, you can send them flying with the primary. Once you have picked something up, you can drop it gently by pressing your secondary trigger again. Pick up some stuff and toss it. You can also pull stuff over from a distance. Try grabbing those barrels from that ledge up there. All right.",
+      "line_index": 257
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Now let me call dog, he loves to play fetch. Dog! Come!",
+      "line_index": 258
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Gordon this is dog, my dad built him to protect me when I was a kid.",
+      "line_index": 259
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "First Model Way About Yay",
+      "is_main_character": false,
+      "text": "high I have been adding to him ever since. Ok dog lets play catch with Gordon. You will need to use the gravity gun. Go ahead dog. Throw!",
+      "line_index": 260
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dog, go get your ball!",
+      "line_index": 261
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "When I told you that you would be playing fetch, I didnt tell you who would be fetching did I.",
+      "line_index": 262
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Ok Gordon lets try something else. Throw something bigger dog.",
+      "line_index": 263
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "No Dog! No boy put that down! What is it dog?",
+      "line_index": 264
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Oh my god what was that? Scanners! The combine is sweeping the area! We have to head back to the lab come on Gordon!",
+      "line_index": 265
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dad its Alyx are you there?",
+      "line_index": 266
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Alyx.. Honey",
+      "line_index": 267
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Whats going on in there?",
+      "line_index": 268
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Where are you Alyx?",
+      "line_index": 269
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "We are in the scrapyard airlock stuck in a full autocycle.",
+      "line_index": 270
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Is Gordon still with you?",
+      "line_index": 271
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "He is right here.",
+      "line_index": 272
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Good, I want you two to..",
+      "line_index": 273
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dad?",
+      "line_index": 274
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Take Gordon out of here, head for the coast! Do not go through raven..",
+      "line_index": 275
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dad? Dad! Damn it! Dog open the airlock get us out of here! Hurry now! Tear it apart if you have to, just get it open! Thats enough dog. Come on Gordon! Come on!",
+      "line_index": 276
+    },
+    {
+      "chapter_id": "2e",
+      "chapter_name": "Black Mesa East",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Gordon you need to get out of here, I cant leave my father. Dog, take Gordon to the Ravenholm tunnel, then circle around and try to meet up with me.",
+      "line_index": 277
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "For it was said that they had become like those peculiar demons which dwell in matter, but in which no light may be found.",
+      "line_index": 278
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "For the days of my life have vanished like smoke, and my bones are parched like ash, and let all my impurities be as fuel for that fire until nothing remains but the light alone.",
+      "line_index": 279
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "May they become like dust before the wind, may the angel of the lord pursue them.",
+      "line_index": 280
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "But whos is this? Another life to save? I will keep my eye on you, more than that I cannot promise.",
+      "line_index": 281
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "Well done brother. Make free us of my traps. But take care not to fall in them yourself. Behind you!",
+      "line_index": 282
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "In Ravenholm, you do well to be vigilant.",
+      "line_index": 283
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "Better and Better! I am Father Gregori, you have already met my, congregation, aha aha ahaaa!",
+      "line_index": 284
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "Ah! It is you brother! I apologize, but no harm done. My bullets are the least of your concerns.",
+      "line_index": 285
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "Although they call me crazy I care not, for thou art my helper my strength, and my savior.",
+      "line_index": 286
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "Here brother! Come closer. You have stirred up hell! A man after my own heart! Here I have a more suitable gun for you. You will need it. Catch!",
+      "line_index": 287
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "Good, now keep it close. My advice to you is..aim for the head. Hush!",
+      "line_index": 288
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "They come! There is no rest in Ravenholm! Move on and I will meet you at the church.",
+      "line_index": 289
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "How came you here brother? This is the wrong side of town for you! Did I not tell you to seek the church? Mend your ways before it is too late!",
+      "line_index": 290
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "Ah, there you are! At last! I will send the cart for you brother! It will be but a moment! Patience brother! Guard yourself well!",
+      "line_index": 291
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "Almost there brother!",
+      "line_index": 292
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "Now brother step into the cart! The handbrake brother release it and come down!",
+      "line_index": 293
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "Greetings brother! And so we meet at last. You are to be commended for avoiding my traps. The work of a man who once had too much time on his hands, and now finds time for nothing but the work of salvation. I suspect you have little wish to remain in Ravenholm, so I will show you to the mines. As for me..A shepherd must tend to his flock... Especially when they have grown unruly. Follow me brother, and tread lightly, for this is hallowed ground.",
+      "line_index": 294
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Father Gregori",
+      "is_main_character": true,
+      "text": "Farwell brother! I fear I deliver you to a darker place. May the light of lights be with you. Look to your own, salvation.",
+      "line_index": 295
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Who is hurt?",
+      "line_index": 296
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Winston has been hit.",
+      "line_index": 297
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Patch him up and get him to the back as soon as he is stable.",
+      "line_index": 298
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Gordon Freeman? Its incredible you made it! We have been getting communications from Alyx. I will see if I can reach her again. Follow me.",
+      "line_index": 299
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Its Leon, we are all clear. And I have got Gordon Freeman!",
+      "line_index": 300
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Dr. Freeman you are kidding? I have been on the line with Alyx. Her father has been captured.",
+      "line_index": 301
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Over here Dr. Freeman.",
+      "line_index": 302
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Vortigaunt",
+      "is_main_character": true,
+      "text": "The Eli Vance is indispensable to the liberation.",
+      "line_index": 303
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Alyx its Leon, and I have got Gordon Freeman with me.",
+      "line_index": 304
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Gordon! You made it through Ravenholm? Thank god! I need your help! They have taken my father! He has been taken to Nova Prospekt. The vorigaunts tracked the ship that made off with him and Judith Mossman. While the trains are still running I am going to hitch a ride. Here is where you come in Gordon. I need you to make your way along the coast until you get to Nova Prospekt. It used to be a high security prison, its something much worse than that now. But I think it is still easier to sneak in than to break out.",
+      "line_index": 305
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "You want him to take the coast road? He wont last five minutes on foot. Its antlion spawning season.",
+      "line_index": 306
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Thats why I called you Leon. I was hoping you still had the scout car we left with you last summer. The one my dad rigged with the tau cannon.",
+      "line_index": 307
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Yeah good idea, hold on a sec.",
+      "line_index": 308
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Noriko? Bring the buggy out put it on the dock right now, Gordon Freeman will be driving it!",
+      "line_index": 309
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Will do! I just finished mounting an ammo crate on the back.",
+      "line_index": 310
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Good timing. Ok Alyx we are all set.",
+      "line_index": 311
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Thanks Leon. Gordon I have not driven the coast in over a year, but I have no reason to think its gotten any safer. Meet me in the depot where the trains unload. Take care of yourself and I will see you in Nova Prospekt.",
+      "line_index": 312
+    },
+    {
+      "chapter_id": "2f",
+      "chapter_name": "We Don't Go To Ravenholm",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Bye Alyx. Ok doc, before you hit the road you might wanna grab some medkits, restock on ammo, maybe check the map see where you are headed. There is an ammo supply crate on the back of the car if that is any comfort. Stay with the car, make use of the thumpers, and you will stand a fair chance against the antlions. I will radio ahead to let the next base know you are coming.",
+      "line_index": 313
+    },
+    {
+      "chapter_id": "2g",
+      "chapter_name": "Highway 17",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Hello Dr. Freeman, the car is all ready for you. Hop in and I will lower you down to the beach! Good here we go!",
+      "line_index": 314
+    },
+    {
+      "chapter_id": "2g",
+      "chapter_name": "Highway 17",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Damn magnet is failing! Hold on!",
+      "line_index": 315
+    },
+    {
+      "chapter_id": "2g",
+      "chapter_name": "Highway 17",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Sorry doc!",
+      "line_index": 316
+    },
+    {
+      "chapter_id": "2g",
+      "chapter_name": "Highway 17",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Gordon Freeman! Hurry get in the basement! We are expecting gunships at any moment. Colonel Cubbage will be glad to see you made it.",
+      "line_index": 317
+    },
+    {
+      "chapter_id": "2g",
+      "chapter_name": "Highway 17",
+      "character": "Colonel Cubbage",
+      "is_main_character": true,
+      "text": "This steerable rocket launcher is our best bet for taking down a gunship. Ah! Hello, I will be right with you. Now.. where was I? Ah yes.. Using the laser guide, you can steer you rocket past the gunship defenses and prevent it from shooting down your rocket. This will only anger it at first. But if you can survive long enough to make several direct hits, you will be rewarded with a prize worthy of any mantle piece. Now? Who is going to be the lucky one to carry it into combat? Ah yes Gordon Freeman. I could not have asked for a finer volunteer.",
+      "line_index": 318
+    },
+    {
+      "chapter_id": "2g",
+      "chapter_name": "Highway 17",
+      "character": "Colonel Cubbage",
+      "is_main_character": true,
+      "text": "Colonel Odessa Cubbage at your service.",
+      "line_index": 319
+    },
+    {
+      "chapter_id": "2g",
+      "chapter_name": "Highway 17",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Gunship!",
+      "line_index": 320
+    },
+    {
+      "chapter_id": "2g",
+      "chapter_name": "Highway 17",
+      "character": "Colonel Cubbage",
+      "is_main_character": true,
+      "text": "Damn! Let me just send a warning to lighthouse point, then I will come right up and lend a hand!",
+      "line_index": 321
+    },
+    {
+      "chapter_id": "2g",
+      "chapter_name": "Highway 17",
+      "character": "Colonel Cubbage",
+      "is_main_character": true,
+      "text": "Well thats that. I gather you have disposed of that gunship Dr. Freeman, your reputation is well deserved. I will have someone open the gate for you immediately.",
+      "line_index": 322
+    },
+    {
+      "chapter_id": "2h",
+      "chapter_name": "Sandtraps",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Hey over here! You made it! We are picking up radio chatter, they are looking for your car. Get you car in the garage.",
+      "line_index": 323
+    },
+    {
+      "chapter_id": "2h",
+      "chapter_name": "Sandtraps",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Ok doc you will have to go on foot from here. There is a secret path along the cliffside, but no one is going anywhere until we fight off this attack. Having you here to fight alongside us is going to make a big difference for morale. Oh crap! Here come the dropships!",
+      "line_index": 324
+    },
+    {
+      "chapter_id": "2h",
+      "chapter_name": "Sandtraps",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "This way Dr. Freeman, we will take the cliff path before the gunships find us. Right along there, and watch your step.",
+      "line_index": 325
+    },
+    {
+      "chapter_id": "2h",
+      "chapter_name": "Sandtraps",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Hey you there! Dont move! Stay on the rocks! Stepping on the sand makes the antlions crazy!",
+      "line_index": 326
+    },
+    {
+      "chapter_id": "2h",
+      "chapter_name": "Sandtraps",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Lazlo dont move!",
+      "line_index": 327
+    },
+    {
+      "chapter_id": "2h",
+      "chapter_name": "Sandtraps",
+      "character": "Citizen",
+      "is_main_character": false,
+      "text": "Dear god! Poor Lazlo. The finest mind of his generation come to such an end. You go on. There is nothing else you can do here.",
+      "line_index": 328
+    },
+    {
+      "chapter_id": "2h",
+      "chapter_name": "Sandtraps",
+      "character": "Vortigaunt",
+      "is_main_character": true,
+      "text": "The freeman would be wise to heed out extraction of the myrmadonts aromatic pheropods, the process is not entirely hygienic so please, stand aside.",
+      "line_index": 329
+    },
+    {
+      "chapter_id": "2h",
+      "chapter_name": "Sandtraps",
+      "character": "Vortigaunt",
+      "is_main_character": true,
+      "text": "The freeman will have need of these on the road ahead. Gather them now.",
+      "line_index": 330
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "I am glad you made it here in one piece. My dad is up there somewhere, in that holding area. Its gonna take some doing to get him out. Lets get out of here.",
+      "line_index": 331
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "I am afraid that I am flying blind here. Every now and then a vorigaunt gets captured and sends back a little picture of this place. What we do know, is all bad.",
+      "line_index": 332
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "There he is!",
+      "line_index": 333
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Alyx! Gordon! Is that really you? I cant believe you found me!",
+      "line_index": 334
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dad are you alright?!",
+      "line_index": 335
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Im fine but you have to get out of here.",
+      "line_index": 336
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "We are here to get you out dad!",
+      "line_index": 337
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Nevermind me save yourselves!",
+      "line_index": 338
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "No we are not leaving you! I think I can recalibrate the combine portal to get us out of here.",
+      "line_index": 339
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "But where will you go?",
+      "line_index": 340
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "I talked to Dr. Kliener, his portal was almost working again. If he has managed to repair it then we will end up there. If he hasnt well... we would not be any worse off.",
+      "line_index": 341
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Its not worth the risk honey! I cant lost you! Get out while you still can!",
+      "line_index": 342
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "We are not leaving here without you, thats final!",
+      "line_index": 343
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "We cant leave without Judith either.",
+      "line_index": 344
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dont worry dad we will find her. For now I am going to send you to the teleport room. I am not saying goodbye dad. We will meet you there.",
+      "line_index": 345
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "I know you will honey.",
+      "line_index": 346
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Lets get out of here. I am going to head back to the security station and try to patch into your suit radio.",
+      "line_index": 347
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Hey it worked, lets see what I can do to clear the way for you, keep an eye out for Mossman. I will get my dad through the prison as far as I can then I will catch up to you.",
+      "line_index": 348
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Hang on I will get that gate open.",
+      "line_index": 349
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Damn! It is jammed ok I have got an idea, head back to that office.",
+      "line_index": 350
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Be careful Gordon I am picking up a lot of soldiers ahead.",
+      "line_index": 351
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "I will start working on this gate, hang on.",
+      "line_index": 352
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "You are coming up to another control room, looks like it is still occupied.",
+      "line_index": 353
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "My guess is that there are a bunch more soldiers heading your way. Quick search the room. There should be some combine turrets nearby. I can reprogram these turrets to attack the enemy. You set them up to defend the control room. I cant shut down those fields from here. I am going to have to catch up with you to access them. I am picking up a lot of incoming soldiers, hold the fort until I get there.",
+      "line_index": 354
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Sorry it took me so long. Glad to see you are okay. Lets see if we can find Mossman. It looks like this station might give me better access.",
+      "line_index": 355
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "There she is. Wait a minute. How did she..?",
+      "line_index": 356
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "...from your area",
+      "line_index": 357
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "I am not calling about that, you promised you were not going to touch Eli",
+      "line_index": 358
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "What is she up to? Oh my god.",
+      "line_index": 359
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "The soldiers were a bit overzealous I admit, but he was too tempting a prize to turn loose, especially in the absence of Gordon Freeman.",
+      "line_index": 360
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "You would have had Freeman if you had just been patient and waited for my signal.",
+      "line_index": 361
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "We were not entirely sure you were ever going to get around to that, human loyalties being what they are.",
+      "line_index": 362
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Dr. Breen, as I have stated before you have to let Eli come around on his own, you cannot just..",
+      "line_index": 363
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "I have known Dr. Vance far longer than you my dear. I am afraid your feelings for him might have blinded you.",
+      "line_index": 364
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Feelings? This has nothing to do with feelings. It is a simple truth that when Eli believes in our..",
+      "line_index": 365
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "This is not open to debate Dr. Mossman.",
+      "line_index": 366
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Doctor please..",
+      "line_index": 367
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "So sorry Judith I am all out of time.",
+      "line_index": 368
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Damn her! I dont believe this! Come on Gordon now we really have to hurry. Go on ahead I will disrupt the next level of security and will catch up to you when I can.",
+      "line_index": 369
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Quick get these set up, I see soldiers coming in from all directions.",
+      "line_index": 370
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Here they come!",
+      "line_index": 371
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Ok Gordon I am going to leave off here and catch up with you. be there as soon as I can.",
+      "line_index": 372
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Sorry to take so long Gordon, I wont leave you again, now, lets go track down Mossman.",
+      "line_index": 373
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "uh-oh",
+      "line_index": 374
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Great another security station.",
+      "line_index": 375
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Alright Mossman where are you...",
+      "line_index": 376
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Ha! There you are!",
+      "line_index": 377
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Ha! Got you now! Well come on Gordon we dont want to keep her waiting.",
+      "line_index": 378
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Come on Gordon! Let me seal this door. No turning back now.",
+      "line_index": 379
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "There she is. Leave the talking to me Gordon. We may need her to get out of here.",
+      "line_index": 380
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Hello? Oh thank god.. Someone is here. Alyx? Gordon? How did you get in here?",
+      "line_index": 381
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "We know all about you and Breen. You have been a spy for the combine the whole time.",
+      "line_index": 382
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "What? What are you talking about?",
+      "line_index": 383
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dammit, move back Mossman we are coming in.",
+      "line_index": 384
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Alyx whatever you may think I assure you I am working to protect your father.",
+      "line_index": 385
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Shut up and be glad you are still of some use to us! We are going to reconfigure this teleport and get the hell out of here.",
+      "line_index": 386
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "You see we are working to the same end. I have already modulated the teleporter to emulate a xen relay.",
+      "line_index": 387
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "That is my fathers work you stole!",
+      "line_index": 388
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Its my work to! And I had to prove to Dr. Breen that your father would be the most valuable member of any research effort going forward from here.",
+      "line_index": 389
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Enough of your bullshit!",
+      "line_index": 390
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Look Gordon there is my dad, I am going to bring him in.",
+      "line_index": 391
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "You found Eli?",
+      "line_index": 392
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "No thanks to you! Just enter the coordinates for Dr. Klieners lab and lets get moving.",
+      "line_index": 393
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "But we need access to the teleport platform and we are locked out.",
+      "line_index": 394
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "I will take care of that.",
+      "line_index": 395
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Lets get going.",
+      "line_index": 396
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Oh my god. And you have been working with this thing? For how long?",
+      "line_index": 397
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Never.. Until now. Though I did have a fairly good idea of what to expect.",
+      "line_index": 398
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "I bet you did. It looks like it is waiting for us.",
+      "line_index": 399
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "The combine use a peculiar pulse-forming network with a very long rise time, It takes quite a while to recharge.",
+      "line_index": 400
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "So you have warmed it up for us. Good. And just in time.",
+      "line_index": 401
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dad down here. Sorry we took so long I hope that was not too bad for you.",
+      "line_index": 402
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Do not worry about me sweetheart. Judith! I see they set you free!",
+      "line_index": 403
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Not exactly.",
+      "line_index": 404
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Eli! I was so worried about you!",
+      "line_index": 405
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "The coordinates Dr. Mossman.",
+      "line_index": 406
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "So this is the combine portal, It is smaller than I imagined.",
+      "line_index": 407
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Hurry up Mossman!",
+      "line_index": 408
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dr. Kleiner!",
+      "line_index": 409
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Yes Alyx where are you?",
+      "line_index": 410
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "We are in Nova Prospekt, and we are running the Xen emulation for the first time. Are you ready for us?",
+      "line_index": 411
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Ready! Willing! And fully enabled!",
+      "line_index": 412
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Good we will send my dad through first, he is in position for...",
+      "line_index": 413
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "What was that? Hold on gotta bring this back down.",
+      "line_index": 414
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "No! Stop! What are you doing!",
+      "line_index": 415
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "I am sorry Alyx, it is the only way.",
+      "line_index": 416
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "No! Get back here!",
+      "line_index": 417
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Whats going on Alyx? Judith?",
+      "line_index": 418
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dr. Kliener you have to stop them!",
+      "line_index": 419
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Stop who my dear?",
+      "line_index": 420
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Oh my god! What coordinates are these? Where did she take him!",
+      "line_index": 421
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "No.. Cover me Gordon I have to reset the portal. Use the turrets!",
+      "line_index": 422
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Thank god it is done lets get the hell out of here!",
+      "line_index": 423
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "My god we made it! But where is Dr. Kliener?",
+      "line_index": 424
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dr. Kliener let us out!",
+      "line_index": 425
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Aylx? Gordon? My god how did you get here and when?",
+      "line_index": 426
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "What is wrong?",
+      "line_index": 427
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "My dear, I had given up hope of ever seeing you again.",
+      "line_index": 428
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "I was thinking the same. I think the teleport exploded just as we made it out.",
+      "line_index": 429
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Indeed it did. And the repercussions were felt far and wide.. but that was over a week ago.",
+      "line_index": 430
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "What do you mean? Gordon and I were just there a minute ago.",
+      "line_index": 431
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Kiener",
+      "is_main_character": false,
+      "text": "Fascinating. We seem to have developed a slow teleport. This suggests an entirely new line of investigation.",
+      "line_index": 432
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "A week..? Then what have we missed?",
+      "line_index": 433
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "A great deal my dear. The blow you struck at Nova Prospekt was taken as a signal to start the uprising.",
+      "line_index": 434
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "But what about my father?",
+      "line_index": 435
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Well.. that is most disturbing. According to the vorigaunts he is a prisoner at the citadel.",
+      "line_index": 436
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "We have got to get my father out.",
+      "line_index": 437
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Barney has been leading a push with that very aim in mind. And another of your friends arrived several days ago.",
+      "line_index": 438
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dog! You made it!",
+      "line_index": 439
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "So there. You see? Its not all hopeless.",
+      "line_index": 440
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "I wish I shared your optimism doctor.",
+      "line_index": 441
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Doc come in.. are you there?",
+      "line_index": 442
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Dr. Kleiner",
+      "is_main_character": true,
+      "text": "Yes barney and I am no longer alone. Alyx and Gordon have just arrived.",
+      "line_index": 443
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Well man thats good news, I almost gave you guys up for lost. We are going to set up a staging area for the attack on the citadel.",
+      "line_index": 444
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Gordon and dog can head your way. I want to get Dr. Kliener somewhere safer.",
+      "line_index": 445
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "I will take all the help I can get. Oh crap! Incoming!",
+      "line_index": 446
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Get going!",
+      "line_index": 447
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Anti",
+      "is_main_character": false,
+      "text": "Citizen One",
+      "line_index": 448
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Resistance",
+      "is_main_character": false,
+      "text": "Well Gordon Freeman, and about time to",
+      "line_index": 449
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Resistance",
+      "is_main_character": false,
+      "text": "Gordon you are here!",
+      "line_index": 450
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Resistance",
+      "is_main_character": false,
+      "text": "Dr. Freeman we are coming with you",
+      "line_index": 451
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Resistance",
+      "is_main_character": false,
+      "text": "Gordon Freeman? It is you isnt it! Give me a minute, Im gonna plant some charges and blow this open.",
+      "line_index": 452
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Resistance",
+      "is_main_character": false,
+      "text": "Looks nasty in there! Good thing you have that suit!",
+      "line_index": 453
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Resistance",
+      "is_main_character": false,
+      "text": "I see you made it through okay, I figured you would.",
+      "line_index": 454
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Resistance",
+      "is_main_character": false,
+      "text": "Dr. Freeman? It is not safe here anymore. They are shelling the hell out of us. I will send word you are coming up ahead. Keep moving.",
+      "line_index": 455
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Gordon! I had a feeling I would find you here. I have got Dr. Kliener in a safe spot. Now we can join up with Barney. There is a command center downstairs, I am hoping to find information on generator locations. Ready? Lets go.",
+      "line_index": 456
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Well we are in luck, there is a generator in the square outside. We are trying to disable as many as we can to loosen the combines grip on the city. It will take me a few minutes to expose the core, then I will need you to hit it with a burst from the gravity gun. In the meantime watch my back.",
+      "line_index": 457
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "This should not take too long. As soon as it is down, I will open that gate and we can get out of here.",
+      "line_index": 458
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Ok the core is exposed. Use the gravity gun Gordon!",
+      "line_index": 459
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "All right, I am opening the gate.",
+      "line_index": 460
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Ok, Barney should be on the far side of that...canal. Well there used to be a bridge here. Let me see if I can scout a new path. Ah! Wait for me here.",
+      "line_index": 461
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Hey! Looks like we might be able to get through down there! Lets head that way!",
+      "line_index": 462
+    },
+    {
+      "chapter_id": "2j",
+      "chapter_name": "Entanglement",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Ah! No! Gordon! Run! Get out of here!",
+      "line_index": 463
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Resistance",
+      "is_main_character": false,
+      "text": "Dr. Freeman! Barney said you were on your way. We got split up by snipers, and he is pinned down in a warehouse up ahead. Go ahead, he is relying on you.",
+      "line_index": 464
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Resistance",
+      "is_main_character": false,
+      "text": "Help! Is somebody up there? Help! Help me! We thought we would be safer down here. Little did we know the place was infested. The rest of them headed upstairs, took their chances with the snipers. I guess they are still up there.",
+      "line_index": 465
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Over here! Gordon I cant move, these snipers have got me pinned down. Gordon lob a couple grenades, that will clear them out.",
+      "line_index": 466
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Alright, thanks Gordon, now lets clear out of here.",
+      "line_index": 467
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Let me get this gate. My Civil Protection status still gives me limited clearance. Did you hear a cat just now? That damn thing haunts me.",
+      "line_index": 468
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "There is an old building up ahead. A bank or museum or something like that. Whatever the hell it used to be, now it is a nexus for Overwatch in City 17. It is the main source of pain for this part of town, thanks to a huge suppression device that rains down hell from the roof of the place.",
+      "line_index": 469
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "There it is, the Overwatch nexus. Looks like they are mobilizing",
+      "line_index": 470
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Big",
+      "is_main_character": false,
+      "text": "time. You can sort of see the gate from here. I will show you when we get to street level. We have to get into that building to open the gate. Even then the suppression device will, suppress anyone who tries to come through unless we shut it down.",
+      "line_index": 471
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "So much for stealth. We have been spotted!",
+      "line_index": 472
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "There is the gate I was telling you about. We have to come back here after we get it open. If we get it open. First we gotta get into the nexus building.",
+      "line_index": 473
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Uh-oh, turrets. You have the HEV suit, you deal with them. Then I will open the door.",
+      "line_index": 474
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Wow, with that much security there must be something good in there. Go for it doc. I will wait here until you shut I down.",
+      "line_index": 475
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Ah here it is, roof access. I am going to stay here and help other resistance members come through.",
+      "line_index": 476
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Resistance",
+      "is_main_character": false,
+      "text": "Dr. Freeman! Since you shut off the suppressor and opened the gate, we can really move people through now. The combine is really going to feel the squeeze! We dropped a crate of rockets across the plaza. If you can make it there you can take down the striders.",
+      "line_index": 477
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Dog! Here boy! Dog come back here! Damn it all! Gordon! Hey help me out here!",
+      "line_index": 478
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Dog came crashing through the plaza, knocking over walls, I think he is looking for Alyx. He seems to have it set in his mind that she is in the citadel. I figured Alyx would not want him getting into any deeper trouble but hell, you try stopping him.",
+      "line_index": 479
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Hey dog! Not there! You cannot get through that way!",
+      "line_index": 480
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "Well I will be dammed. I think he wants you to go through Gordon, you had better hurry.",
+      "line_index": 481
+    },
+    {
+      "chapter_id": "2l",
+      "chapter_name": "Follow Freeman!",
+      "character": "Barney",
+      "is_main_character": true,
+      "text": "And if you see Dr. Breen, tell him I said f--- -ou!*",
+      "line_index": 482
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "I will take him from here. Dont struggle, its no use. Until you are where he wants you there is nothing you can do. I am sorry Gordon.",
+      "line_index": 483
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "..ancient stars colonized by sentient fungi. Gas giants, inhabited by vast meteorological intelligences. Worlds stretched thin across the membranes where dimensions intersect...Impossible to describe with our limited vocabulary!",
+      "line_index": 484
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "What I have seen is also beyond words Breen. Genocide, indescribable evil...Good god.",
+      "line_index": 485
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Well if it isnt Gordon Freeman at last.",
+      "line_index": 486
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Oh what is this? Put it over there.",
+      "line_index": 487
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "You have my gratitude Dr. Freeman, first you lead me to the doorstep of my oldest friend, then you deliver yourself. If I had known you were going to come straight up to my office I would not have bothered hunting you in the first place. Having both of you in my keeping ensures I can dictate the terms of any bargain I care to make with the Combine.",
+      "line_index": 488
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Dr. Breen..Wallace..",
+      "line_index": 489
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Yes what is it Judith?",
+      "line_index": 490
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "The bargain we should be making is for his life so he can continue his research!",
+      "line_index": 491
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Thanks to you we have everything we need in that regard. You are more than qualified to finish his research yourself. What neither you nor I can do is convince that rabble in the streets to give up their senseless struggle. Yet Eli refuses to speak the words that would save them all.",
+      "line_index": 492
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Save them?! For what?!",
+      "line_index": 493
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Eli.. If you will not do this for the good of all people, maybe you will do it for one of them.",
+      "line_index": 494
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Alyx..Honey..",
+      "line_index": 495
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dad! Huh.. Gordon? No..",
+      "line_index": 496
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "God damn you Breen! You let her go!",
+      "line_index": 497
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "That is all up to you my old friend. Will you let your stubborn short sightedness doom the entire species? Or will you give your child the chance her mother never had?",
+      "line_index": 498
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "How dare you even mention her!",
+      "line_index": 499
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Alyx my dear you have your mothers eyes. But your fathers stubbornness.",
+      "line_index": 500
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "You have not seen a bit of it yet.",
+      "line_index": 501
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Really? Well lets see how it serves you, on the far side of a combine portal.",
+      "line_index": 502
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Go ahead Breen! If that is the worst you can do, send us through your portal.",
+      "line_index": 503
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Oh it is hardly the worst. But you might find that hard to believe once you get there.",
+      "line_index": 504
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "It isnt necessary!",
+      "line_index": 505
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "I agree it is a total waste. Fortunately the resistance has shown it is willing to accept a new leader. And this one has proven to be a fine pawn for those who control him.",
+      "line_index": 506
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "No!",
+      "line_index": 507
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dont listen to him Gordon!",
+      "line_index": 508
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "How about it Dr. Freeman? Did you realize your contract was open to the highest bidder?",
+      "line_index": 509
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Gordon would never make any kind of deal with you!",
+      "line_index": 510
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "I understand if you dont wish to discuss this in front of your friends. I will send them on their way and then we can talk openly.",
+      "line_index": 511
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Dont struggle honey.",
+      "line_index": 512
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dad.. Im so sorry.",
+      "line_index": 513
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Alyx..sweetheart.",
+      "line_index": 514
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Judith, what do you think you are doing?",
+      "line_index": 515
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "We are doing what I could never do alone. We are stopping you.",
+      "line_index": 516
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Yes!",
+      "line_index": 517
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Guards! Get in here!",
+      "line_index": 518
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "They know you betrayed them, they will turn on you, Judith.. Dr. Mossman please!",
+      "line_index": 519
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "I am sorry Wallace, you are all out of time.",
+      "line_index": 520
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Dont!",
+      "line_index": 521
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Hurry! Dad hang on!",
+      "line_index": 522
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "You fool!",
+      "line_index": 523
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Watch out he is gonna..",
+      "line_index": 524
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "No!",
+      "line_index": 525
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dad!",
+      "line_index": 526
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Oh no no no. Dont worry about me honey.",
+      "line_index": 527
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "There is no time Alyx, he is on his way to the portal. You will need this.",
+      "line_index": 528
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dr. Mossman..Judith.. Look after my father.",
+      "line_index": 529
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Mossman",
+      "is_main_character": true,
+      "text": "Dont you worry.",
+      "line_index": 530
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dad I am not saying goodbye.",
+      "line_index": 531
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Eli",
+      "is_main_character": true,
+      "text": "Never.",
+      "line_index": 532
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Come on Gordon, lets go.",
+      "line_index": 533
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Gordon.. We have not known each other very long, but I know you did not have to do this. I had to rescue my father, but you.. well.. thanks for coming after me.",
+      "line_index": 534
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Hey listen!",
+      "line_index": 535
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "It is me you should be concerned about, I can still deliver earth but not without your help.",
+      "line_index": 536
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "That is him!",
+      "line_index": 537
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "The portal destination is untenable surely you can set the relay destination elsewhere. There is no way I can survive in that environment. A host body? You must be joking, there is no way I can possibly..",
+      "line_index": 538
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "There he is!",
+      "line_index": 539
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Oh alright dammit if that is what it takes. Just hurry! He is right behind me!",
+      "line_index": 540
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Oh shit!",
+      "line_index": 541
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Dammit! Not again! Huh! The gravity gun! He does not have a clue does he? I wonder where he is going.",
+      "line_index": 542
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Oh my god! This is the dark fusion reactor. It powers their tunneling entanglement device. We will never have a chance like this again. We have to stop him!",
+      "line_index": 543
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "I cannot shut it down, looks like he has turned control over to the other side. You will have to go into the core and do what you can. Get into the elevator and I will let you in. Do not forget to charge up your suit.",
+      "line_index": 544
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Its Dr. Breen! There he is!",
+      "line_index": 545
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Dr. Freeman, you really should not be out there. At the moment of synapse as I teleport this chamber will be bathed in deadly particles that have yet to be named by human science. Perhaps when I have the leisure to do the work myself, I will name one after you. That way you will not be completely forgotten. When the singularity collapses, I will be far away from here, in another universe in fact. You on the other hand will be destroyed in every way possible, and even some essentially impossible.",
+      "line_index": 546
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "What the hell? Oh no, combine soldiers, where did they come from?",
+      "line_index": 547
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "I do not know what you can possibly hope to achieve, apart from your own annihilation.",
+      "line_index": 548
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Do not listen to him Gordon!",
+      "line_index": 549
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "I warned you this was futile.",
+      "line_index": 550
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "He is bluffing Gordon. Do not listen to him!",
+      "line_index": 551
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Great! Oh no, Breen has started his ascent! Hurry Gordon before he escapes!",
+      "line_index": 552
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "I could have told you that was pointless Dr. Freeman.",
+      "line_index": 553
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Go Gordon!",
+      "line_index": 554
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Are you still with us Dr. Freeman? Not for much longer I think.",
+      "line_index": 555
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Oh my god, the portal is opening!",
+      "line_index": 556
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "I hope you have said your farewells.",
+      "line_index": 557
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "Go back Freeman, you have no idea what you are doing!",
+      "line_index": 558
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "You do not know what you will unleash, you could bring down this whole citadel. Think, man, think of the people below!",
+      "line_index": 559
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Dr. Breen",
+      "is_main_character": true,
+      "text": "NO! You need me!",
+      "line_index": 560
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Yes!",
+      "line_index": 561
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "Alyx",
+      "is_main_character": true,
+      "text": "Yeah! You did it! Come on Gordon we have got to get out of here, maybe we still have...",
+      "line_index": 562
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "G-Man",
+      "is_main_character": true,
+      "text": "Time? Dr. Freeman? Is it really that time again? It seems as if you only just arrived. You have done a great deal in a small timespan. You have done so well that I have received some interesting offers for your services. Ordinarily I would not contemplate them, but these are extraordinary times. Rather than offer you the illusion of free choice, I will take the liberty of choosing for you. If and when the time comes again.",
+      "line_index": 563
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "G-Man",
+      "is_main_character": true,
+      "text": "I do apologize for what must seem to you an arbitrary imposition, Dr. Freeman, I trust it will all make sense in the course of.. well.. I am really not at liberty to say.",
+      "line_index": 564
+    },
+    {
+      "chapter_id": "2n",
+      "chapter_name": "Dark Energy",
+      "character": "G-Man",
+      "is_main_character": true,
+      "text": "In the meantime, this is where I get off.",
+      "line_index": 565
+    }
+  ],
+  "stage_directions": [
+    {
+      "chapter_id": "2a",
+      "text": "The gman slowly fades away into the background and his image is replaced with the viewpoint of Gordon Freeman on a train pulling into a station"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "the train pulls into the station and stops"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "as Gordon gets off the train he is scanned by a small flying device, a large monitor with a face on it begins to speak"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "the civil patrolman shoves the citizen into his luggage"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "Gordon looks down to the end of the checkpoint where he sees citizens being led through"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "Gordon comes to a fenced in area, a civil patrolman blocks his path, he goes the other way and when he enters the caged area both doors shut and an alarm sounds, he is scanned by a camera"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "the side door opens"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "Gordon follows him down a hallway, as he looks into a room he can see a citizen being intterogated"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "before Gordon can see anything more the civil patrol man in this room shuts the viewing slot on the door"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "Gordon comes to the last door in the hall way, the civil patrolman knocks on the door and it opens to reveal another civil patrolman"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "Civil Patrolman 4 leaves the room"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "civil patrolman 5 uses his console to turn off the 2 cameras in the room"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "the civil patrolman takes off his helmet and reveals himself to be barney"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "a man in a lab coat appears on the screen on the console in front of barney"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "the monitor shuts off"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "there is a loud knocking at the door"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "barney releases the lock on the back door"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "Gordon escapes out the window and arrives at another building, a civil patrolman blocks his only path, he knocks a can over"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "reluctantly Gordon puts it in the trash can"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "Gordon comes to a large plaza, with gates branching to different areas of the city, he continues past the plaza outside, beyond the plaza lies a extremely large building, he makes his way down the street to a area with 2 buildings, one of the entrances is guarded by civil patrolman"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "Gordon enters the entrance of the non-guarded building"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "as he makes his way up the stairs he sees a group of 4 civil patrolmen knock down a door and rush in too a room, he enters the adjacent room"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "as he makes his way further up the building a voice sounds"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "Civil protection starts raiding the building and Gordon runs for the roof along with other citizens"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "the citizen shuts the door to the room and holds his body against it"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "a chase ensues with Gordon running across a series of rooftops with civil protection chasing him"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "Gordon reaches a open window and goes inside, he heads down a staircase which collapses behind him, civil protection close in on him"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "the screen goes white and Gordon is knocked unconscious"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "as Gordon wakes up he sees alyx and the bodies of the CPs that were chasing him"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "alyx opens an elevator and Gordon heads down it along with her"
+    },
+    {
+      "chapter_id": "2a",
+      "text": "alyx gestures to a picture of the same man that was on the large monitor"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "alyx puts a coin into a vending machine, the machine opens like a door to reveal a passage behind it that leads to Dr. Klieners lab"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon enters the lab and sees Dr. Kliener"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "barney enters the lab"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "barney uses a keypad to open up a garage like door, inside this small room there is a glass case which contains the HEV suit"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Dr. Klieners pet headcrab Llamar jumps on barney"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Llamar jumps up onto a shelf with some crates and computers"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Llamar jumps into a vent"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon steps into the glass chamber and puts the HEV suit on"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Dr. Kliener picks up a clipboard with a paper on it and begins reading from the paper"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "A loud alarm sounds in the background"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Dr. Kliener moves a picture frame around, this opens up a retinal scanner which he uses to open up a secret room behind the wall, Gordon enters the room along with everyone else, inside is a large mass of computers and wires along with a platform in the middle of the room, Alyx gets onto the platform and the guard rails close behind her"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "A man appears on a monitor behind barney"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "the platform Alyx is standing on begins to rise"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "One of the plugs comes lose out of its outlet"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon plugs the cord back in"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon throws the switch"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Aylx disappears from the teleporter"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "The loud alarm sounds again"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon steps into the teleporter, the guardrails close and it begins to rise"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "An alarm begins to sound"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Llamar jumps out of a vent a breaks some wires connected to the teleporter"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Llamar jumps onto the teleport as it begins to malfunction, Gordon is transported to a beach, then back to the lab"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon is now transported to his intended destination"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon is teleported into an unknown location, he sees the same man he saw on the monitor"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon is now teleported back to the lab"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon is transported back to his original destination"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon is transported back to the unknown location"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon is transported underwater, A giant alien comes rushing at him but he is transported again at the last second, this time he is outside of the lab looking in through a window behind Dr. Kliener"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon makes his way through the area behind the lab until he sees barney on a ledge above"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Barney throws down a crowbar"
+    },
+    {
+      "chapter_id": "2b",
+      "text": "Gordon makes his way away from the lab and through a train station while being chased by civil protection"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "Gordon makes his way through the sewers of city 17 while being chased by civil protection, as he rounds a corner he comes upon the scene of yet another combine beating"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "The combine soldiers are beating the husband of the woman, they notice freeman and come after him instead, he kills them with his crowbar"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "Gordon continues his trek through the sewers while fighting civil protection, after passing over same train tracks Gordon finds a citizen and a vorigaunt"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "The vorigaunt charges up the HEV suit"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "Gordon continues to find his way through the sewers and slums of city 17, he comes upon a combine soldier killing a resistance member"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "The radio in the underground railroad station is going"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "Gordon continues to battle the combine and go through the sewers, he comes upon a resistance member hiding in a piece of concrete pipe"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "Gordon continues to press on through the sewers, he finds a combine patrol standing on a grate above him"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "They see Gordon"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "Gordon escapes through the sewer tunnel and heads on, he comes across another resistance station"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "The citizen opens the viewing slot on the door and is greeted with the site of several manhacks flying towards him"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "The citizen grabs a pipe and tries to defend himself, Gordon and the citizen destroy all the manhacks"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "Gordon continues to press on into the sewers, he comes to another resistance station"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "A voice comes over the radio"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "Gordon freeman heads on past the station, the area up ahead is being hit with artillery shells filled with headcrabs, he reached a small shelter with a airboat and another citizen"
+    },
+    {
+      "chapter_id": "2c",
+      "text": "Gordon drives the airboat out of the shelter and out of city 17 and into the river"
+    },
+    {
+      "chapter_id": "2d",
+      "text": "Gordon continues his way down the river and he comes upon a citizen on a bridge above him"
+    },
+    {
+      "chapter_id": "2d",
+      "text": "The citizen throws down some supply crates"
+    },
+    {
+      "chapter_id": "2d",
+      "text": "Gordon continues on, he reaches a closed floodgate, he goes inside the building and inside he sees Dr. Breen on a monitor"
+    },
+    {
+      "chapter_id": "2d",
+      "text": "Gordon continues on and opens the flood gate, and passes further down the river, after eluding a chopper, he comes upon a resistance outpost with two citizens and a vorigaunt."
+    },
+    {
+      "chapter_id": "2d",
+      "text": "The citizen leads Gordon into a room with a map and radio"
+    },
+    {
+      "chapter_id": "2d",
+      "text": "The citizen points to the map"
+    },
+    {
+      "chapter_id": "2d",
+      "text": "Gordon goes back to the dock and checks on the airboat, it now has a gun mounted on it"
+    },
+    {
+      "chapter_id": "2d",
+      "text": "Gordon leaves the outpost, just as he gets to the hideout the flood gate closes and he has to shoot down the chopper"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Gordon passes through the dam and finally reaches the hideout, he enters a chamber but it is sealed and some alarms go off"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Some machines begin to run a series of scans on Gordon"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "The scanners stop and turn off and the door in front of Gordon opens"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Judith leads Gordon down through the facility"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Judith gets into an elevator and Gordon follows"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "The elevator goes down"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "The elevator reaches the bottom floor"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Eli is speaking to a vorigaunt"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Eli goes back to his business, after a short while Alyx walks in"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Alyx goes and works on one of the machines while Eli activates a display for Gordon to look at"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Judith comes out of the room she was working in"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Alyx opens up a door with keypad and leads Gordon down a hallway"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Alyx points down a hallway"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Alyx leads Gordon through another airlock into an area outside"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Alyx opens a glass case and hands Gordon the gravity gun"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Alyx leads Gordon into the scrapyard"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "A large robot comes out of a metal shack on the other side of the scrapyard"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Dog throws a series of crates as Gordon catches them with the gravity gun"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Dog runs over to a metal crate and removes a round glowing object, he throws this object back and forth with Gordon"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "This continues for a short while"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Dog runs over and picks up a dumpster"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "A explosion can be heard"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Gordon follows Alyx back to the airlock along with dog, Alyx contacts Eli over the monitor"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "The power shuts off"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "The power comes back on"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "The monitor cuts off"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "As Alyx and Gordon run back to the lab a pile of rocks collapses separating Gordon from Alyx, a firefight can be heard taking place, she speaks to him through a hole in the rubble"
+    },
+    {
+      "chapter_id": "2e",
+      "text": "Gordon follows dog down the hallway Alyx pointed out earlier, Dog opens up a tunnel door and Gordon continues on alone"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Gordon fights his way through Ravenholm, a horrid abandoned town infested with headcrabs and zombies, after a short while he hears a mans voice"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Gordon comes upon a burning yard with several zombies coming at him on fire, a man kicks open the door at the top of the yard and kills the zombies with a shotgun"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "The man heads back into the door"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Gordon continues to fight his way through Ravenholm when he sees the man again"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Father Gregori shoots a zombie behind Gordon"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Father Gregori walks away and Gordon continues to move forward"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "After a short time Gordon sees him again"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Father Gregori walks away again and Gordon moves on"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "After some time Gordon again sees Father Gregori shooting at some zombies"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "In the same area Gordon sees him again"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Gordon sees the man soon again on a ledge above him"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Father Gregori throws Gordon a shotgun"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "The sound of claws clinking on metal can be heard, the drain pipe in front of Gordon begins to shake"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "After Gordon and Father Gregori fight off the aliens, Gordon moves on and sees him again"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Gordon continues on, as he emerges from a roof hatch he sees Father Gregori on the other side of a fence, behind him is the church"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Father Gregori goes and activates the tiny gondola to the church, while Gordon is waiting for it to arrive a swarm of aliens attacks him"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "The gondola arrives"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Gordon rides the gondola across the fence and into the church area"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Gordon and Father Gregori fight their way past the area behind the church, and past a graveyard to the mine entrance"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Father Gregori runs off to kill some zombies, and Gordon heads into the mines, Gordon finally makes his way out of the mines, and emerges onto some train tracks, there are combine snipers here, after killing them he finds a firefight going on between resistance members and the combine, he jumps in and helps, after this is over the citizens survey the damage"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "He notices Gordon"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "He leads Gordon to a door, then knocks on it"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "The door opens"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "The citizen leads Gordon to a monitor, he tunes it and Alyx appears"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "The citizen tunes the radio again"
+    },
+    {
+      "chapter_id": "2f",
+      "text": "Gordon heads out to the dock where the car is waiting"
+    },
+    {
+      "chapter_id": "2g",
+      "text": "As Gordon comes out onto the dock he can see the car waiting for him, and a large crane with a magnet on it"
+    },
+    {
+      "chapter_id": "2g",
+      "text": "The citizen in the crane begins to lower Gordon and the car down to the beach"
+    },
+    {
+      "chapter_id": "2g",
+      "text": "The car falls to the beach upside down"
+    },
+    {
+      "chapter_id": "2g",
+      "text": "Gordon rights the car with the gravity gun a drives off"
+    },
+    {
+      "chapter_id": "2g",
+      "text": "After a while Gordon comes to another resistance outpost"
+    },
+    {
+      "chapter_id": "2g",
+      "text": "Gordon heads down into the basement of the building where a man is speaking to some other resistance members"
+    },
+    {
+      "chapter_id": "2g",
+      "text": "Gordon takes the RPG"
+    },
+    {
+      "chapter_id": "2g",
+      "text": "An alarm begins to sound"
+    },
+    {
+      "chapter_id": "2g",
+      "text": "Gordon goes outside and shoots down the gunship, he goes back down to the basement"
+    },
+    {
+      "chapter_id": "2g",
+      "text": "Gordon goes outside, a citizen opens the gate for him and he drives off"
+    },
+    {
+      "chapter_id": "2h",
+      "text": "After driving for a very long time, Gordon comes to a resistance outpost stationed at a lighthouse"
+    },
+    {
+      "chapter_id": "2h",
+      "text": "Gordon drives his car into the garage and leaves it there, as this is his destination"
+    },
+    {
+      "chapter_id": "2h",
+      "text": "Gordon fights off the combine along with the resistance members, after the battle one of them comes up and shows Gordon the way down the path"
+    },
+    {
+      "chapter_id": "2h",
+      "text": "The secret door opens up and Gordon goes on foot down the path along the edge of the cliff"
+    },
+    {
+      "chapter_id": "2h",
+      "text": "After a short while Gordon comes to a citizen and his friend laying injured on a rock in the middle of the sand"
+    },
+    {
+      "chapter_id": "2h",
+      "text": "The injured citizen begins to get up"
+    },
+    {
+      "chapter_id": "2h",
+      "text": "The antlions crawl up from the sand and kill the injured citizen"
+    },
+    {
+      "chapter_id": "2h",
+      "text": "Gordon continues on across the beach when he comes upon a very large antlion he kills it, and a vorigaunt emerges from a nearby outpost"
+    },
+    {
+      "chapter_id": "2h",
+      "text": "The vorigaunt harvests the bugbait from the corpse of the super antlion"
+    },
+    {
+      "chapter_id": "2h",
+      "text": "The vorigaunt leads Gordon back into the outpost and gives him some simple training on how to use the bugbait, he then raises a barrier and lets Gordon leave"
+    },
+    {
+      "chapter_id": "2h",
+      "text": "Gordon fights his way up the beach with the antlions helping him, after a while he finally reaches Nova Prospekt"
+    },
+    {
+      "chapter_id": "2i",
+      "text": "Gordon continues to fight his way on through Nova Prospekt with his army of antlions"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon finally meets up with Alyx after a short while, unfortunately he has lost control of the antlions and can no longer herd them"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon follows her down an elevator"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon fights his way along with Alyx and they come to a control room, she finds her dad and they go after him, they come to the holding room where he is"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx uses the controls to send the pod Eli is in to the teleport room"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx goes back while Gordon heads forward"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx speaks through the suit"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon comes to a closed gate"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "The gate opens"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon comes to another closed gate"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon goes back and finds a vent he goes through"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon comes to another gate"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon moves on"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon clears the room"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon defends the room until Alyx falls down out of a vent in the ceiling"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx scrolls through some cameras and finds her"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Mossman is talking to Dr. Breen"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "The monitor shuts off"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon goes on ahead"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon comes to a room with 3 turrets in it"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon sets up the turrets"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "After a while of fighting of soldiers, Alyx talks to Gordon again"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx jumps down from a balcony above"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx and Gordon head off to find Mossman, after a short distance they come to a hallway, all the lights are shut off one by one"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "A horde of Combine soldiers pour in, Gordon and Alyx fight them off and head on"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "They come to a control room"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx uses her hacking tool to hack the security station"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "The monitor cycles to a image of Judith in a control room"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx inputs some commands and seals off the station that Judith is at"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "They head to the next room, combine soldiers come out of a field gate"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "They run up to a window and see Judith inside"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx goes and bangs on the window"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "The sealed door begins to give way under the combine battery"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx opens the door to the room"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "The monitor shows Eli"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "The door to the teleport room opens"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "They all head into the teleport room which contains a teleport similar to the one in Dr. Klieners lab but it is much taller"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Eli comes in on the prison pod"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "The prison pod opens"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "A large bang is heard at the sealed door"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Eli is moved into the portal"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx contacts Dr. Kliener over the terminal"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "An alarm sounds"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Mossman sneaks into the portal and starts it"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "The portal starts to rise, as Alyx tries to stop it, it activates"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Another large bang is heard at the door"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "A series of several bangs can be heard, the doors to the room finally are blown open by the combine, Gordon and alyx fight them off until the portal is ready"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx and Gordon run into the portal, as it begins to raise the remaining doors to the room blow open and soldiers flood out, the building begins to collapse, just as a large cement piece is about to fall on the portal they are teleported and the screen goes white"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "The screen fades back in to reveal the room in Dr. Klieners lab with the teleporter in it"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx bangs on the secret wall"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Dr. Kliener pops in with a shotgun"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Dr. Kliener opens the room where the HEV suit used to be, inside is Dog"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Barney appears over a monitor"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "A artillery shell flies by barney"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon and Dog head out of the lab and onto the streets of City 17"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "As Gordon and Dog head out to the streets a combine tank drives up, Dog picks it up and throws it into a building filled with soldiers, he then pries open a barricade to let Gordon past, after Gordon is past he shuts it and jumps onto a dropship, the dropship flies off with Dog on it"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon meets up with some resistance members"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "They head off and continue on"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon comes to an area sealed off by twisted metal and concrete"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "After holding off combine forces for some time the area is blow open"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon makes it past the area and opens the locked door"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon finds a resistance member through a fence"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon continues on with his squad"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "He comes to a room with 2 turrets, after knocking them down the door blows open and Alyx comes in"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon and Alyx go downstairs and reach the command center"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon and Alyx head outside to the plaza, Alyx starts to disable the generator"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon fights off the combine forces as Alyx tries to open the generator"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon uses the gravity gun to push the energy source out of the core"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "They both run through the gate and Alyx shuts it"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Alyx climbs up a drain pipe to the top of a building"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Bullets are fired at Alyx"
+    },
+    {
+      "chapter_id": "2j",
+      "text": "Gordon runs off into the sewers"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "After getting through the sewers Gordon finds another resistance member"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "Gordon heads past the snipers and finds a wounded resistance member in the basement of the warehouse"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "Gordon heads upstairs and sees Barney"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "Gordon blows out the snipers with grenades"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "Gordon and Barney head out of the building and to a security gate"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "Barney opens the gate and they both continue on"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "They come to a building and some resistance members join them"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "They come to a window"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "As Gordon goes into the next room a camera detects him and an alarm goes off"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "They reach the street"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "Barney and Gordon fight past the combine and get into the building"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "Barney and Gordon fight past the combine into the building and come to a room with lasers"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "Gordon gets past the lasers and shuts it down"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "After disabling the final generator Barney and Gordon head for the roof"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "After fighting his way up to and down from the roof Gordon finds another resistance member"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "After fighting his way through City 17 and past a whole mess of striders Gordon finds Dog bursting through a barricade of cars with Barney running behind him"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "They run over to the citadel wall"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "Dog pulls up the citadel wall"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "Dog lifts it all the way up"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "Gordon jumps into the hole"
+    },
+    {
+      "chapter_id": "2l",
+      "text": "Gordon heads down into the citadel through the underground"
+    },
+    {
+      "chapter_id": "2m",
+      "text": "Gordon rides along the prison pod conveyor system to get to the top of the citadel, he gets the upgraded gravity gun and probably enjoys throwing some combine fools around the building"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Gordon reaches the top of the citadel in the prison pod, the guards take the blue gravity gun from him and Judith comes in"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Judith leads the pod into a room with Eli and Dr. Breen talking"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "The guard shows Breen the gravity gun"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "The guard puts it on the desk"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "The mechanical arm takes Alyx out of the prison pod"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Alyx spits in his face"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Judith uses the hacking tool on the console"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Breen uses the intercom"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Judith uses the hacking tool on the intercom, the guards begin banging on the door"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Judith begins using the console, Breen tries to stop her"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "As Judith is freeing Gordon Breen grabs the gravity gun"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Breen fires the gun, Gordon gets up and he is free"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Judith gives Alyx the hacking tool"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Alyx and Gordon get into the elevator"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Breen is talking to someone"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Alyx uses the hacking tool on the force shield"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Gordon picks up the gravity gun, and Breen gets into another elevator and shuts the door before he can get in"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "The metal shield opens up to reveal the top of the citadel"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Alyx uses the consoles"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Gordon gets into the elevator and Alyx lets him down into the core, he sees Dr. Breen in the tower in the center inside a glowing orb, as he goes up the chamber Breen taunts him"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Gordon reaches the center"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Gordon reaches the top"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Gordon uses the gravity gun to shoot the energy balls into the portal"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Gordon continues to wreck the portal"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "Gordon blows up the portal"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "The shield covering the control room shuts off and Alyx steps out"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "The portal collapses and explodes, time begins to slow down and the Gman slowly appears"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "The background begins to fade away into black, a greenish light appears"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "The background becomes a black tunnel with white strands of light flying by"
+    },
+    {
+      "chapter_id": "2n",
+      "text": "A door slides open in the air and the Gman steps in and the door shuts behind him and the credits roll"
+    }
+  ]
+}
