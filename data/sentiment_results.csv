@@ -1,0 +1,567 @@
+chapter_id,character,text,sentiment,sentiment_score
+2a,G-Man,"Rise and shine Mr. Freeman, rise and shine. Not that I wish to imply that you have been sleeping on the job. No one is more deserving of a rest than you. And all the effort in the world would have gone to waste until.... Well lets just say your hour has come again. The right man in the wrong place can make all the difference in the world. So wake up Mr. Freeman, wake up and smell the ashes.",positive,0.5281378626823425
+2a,Citizen,I didnt see you get on. This is my third transfer this year.,neutral,0.8021142482757568
+2a,Citizen,No matter how many times I get relocated I never get used to it.,negative,0.7483633160591125
+2a,Citizen,"Well, end of the line.",negative,0.5133968591690063
+2a,Dr. Breen,"Welcome, welcome to city 17, you have chosen or been chosen to relocate to one of our finest remaining urban centers. I thought so much of city 17 that I elected to establish my administration here, in the citadel so thoughtfully provided by our benefactors. I have been proud to call city 17 my home. So whether you are here to stay, or passing through on your way to parts unkown, welcome to city 17, it is safer here.",positive,0.924689769744873
+2a,Civil Patrol,First warning move away.,neutral,0.6578057408332825
+2a,Citizen,"It, Its all I have left.",neutral,0.5645653605461121
+2a,Civil Patrol,Move it.,neutral,0.7412253022193909
+2a,Citizen,"Alright, alright I am moving, jeez.",neutral,0.5389053225517273
+2a,Citizen,"Were you the only ones on that train? Overwatch stopped our train in the woods and took my husband for questioning. They said he would be on the next train, I am not sure when that was. They are being nice and letting me wait though.",neutral,0.7628081440925598
+2a,Citizen,"Dont drink the water, they, they put something in it to make you forget, I dont even remember how I got here.",negative,0.8570280075073242
+2a,Citizen,Dr. Breen again? I was hoping I had seen the last of him in city 14.,neutral,0.5146324634552002
+2a,Citizen,"I wouldnt say that to loud, this is his base of operations.",neutral,0.6296047568321228
+2a,Civil Patrol,"You, Citizen come with me.",neutral,0.710149884223938
+2a,Citizen,"Wai, Wait a minute where are you...",neutral,0.8785318732261658
+2a,Civil Patrol,GET IN HERE!,neutral,0.648052453994751
+2a,Civil Patrol,Go on!,positive,0.5496275424957275
+2a,Citizen,ME?,neutral,0.6811547875404358
+2a,Civil Patrol,I SAID MOVE!,neutral,0.7038706541061401
+2a,Civil Patrol,"Dont move, hold it",neutral,0.7835927605628967
+2a,Civil Patrol,"You citizen, come with me.",neutral,0.7201022505760193
+2a,Citizen,"This must be a mistake, I got a standard relocation coupon just like everyone else.",negative,0.7247360944747925
+2a,Civil Patrol,Get in! Need any help with this one?,neutral,0.6894553899765015
+2a,Civil Patrol,No I am good,positive,0.8321435451507568
+2a,Civil Patrol,Back up!,positive,0.6772083640098572
+2a,Civil Patrol,Yeah I am gonna need me some privacy for this,negative,0.5479181408882141
+2a,Civil Patrol,Now...,neutral,0.7681596875190735
+2a,Barney,"About that beer I owed ya. Its me Gordon, barney from black mesa. Sorry for the scare I had to put on a show for the cameras. I have been working undercover with civil protection, I cant take too long or they will get suspicious, I am way behind on my beating quota",neutral,0.4776698648929596
+2a,Dr. Kleiner,Yes barney what is it? I am in the middle of a critical test.,neutral,0.8579508662223816
+2a,Barney,"Sorry doc, but look whos here.",neutral,0.5081304907798767
+2a,Dr. Kleiner,Great Scott! Gordon Freeman! I expected more warning.,positive,0.958460807800293
+2a,Barney,Yeah you and me both doc. He was about to board the express train to Nova Prospekt.,neutral,0.859669029712677
+2a,Dr. Kleiner,"Well, Barney what do you intend to do?",neutral,0.9162142872810364
+2a,Barney,"Im thinking, Im thinking.",neutral,0.8077366948127747
+2a,Dr. Kleiner,"Alyx is around here somewhere, she would have an idea of how to get him here.",neutral,0.866366982460022
+2a,Barney,"Well, as long as he stays away from checkpoints we should be okay. Listen I gotta go doc, we are taking enough chances as it is.",neutral,0.6723632216453552
+2a,Dr. Kleiner,Very well. And eh Gordon? Its good to see you.,positive,0.9837599992752075
+2a,Barney,Okay Gordon your going to have to make your way to Dr. Klieners lab.,neutral,0.833014190196991
+2a,Barney,Oh man! That is what I was afraid of! Get in here Gordon! Before you blow my cover!,negative,0.7007550597190857
+2a,Barney,Pile up some stuff to get to that window and keep going till your in the plaza. I will meet up with you later.,neutral,0.923466682434082
+2a,Civil Patrol,Pick up that can. Now put it in the trash can.,negative,0.6197970509529114
+2a,Civil Patrol,Alright you can go.,neutral,0.6863909959793091
+2a,Citizen,"This is how it always starts, first one building, then the entire block.",neutral,0.612610399723053
+2a,Citizen,They have no reason to come to our place.,negative,0.7049389481544495
+2a,Citizen,"Dont worry, they will find one.",positive,0.6140202283859253
+2a,Citizen,"Oh, I thought you were a cop.",neutral,0.6470902562141418
+2a,Citizen,Dont worry he is one of us.,neutral,0.5564499497413635
+2a,Citizen,Look at them down there.,neutral,0.7427492737770081
+2a,Citizen,I told you they would be coming for us next!,negative,0.5569334626197815
+2a,Citizen,Just this once I hope you are wrong.,neutral,0.510648787021637
+2a,Announcer,"Attention residents, miscount detected in your sector",neutral,0.7537834048271179
+2a,Citizen,Psst! Hey you! In here! Head for the roof! There is no time to lose!,positive,0.8738377094268799
+2a,Citizen,Run for your life!,neutral,0.41201138496398926
+2a,Citizen,Civil Protection!,neutral,0.5841350555419922
+2a,Citizen,CPs!,neutral,0.6306434869766235
+2a,Citizen,Here they come!,neutral,0.5408507585525513
+2a,Citizen,Get in here quick!,positive,0.49837225675582886
+2a,Citizen,Head for the roof! I will keep them busy!,neutral,0.5114409923553467
+2a,Alyx,Over Here! Ha! No you dont!,neutral,0.4688246250152588
+2a,Alyx,"Dr. Freeman I presume? We better hurry, the combine can be slow to wake, but once they are up you will have a hard time taking them down.",neutral,0.5683547854423523
+2a,Alyx,Dr. Kliener said you might be coming this way. I dont think it occurred to him that you might not have a map.,neutral,0.7661359310150146
+2a,Alyx,"Im Alyx Vance, my father worked with you back in black mesa, but im sure you dont remember him.",neutral,0.7386202216148376
+2a,Alyx,Man of few words arent you?,neutral,0.5059651136398315
+2a,Alyx,Remember him from black mesa? Your old administrator?,neutral,0.935541033744812
+2a,Alyx,Ha! Dont get my dad started on Dr. Breen.,positive,0.4957832992076874
+2b,Alyx,Funny you showing up on this day in particular.,negative,0.6283613443374634
+2b,Alyx,"We have been helping people escape the city on foot. Its a dangerous route to my fathers lab through the old canals, today we are finally on the verge of having a better way.",neutral,0.5633954405784607
+2b,Alyx,Here lemme buy you a drink,neutral,0.6873660087585449
+2b,Alyx,"Oh and by the way, nice to finally meet you.",positive,0.9807081818580627
+2b,Dr. Kleiner,Blast that little.. where did she get to? Llamar? Come out of there.,negative,0.7997933030128479
+2b,Alyx,"Uh-oh, everything alright Dr. Kliener?",neutral,0.8988943696022034
+2b,Dr. Kleiner,"Oh, hello Alyx. Well almost alright, Llamar has gotten out of her crate again. If I didnt know better, I would suspect barney of trapping and.. My goodness, Gordon Freeman, It really is you isnt it?",positive,0.4898817539215088
+2b,Alyx,"I found him wandering around outside, bit of a troublemaker isnt he?",negative,0.5041409730911255
+2b,Dr. Kleiner,"We owe a great deal to Dr. Freeman, even if trouble does seem to follow in his wake.",positive,0.7366211414337158
+2b,Dr. Kleiner,"I must say Gordon you have come at a very opportune time, Alyx has just installed the final piece in the resurrected teleport!",positive,0.9291419982910156
+2b,Alyx,I cant take any credit for the breakthrough doctor.,negative,0.6985024809837341
+2b,Dr. Kleiner,"Nonsense, your talents surpass your loveliness.",positive,0.5226401090621948
+2b,Alyx,Lets just see if this thing works ok?,neutral,0.7096078991889954
+2b,Barney,Well is he here? There you are! Man Gordon you stirred up the hive!,positive,0.47948750853538513
+2b,Barney,"We cant keep him here long doc, It will jeporadize everything we have worked for.",negative,0.8402178287506104
+2b,Alyx,Dont worry he is coming with me.,positive,0.5782124400138855
+2b,Dr. Kleiner,"Thats right Barney, this is a red letter day, we will inaugurate the new teleport with a double transmission.",positive,0.7546660900115967
+2b,Barney,You mean its working? For real this time? Because I still have nightmares about that cat.,negative,0.6755789518356323
+2b,Alyx,What cat?,neutral,0.878034234046936
+2b,Dr. Kleiner,"Now now there is nothing to be worried about, we have made major strides since then. Major strides.",positive,0.8725011348724365
+2b,Alyx,What cat?,neutral,0.878034234046936
+2b,Barney,"Doc, since he is not taking the streets you might as well get him out of his civvies.",negative,0.7473006844520569
+2b,Dr. Kleiner,"What? Oh dear you are right, I almost forgot. Barney I will give you the honor.",positive,0.6674849390983582
+2b,Barney,I have gotta get back on my shift but ok.,neutral,0.7278081178665161
+2b,Barney,Here we go.. Awahh!,positive,0.6027410626411438
+2b,Barney,Damn it! Get it off me!,negative,0.8757511377334595
+2b,Dr. Kleiner,Llamar! There you are!,positive,0.6873916983604431
+2b,Barney,I though you got rid of that pest!,negative,0.6829345226287842
+2b,Dr. Kleiner,"Certainly not. Never fear Gordon, she is de-beaked and completely harmless. The worst she might try to do is couple with your head. Fruitlessly.",negative,0.47325214743614197
+2b,Llamar,Guwakkh!,neutral,0.6031844615936279
+2b,Barney,Get that thing away from me!,negative,0.8204675316810608
+2b,Dr. Kleiner,Here my pet. Hop up!,positive,0.8480861783027649
+2b,Dr. Kleiner,No not up there!,negative,0.5787937641143799
+2b,Dr. Kleiner,"No, No! Careful Llamar those are quite fragile.",negative,0.5810849666595459
+2b,Dr. Kleiner,Oh fie! It will be another week before I can coax here out of there!,negative,0.5829838514328003
+2b,Barney,Yeah. Longer if we are lucky.,positive,0.5919750928878784
+2b,Alyx,Barney.. You are not an animal person?,negative,0.7235884666442871
+2b,Barney,Ugh.,negative,0.5854474306106567
+2b,Dr. Kleiner,"Well Gordon go ahead, slip into your suit now.",neutral,0.6363765001296997
+2b,Dr. Kleiner,"Well Gordon I see your HEV suit still fits you like a glove, at least the glove parts do.",positive,0.7042388916015625
+2b,Dr. Kleiner,"I have made a few modifications, but I will just acquaint you with the essentials, now lets see..",neutral,0.70917147397995
+2b,Dr. Kleiner,The Mark V Hazardous Environment Suit has been redesigned for comfort and utility..,positive,0.5665864944458008
+2b,Dr. Kleiner,Oh dear!,neutral,0.4263339340686798
+2b,Barney,Doc we dont have time for this. At least get that suit juiced up Gordon.,negative,0.7399500608444214
+2b,Dr. Kleiner,"Good idea, there is a charger on the wall. I have modified your suit to draw power from combine energy outlets, which are plentiful wherever they patrol.",positive,0.8551914691925049
+2b,Alyx,"Meanwhile, lets get this show on the road.",positive,0.6266464591026306
+2b,Dr. Kleiner,"Gordon, why dont you position yourself near the panel over there and wait for my word?",neutral,0.7516884803771973
+2b,Eli,Issac are you there?,neutral,0.9498759508132935
+2b,Dr. Kiener,"Yes, yes, Eli, a bit of a hold up on this end. You will never guess who found his way into our lab this morning.",neutral,0.5902687311172485
+2b,Eli,"Thats not who I think it is, is it?",negative,0.703685462474823
+2b,Dr. Kleiner,"Indeed it is, and its our intention to send him packing straight away, in the company of your lovely daughter.",positive,0.6045733690261841
+2b,Alyx,Are you ready for us dad?,neutral,0.6035690307617188
+2b,Eli,We are all set on this end.,neutral,0.5576449036598206
+2b,Alyx,Then lets do it,neutral,0.6582712531089783
+2b,Dr. Kleiner,"Lets see, the massless field flux should self-limit and I have clamped the manifold parameters to include CY Hilbert and GC orbitfold inclusive. Conditions could not be more ideal.",positive,0.712005615234375
+2b,Barney,Thats what you said last time.,neutral,0.8244994878768921
+2b,Alyx,"Hey, uh, yeah, about that cat..",neutral,0.7349370718002319
+2b,Dr. Kleiner,Initializing in three.. two.. one.. Oh fiddlesticks what now?,neutral,0.7449135780334473
+2b,Alyx,"Uh, doctor the plug.",neutral,0.8047494292259216
+2b,Dr. Kleiner,"Dear me, you are right, Gordon would you mind plugging us in.",neutral,0.5685052871704102
+2b,Alyx,You gonna let Gordon throw the switch?,neutral,0.8867348432540894
+2b,Dr. Kleiner,"Gordon, go right ahead.",neutral,0.5810367465019226
+2b,Dr. Kleiner,"Very good, final sequence commencing..now.",positive,0.9857057332992554
+2b,Barney,I cant look.,neutral,0.5174928307533264
+2b,Alyx,"Uh, ok, oh ah ohhh!",positive,0.5205363631248474
+2b,Dr. Kleiner,"Well, did it work?",neutral,0.6730816960334778
+2b,Eli,See for yourself,neutral,0.6385014653205872
+2b,Alyx,Hey doc!,positive,0.7834935188293457
+2b,Dr. Kleiner,"Thank goodness, my relief is almost palpable",positive,0.9658989310264587
+2b,Eli,Fantastic work Izzy,positive,0.966536819934845
+2b,Dr. Kleiner,"Well I cant take all the credit, Dr. Freeman proved an able assistant",positive,0.5287864208221436
+2b,Eli,Lets go ahead and bring Gordon through now.,neutral,0.8616949319839478
+2b,Dr. Kleiner,"Right you are, speak to you again in a few moments.",neutral,0.7556942105293274
+2b,Barney,"Good job Gordon, throwing that switch and all, I can see your M.I.T. education really pays off.",positive,0.9696663618087769
+2b,Dr. Kleiner,"Alright Barney, your turn.",neutral,0.6664451360702515
+2b,Barney,Gee thanks,positive,0.7842636704444885
+2b,Dr. Kleiner,"Gordon, as soon as you are in position we will send you to Eli.",neutral,0.8770776987075806
+2b,Barney,And not a moment too soon,positive,0.6085739135742188
+2b,Dr. Kleiner,"Excellent, initializing, in three.. two.. one.., eh Barney if you would be so kind?",positive,0.9062591791152954
+2b,Barney,Good luck out there Gordon,positive,0.9328654408454895
+2b,Dr. Kleiner,"Yes indeed, we are ready to project you Gordon, best of luck in your future endeavors, and bon voyage, final sequence.",positive,0.9790154695510864
+2b,Barney,What the hell?,negative,0.7762783765792847
+2b,Dr. Kleiner,What is it?,neutral,0.792158305644989
+2b,Barney,Its your pet the freaking head humper!,negative,0.4946182668209076
+2b,Dr. Kleiner,Llamar? Hedy! No!,negative,0.7827924489974976
+2b,Barney,Look out!,neutral,0.5736438632011414
+2b,Barney,There he is!,positive,0.8227157592773438
+2b,Dr. Kleiner,Is Llamar with him?,neutral,0.9549748301506042
+2b,Barney,Forget about that thing!,negative,0.7248420119285583
+2b,Alyx,He is coming through dad!,positive,0.9105162620544434
+2b,Eli,What is going on Judith?,neutral,0.8187761306762695
+2b,Dr. Mossman,"Im not sure, it seems to be some kind of interference.",negative,0.4972178339958191
+2b,Eli,Gordon stay put we will get ya out of there.,neutral,0.6616784334182739
+2b,Dr. Mossman,Something is drawing him away.,negative,0.649124264717102
+2b,Dr. Breen,What is the meaning of this? Who are you? How did you get in here?,neutral,0.6140658855438232
+2b,Barney,"He is back, Im getting him outta there.",neutral,0.5556493997573853
+2b,Dr. Kleiner,You cant just wade into the field! It will peel you apart!,negative,0.8137888312339783
+2b,Alyx,We just lost Gordon what is going on?,negative,0.64786297082901
+2b,Dr. Kleiner,"I wish I knew, Im encountering unexpected interference",negative,0.5989041924476624
+2b,Barney,Dont worry Gordon we will..,positive,0.7573643326759338
+2b,Alyx,There he is!,positive,0.8227157592773438
+2b,Dr. Mossman,Ah! We are losing him again!,negative,0.8569394946098328
+2b,Dr. Breen,"The man I saw, im all but certaint it was... Gordon Freeman",neutral,0.7675787806510925
+2b,Dr. Kleiner,What do you mean he is not there?,neutral,0.7070788145065308
+2b,Eli,He didnt come through.,negative,0.6570580005645752
+2b,Dr. Kleiner,Then where is he?,neutral,0.6374320983886719
+2b,Eli,Behind you.,neutral,0.7142672538757324
+2b,Dr. Kleiner,Ahh!,positive,0.6454574465751648
+2b,Eli,Shut it down! Shut it down!,neutral,0.5622598528862
+2b,Dr. Kleiner,Gordon run! You must get out of here!,negative,0.6652439832687378
+2b,Barney,Get down outta sight I will come find you!,neutral,0.574371874332428
+2b,Barney,"Gordon! I have never seen the citadel on full alert like that! Take the old canals out of city 17 to Eli, its dangerous but there is a whole network of resistance members who run the underground railroad. I would come with you but I have to look after Dr. Kliener. Oh and before I forget, I think you dropped this back at black mesa.",negative,0.6694024205207825
+2b,Barney,"Good luck out there buddy, you are gonna need it.",positive,0.9682552218437195
+2c,Citizen,Help me! Stop we didnt do anything!,negative,0.869803249835968
+2c,Citizen,They will be looking for you now. You should run there is nothing else you can do here.,neutral,0.4871080815792084
+2c,Citizen,"Good god! Guess those sirens are for you huh? Good thing you found us, you are not the first to come through by a..",negative,0.38615134358406067
+2c,Vortigaunt,"This is the freeman, the reckoning of the combine has come.",neutral,0.7845132350921631
+2c,Citizen,Look we are just a lookout for the underground railroad. Main station is right around the corner. They will get you started on the right foot. Meanwhile let my vorigaunt friend here give you a jolt to get going.,neutral,0.5757499933242798
+2c,Vortigaunt,That is all we can spare.,negative,0.4623677730560303
+2c,Citizen,"Be careful now, we REALLY cant afford to get noticed. Civil protection catches you down here, its bad news for the whole railroad.",negative,0.9106110334396362
+2c,Vortigaunt,We serve the same mystery.,neutral,0.7437185049057007
+2c,Citizen,Get outta here.,negative,0.6598532795906067
+2c,Citizen,Wait. what are you.. no.. please.. dont shoot! Ahhh!,negative,0.8042170405387878
+2c,Radio,Station 12 come in. Station 12 do you read?,neutral,0.934684157371521
+2c,Radio,"This is station 8! We heard 12 go down and out! Surgical strike units are targeting the railway stations! Repeat Civil Protection is coming down on the stations! We are already getting refuges from 9 and outlying, looks like..(static)",negative,0.7136791348457336
+2c,Radio,Station 8 do you copy? Station 8 are you there? We have confirmed reports of manhacks. Repeat they are filling the underground with manhacks.,neutral,0.5138896703720093
+2c,Citizen,Over here! Keep going friend that station was raided but there are still others up ahead. I am gonna stay here in case any others come through. Gotta keep the railway alive.,positive,0.7253727912902832
+2c,Civil Patrol,Anyone else get a 647-E reading?,neutral,0.8939999341964722
+2c,Civil Patrol,Check for miscount.,neutral,0.828889012336731
+2c,Civil Patrol,Still getting that 647-E reading.,neutral,0.844853937625885
+2c,Civil Patrol,There he is!,positive,0.8227157592773438
+2c,Citizen,"Get in here, hurry! Civil protection is on to us. We are tearing up the railroad, covering up our tracks. Looks like you are going to be the last one through. Be glad you are not the guy they are looking for. Poor bastard does not stand a chance. Sounds like they are calling in every CP unit in city 17. Now they are flooding the areas up ahead with manhacks. You better get going before they sweep through here",negative,0.8322109580039978
+2c,Citizen,Oh shit!,positive,0.35831519961357117
+2c,Citizen,"Thanks for your help. Look it isnt safe here, I will give you some supplies to get you going but then you have to leave. Good luck out there!",positive,0.41671714186668396
+2c,Citizen,Hey! You are Freeman arent you? We got word that you were coming. You got here at a bad time.,negative,0.7772621512413025
+2c,Alyx,"Black Mesa East to station 6 do you read? Dr. Freeman is on his way downriver. Lend him the airboat and give him all the help you can. Repeat Gordon Freeman has returned, it is critical he reaches Black Mesa East.",neutral,0.7075758576393127
+2c,Citizen,You better get going now.,neutral,0.6413651704788208
+2c,Citizen,"Hey, Dr. Freeman I had been hoping you would show up, got this airboat all gassed up and ready to go. Its gonna be tough dodging civil protection out there in the open, but drive hard and you will make it. You will find more help at station 7, just up the river, its the red barn. Climb on in, and fire her up. You had better get going now!",positive,0.7199784517288208
+2d,Citizen,Hey! You down there! Supplies!,neutral,0.5150891542434692
+2d,Citizen,Look out below!,neutral,0.7764564752578735
+2d,Dr. Breen,"We now have direct confirmation of a disruptor in our midst, one who has acquired an almost meesianic reputation in the minds of certain citizens. His figure is synonymous with the darkest urges of instinct, ignorance, and decay. Some of the worst excesses of the Black Mesa incident have been laid directly at his feet. And yet unsophisticated minds continue to imbue him with romantic power. Giving him such labels as, the one free man, or the opener of the way. Let me remind all citizens of the dangers of magical thinking. We have scarcely begun to climb from the dark pit of our the evolution of our species. Let us not slide backward into oblivion, just as we have finally",negative,0.8238362669944763
+2d,Begun To See The Light. If You See This So Called Free,"man, report him.",negative,0.7327096462249756
+2d,Civic Deeds Do Not Go Un,rewarded and likewise complicity with his cause will,neutral,0.825808048248291
+2d,Not Go Un,punished. Be wise. Be safe. Be aware.,neutral,0.7332713603973389
+2d,Citizen,Hey! You are freeman arent you?,neutral,0.6240101456642151
+2d,Citizen,Well! I wouldnt believe it if I couldnt see it with my own eyes. Dr. Gordon Freeman himself!,neutral,0.38832005858421326
+2d,Citizen,"You are just in time doc, we have gotta move out before the combine picks us up, we are getting ready to pull out.",neutral,0.6475396156311035
+2d,Citizen,"We better hurry, we have to tear down this camp before the combine gets here.",negative,0.5907935500144958
+2d,Vortigaunt,Greetings to the Freeman.,positive,0.78593909740448
+2d,Citizen,"Come on in, I will show you what you are up against.",positive,0.5179141759872437
+2d,Citizen,Here take a look at this. This here is the dam just up ahead.,neutral,0.8514984846115112
+2d,Citizen,"The hideout is here, a stones throw away from the apron and nestled in the old hydro plant. But getting there, with that hunter chopper on your ass, next to impossible. Good news is, the vorigaunt is working his magic on your airboat, so you will have a little more firepower going forward. I think he is just finishing up now. Go on out.",positive,0.533605694770813
+2d,Citizen,There we are. That gun came off of one of the same hunter choppers that you are up against. I always like to bring a little irony to a firefight.,negative,0.6282060146331787
+2d,Vortigaunt,"The freeman will accept this weapon, or suffer greatly on the road ahead.",negative,0.881452202796936
+2d,Citizen,Farwell Dr. Freeman.,neutral,0.9336573481559753
+2d,Vortigaunt,For Freedom!,positive,0.5543649792671204
+2d,Citizen,Give them hell doc.,negative,0.8784375786781311
+2e,Dr. Mossman,"We have got something. Okay, its human. Hello? Take it easy in there you are safe now. You will have to forgive the scanning process we cant take any chances.",positive,0.5399128794670105
+2e,Dr. Mossman,"Dr. Freeman? Gordon Freeman?! Is that you? You made it here this quickly? Well is Eli is going to be amazed, not to mention relieved. I am Dr. Mossman, Dr. Judith Mossman. I have been hearing about you since long before the Black Mesa incident. Oh! Black Mesa. I do so envy you working with Eli and Dr. Kliener when they were at the top of their field. Ah! There we go you can come through now.",positive,0.9036691784858704
+2e,Dr. Mossman,I will take you down to Eli right away. He would never forgive me if I kept you waiting.,negative,0.921008825302124
+2e,Dr. Mossman,"We could certainly use the extra help around here. We have covered a lot of ground in the last few months, but things would go much more faster if we had more people with your training. We are closing in on a reliable local teleport technology, something even the combine has not mastered. Eli thinks their portals are string based, similar to our Calabi-Yau model, but they have failed to factor in the dark energy equations. They can tunnel through from their universe, but once they are here they are dependent on local transportation. If they knew what we were doing with entanglement...",positive,0.7070910930633545
+2e,Dr. Mossman,"Oh listen to me, I sound like a post-doc. I am just so excited to think that we will finally get the chance to work together.",positive,0.9854410290718079
+2e,Dr. Mossman,"Were was I? Oh yes, Dr. Kliener compressed the xen relay far beyond anything he imagined at Black Mesa. We figured out how to use xen as an unexpressed axis, effectively a dimensional slingshot so we can swing around the borderworld and come back in local space without having to pass through.",positive,0.6245556473731995
+2e,Dr. Mossman,Oh! Here is Eli now.,positive,0.4860365092754364
+2e,Eli,Alright good you keep right on it.,positive,0.7862678170204163
+2e,Dr. Mossman,Eli! Look who I found in the airlock.,neutral,0.5371460914611816
+2e,Eli,"Gordon Freeman! Let me get a look at you man! My god man you havent changed one iota. How do you do it? Now lets see the last time I saw you, I sent you up for help after the resonance cascade. I never thought it would take you this long to get back to me. Welcome to the lab anyway, its not Black Mesa but it serves us well enough.",negative,0.44143807888031006
+2e,Dr. Mossman,Its going to be a lot more like Black Mesa with Gordon here to help.,neutral,0.6935495138168335
+2e,Eli,"Right you are, M.I.T. graduates are few and far between these days. We will get you out of that hazard suit and back into your lab coat where you belong.",neutral,0.5619980096817017
+2e,Dr. Mossman,Lemme just finish up some work and I will see what I can dig up. Dr. Freeman? It has been a real honor. I am looking forward to working together.,positive,0.9749307036399841
+2e,Eli,Feel free to look around.,neutral,0.6667522192001343
+2e,Alyx,"Ah! Gordon, the vorigaunts said you were here. I cannot believe you made it so quickly on foot.",positive,0.5061752796173096
+2e,Eli,I believe he broke your record honey.,positive,0.5606155395507812
+2e,Alyx,Well he earned it. I guess you proved you can handle yourself out there.,positive,0.8660098910331726
+2e,Eli,There is nothing Gordon cannot handle..with the possible exception of you.,neutral,0.48927104473114014
+2e,Alyx,Dad!,positive,0.8921413421630859
+2e,Eli,Haaaa,positive,0.49172815680503845
+2e,Eli,Take a look at this Gordon.,neutral,0.8625463843345642
+2e,Dr. Mossman,Alyx I though you were on watch?,neutral,0.9277196526527405
+2e,Alyx,The vorigaunts relieved me show I could come see Gordon. Anyway I should be in here working on the portal.,positive,0.5076842308044434
+2e,Dr. Mossman,I have the repairs well in hand. Someone misjudged the capacity of the combine thyristor..,neutral,0.6699337959289551
+2e,Alyx,Are you blaming me?,negative,0.6659157276153564
+2e,Dr. Mossman,No it was a calculation error not a mechanical problem.,negative,0.5849888324737549
+2e,Alyx,"Then maybe you should let me do the calculations next time, as well as the installing.",neutral,0.7960562109947205
+2e,Dr. Mossman,"Alyx really, sometimes I think you deliberately misunderstand me.",negative,0.7618818283081055
+2e,Eli,Ahem. Alyx why dont you take Gordon and show him the gravity gun.,neutral,0.8103713989257812
+2e,Alyx,"Sure, come on Gordon, lets go have some fun.",positive,0.8875684142112732
+2e,Dr. Mossman,The zero point field energy manipulator is not a toy Alyx,negative,0.6639143824577332
+2e,Alyx,Lets get out of here.,negative,0.5643153190612793
+2e,Alyx,"So I seen you met Dr. Mossman, she is one of the main reasons I spend so much time outside. You should hear her drone on about how it should have been her in the Black Mesa test chamber that day. I am sorry I shouldnt be talking behind her back, it just gets a bit cluastraphobic down here.",neutral,0.5543649792671204
+2e,Alyx,Thats the old passage to Ravenholm. We dont go there anymore. Come on.,neutral,0.5736809372901917
+2e,Alyx,"So here we are, the scrapyard. This is the gravity gun my father was talking about, you can call it the zero point energy field manipulator if you really want to.",neutral,0.671764075756073
+2e,Alyx,"Its designed for handling hazardous materials, but we mainly use it for heavy lifting. Give it a try. The primary trigger emits a charge, you can punt stuff and send it flying. I found it handy for clearing minefields. The secondary trigger lets you grab things, you can send them flying with the primary. Once you have picked something up, you can drop it gently by pressing your secondary trigger again. Pick up some stuff and toss it. You can also pull stuff over from a distance. Try grabbing those barrels from that ledge up there. All right.",neutral,0.6305559873580933
+2e,Alyx,"Now let me call dog, he loves to play fetch. Dog! Come!",positive,0.9440199136734009
+2e,Alyx,"Gordon this is dog, my dad built him to protect me when I was a kid.",neutral,0.6252203583717346
+2e,First Model Way About Yay,high I have been adding to him ever since. Ok dog lets play catch with Gordon. You will need to use the gravity gun. Go ahead dog. Throw!,positive,0.6147609949111938
+2e,Alyx,"Dog, go get your ball!",neutral,0.5278748273849487
+2e,Alyx,"When I told you that you would be playing fetch, I didnt tell you who would be fetching did I.",neutral,0.7784318327903748
+2e,Alyx,Ok Gordon lets try something else. Throw something bigger dog.,neutral,0.5567842125892639
+2e,Alyx,No Dog! No boy put that down! What is it dog?,negative,0.6618949174880981
+2e,Alyx,Oh my god what was that? Scanners! The combine is sweeping the area! We have to head back to the lab come on Gordon!,negative,0.6431408524513245
+2e,Alyx,Dad its Alyx are you there?,neutral,0.893894374370575
+2e,Eli,Alyx.. Honey,neutral,0.8151076436042786
+2e,Alyx,Whats going on in there?,neutral,0.8014856576919556
+2e,Eli,Where are you Alyx?,neutral,0.9463290572166443
+2e,Alyx,We are in the scrapyard airlock stuck in a full autocycle.,negative,0.4917757213115692
+2e,Eli,Is Gordon still with you?,neutral,0.9544010758399963
+2e,Alyx,He is right here.,neutral,0.6936429738998413
+2e,Eli,"Good, I want you two to..",positive,0.8613078594207764
+2e,Alyx,Dad?,neutral,0.8366150856018066
+2e,Eli,"Take Gordon out of here, head for the coast! Do not go through raven..",negative,0.6371421217918396
+2e,Alyx,"Dad? Dad! Damn it! Dog open the airlock get us out of here! Hurry now! Tear it apart if you have to, just get it open! Thats enough dog. Come on Gordon! Come on!",negative,0.5576871633529663
+2e,Alyx,"Gordon you need to get out of here, I cant leave my father. Dog, take Gordon to the Ravenholm tunnel, then circle around and try to meet up with me.",negative,0.5648020505905151
+2f,Father Gregori,"For it was said that they had become like those peculiar demons which dwell in matter, but in which no light may be found.",negative,0.6575407981872559
+2f,Father Gregori,"For the days of my life have vanished like smoke, and my bones are parched like ash, and let all my impurities be as fuel for that fire until nothing remains but the light alone.",negative,0.5307187438011169
+2f,Father Gregori,"May they become like dust before the wind, may the angel of the lord pursue them.",neutral,0.5929072499275208
+2f,Father Gregori,"But whos is this? Another life to save? I will keep my eye on you, more than that I cannot promise.",neutral,0.5228719711303711
+2f,Father Gregori,Well done brother. Make free us of my traps. But take care not to fall in them yourself. Behind you!,positive,0.7264642715454102
+2f,Father Gregori,"In Ravenholm, you do well to be vigilant.",neutral,0.5021407604217529
+2f,Father Gregori,"Better and Better! I am Father Gregori, you have already met my, congregation, aha aha ahaaa!",positive,0.9721631407737732
+2f,Father Gregori,"Ah! It is you brother! I apologize, but no harm done. My bullets are the least of your concerns.",negative,0.48753681778907776
+2f,Father Gregori,"Although they call me crazy I care not, for thou art my helper my strength, and my savior.",positive,0.8308261036872864
+2f,Father Gregori,Here brother! Come closer. You have stirred up hell! A man after my own heart! Here I have a more suitable gun for you. You will need it. Catch!,negative,0.43498754501342773
+2f,Father Gregori,"Good, now keep it close. My advice to you is..aim for the head. Hush!",neutral,0.455832839012146
+2f,Father Gregori,They come! There is no rest in Ravenholm! Move on and I will meet you at the church.,neutral,0.5999678373336792
+2f,Father Gregori,How came you here brother? This is the wrong side of town for you! Did I not tell you to seek the church? Mend your ways before it is too late!,negative,0.9030793309211731
+2f,Father Gregori,"Ah, there you are! At last! I will send the cart for you brother! It will be but a moment! Patience brother! Guard yourself well!",positive,0.9310563206672668
+2f,Father Gregori,Almost there brother!,positive,0.8647606372833252
+2f,Father Gregori,Now brother step into the cart! The handbrake brother release it and come down!,neutral,0.8014857769012451
+2f,Father Gregori,"Greetings brother! And so we meet at last. You are to be commended for avoiding my traps. The work of a man who once had too much time on his hands, and now finds time for nothing but the work of salvation. I suspect you have little wish to remain in Ravenholm, so I will show you to the mines. As for me..A shepherd must tend to his flock... Especially when they have grown unruly. Follow me brother, and tread lightly, for this is hallowed ground.",positive,0.738792896270752
+2f,Father Gregori,"Farwell brother! I fear I deliver you to a darker place. May the light of lights be with you. Look to your own, salvation.",negative,0.6297376751899719
+2f,Citizen,Who is hurt?,negative,0.58293217420578
+2f,Citizen,Winston has been hit.,neutral,0.7603798508644104
+2f,Citizen,Patch him up and get him to the back as soon as he is stable.,neutral,0.8035800457000732
+2f,Citizen,Gordon Freeman? Its incredible you made it! We have been getting communications from Alyx. I will see if I can reach her again. Follow me.,positive,0.9626482129096985
+2f,Citizen,"Its Leon, we are all clear. And I have got Gordon Freeman!",positive,0.5228486061096191
+2f,Citizen,Dr. Freeman you are kidding? I have been on the line with Alyx. Her father has been captured.,negative,0.7208809852600098
+2f,Citizen,Over here Dr. Freeman.,neutral,0.8800286054611206
+2f,Vortigaunt,The Eli Vance is indispensable to the liberation.,positive,0.7132136821746826
+2f,Citizen,"Alyx its Leon, and I have got Gordon Freeman with me.",neutral,0.7689194083213806
+2f,Alyx,"Gordon! You made it through Ravenholm? Thank god! I need your help! They have taken my father! He has been taken to Nova Prospekt. The vorigaunts tracked the ship that made off with him and Judith Mossman. While the trains are still running I am going to hitch a ride. Here is where you come in Gordon. I need you to make your way along the coast until you get to Nova Prospekt. It used to be a high security prison, its something much worse than that now. But I think it is still easier to sneak in than to break out.",neutral,0.48565369844436646
+2f,Citizen,You want him to take the coast road? He wont last five minutes on foot. Its antlion spawning season.,negative,0.7448867559432983
+2f,Alyx,Thats why I called you Leon. I was hoping you still had the scout car we left with you last summer. The one my dad rigged with the tau cannon.,neutral,0.7463688850402832
+2f,Citizen,"Yeah good idea, hold on a sec.",positive,0.9204720854759216
+2f,Citizen,"Noriko? Bring the buggy out put it on the dock right now, Gordon Freeman will be driving it!",neutral,0.7185726761817932
+2f,Citizen,Will do! I just finished mounting an ammo crate on the back.,positive,0.5153136253356934
+2f,Citizen,Good timing. Ok Alyx we are all set.,positive,0.9325789213180542
+2f,Alyx,"Thanks Leon. Gordon I have not driven the coast in over a year, but I have no reason to think its gotten any safer. Meet me in the depot where the trains unload. Take care of yourself and I will see you in Nova Prospekt.",neutral,0.5249553322792053
+2f,Citizen,"Bye Alyx. Ok doc, before you hit the road you might wanna grab some medkits, restock on ammo, maybe check the map see where you are headed. There is an ammo supply crate on the back of the car if that is any comfort. Stay with the car, make use of the thumpers, and you will stand a fair chance against the antlions. I will radio ahead to let the next base know you are coming.",neutral,0.7792002558708191
+2g,Citizen,"Hello Dr. Freeman, the car is all ready for you. Hop in and I will lower you down to the beach! Good here we go!",positive,0.9152082800865173
+2g,Citizen,Damn magnet is failing! Hold on!,negative,0.9280607104301453
+2g,Citizen,Sorry doc!,negative,0.5315553545951843
+2g,Citizen,Gordon Freeman! Hurry get in the basement! We are expecting gunships at any moment. Colonel Cubbage will be glad to see you made it.,positive,0.7985116243362427
+2g,Colonel Cubbage,"This steerable rocket launcher is our best bet for taking down a gunship. Ah! Hello, I will be right with you. Now.. where was I? Ah yes.. Using the laser guide, you can steer you rocket past the gunship defenses and prevent it from shooting down your rocket. This will only anger it at first. But if you can survive long enough to make several direct hits, you will be rewarded with a prize worthy of any mantle piece. Now? Who is going to be the lucky one to carry it into combat? Ah yes Gordon Freeman. I could not have asked for a finer volunteer.",positive,0.8296036124229431
+2g,Colonel Cubbage,Colonel Odessa Cubbage at your service.,negative,0.6630287170410156
+2g,Citizen,Gunship!,neutral,0.6950169801712036
+2g,Colonel Cubbage,"Damn! Let me just send a warning to lighthouse point, then I will come right up and lend a hand!",neutral,0.5078637003898621
+2g,Colonel Cubbage,"Well thats that. I gather you have disposed of that gunship Dr. Freeman, your reputation is well deserved. I will have someone open the gate for you immediately.",positive,0.5362140536308289
+2h,Citizen,"Hey over here! You made it! We are picking up radio chatter, they are looking for your car. Get you car in the garage.",positive,0.6804139018058777
+2h,Citizen,"Ok doc you will have to go on foot from here. There is a secret path along the cliffside, but no one is going anywhere until we fight off this attack. Having you here to fight alongside us is going to make a big difference for morale. Oh crap! Here come the dropships!",neutral,0.42199626564979553
+2h,Citizen,"This way Dr. Freeman, we will take the cliff path before the gunships find us. Right along there, and watch your step.",neutral,0.6758995056152344
+2h,Citizen,Hey you there! Dont move! Stay on the rocks! Stepping on the sand makes the antlions crazy!,neutral,0.4515317678451538
+2h,Citizen,Lazlo dont move!,negative,0.4753291606903076
+2h,Citizen,Dear god! Poor Lazlo. The finest mind of his generation come to such an end. You go on. There is nothing else you can do here.,negative,0.8872635364532471
+2h,Vortigaunt,"The freeman would be wise to heed out extraction of the myrmadonts aromatic pheropods, the process is not entirely hygienic so please, stand aside.",neutral,0.5578155517578125
+2h,Vortigaunt,The freeman will have need of these on the road ahead. Gather them now.,neutral,0.7686529159545898
+2j,Alyx,"I am glad you made it here in one piece. My dad is up there somewhere, in that holding area. Its gonna take some doing to get him out. Lets get out of here.",neutral,0.4767431318759918
+2j,Alyx,"I am afraid that I am flying blind here. Every now and then a vorigaunt gets captured and sends back a little picture of this place. What we do know, is all bad.",negative,0.9123824834823608
+2j,Alyx,There he is!,positive,0.8227157592773438
+2j,Eli,Alyx! Gordon! Is that really you? I cant believe you found me!,positive,0.5771928429603577
+2j,Alyx,Dad are you alright?!,neutral,0.679542601108551
+2j,Eli,Im fine but you have to get out of here.,neutral,0.5921405553817749
+2j,Alyx,We are here to get you out dad!,neutral,0.5066857933998108
+2j,Eli,Nevermind me save yourselves!,negative,0.6975936889648438
+2j,Alyx,No we are not leaving you! I think I can recalibrate the combine portal to get us out of here.,neutral,0.5704016089439392
+2j,Eli,But where will you go?,neutral,0.8117055892944336
+2j,Alyx,"I talked to Dr. Kliener, his portal was almost working again. If he has managed to repair it then we will end up there. If he hasnt well... we would not be any worse off.",neutral,0.5265730023384094
+2j,Eli,Its not worth the risk honey! I cant lost you! Get out while you still can!,negative,0.8624998331069946
+2j,Alyx,"We are not leaving here without you, thats final!",positive,0.5397626161575317
+2j,Eli,We cant leave without Judith either.,neutral,0.5029274821281433
+2j,Alyx,Dont worry dad we will find her. For now I am going to send you to the teleport room. I am not saying goodbye dad. We will meet you there.,positive,0.5486590266227722
+2j,Eli,I know you will honey.,positive,0.8764746189117432
+2j,Alyx,Lets get out of here. I am going to head back to the security station and try to patch into your suit radio.,neutral,0.6373577117919922
+2j,Alyx,"Hey it worked, lets see what I can do to clear the way for you, keep an eye out for Mossman. I will get my dad through the prison as far as I can then I will catch up to you.",positive,0.6059582829475403
+2j,Alyx,Hang on I will get that gate open.,neutral,0.701738715171814
+2j,Alyx,"Damn! It is jammed ok I have got an idea, head back to that office.",neutral,0.43169599771499634
+2j,Alyx,Be careful Gordon I am picking up a lot of soldiers ahead.,neutral,0.7446001172065735
+2j,Alyx,"I will start working on this gate, hang on.",neutral,0.6249855160713196
+2j,Alyx,"You are coming up to another control room, looks like it is still occupied.",neutral,0.8899889588356018
+2j,Alyx,"My guess is that there are a bunch more soldiers heading your way. Quick search the room. There should be some combine turrets nearby. I can reprogram these turrets to attack the enemy. You set them up to defend the control room. I cant shut down those fields from here. I am going to have to catch up with you to access them. I am picking up a lot of incoming soldiers, hold the fort until I get there.",neutral,0.812807559967041
+2j,Alyx,Sorry it took me so long. Glad to see you are okay. Lets see if we can find Mossman. It looks like this station might give me better access.,positive,0.7523675560951233
+2j,Alyx,There she is. Wait a minute. How did she..?,neutral,0.886223316192627
+2j,Dr. Breen,...from your area,neutral,0.8800160884857178
+2j,Dr. Mossman,"I am not calling about that, you promised you were not going to touch Eli",negative,0.5847270488739014
+2j,Alyx,What is she up to? Oh my god.,negative,0.7938687801361084
+2j,Dr. Breen,"The soldiers were a bit overzealous I admit, but he was too tempting a prize to turn loose, especially in the absence of Gordon Freeman.",neutral,0.6270337700843811
+2j,Dr. Mossman,You would have had Freeman if you had just been patient and waited for my signal.,neutral,0.5666141510009766
+2j,Dr. Breen,"We were not entirely sure you were ever going to get around to that, human loyalties being what they are.",negative,0.5177628397941589
+2j,Dr. Mossman,"Dr. Breen, as I have stated before you have to let Eli come around on his own, you cannot just..",neutral,0.8228100538253784
+2j,Dr. Breen,I have known Dr. Vance far longer than you my dear. I am afraid your feelings for him might have blinded you.,negative,0.5696550607681274
+2j,Dr. Mossman,Feelings? This has nothing to do with feelings. It is a simple truth that when Eli believes in our..,neutral,0.7040672898292542
+2j,Dr. Breen,This is not open to debate Dr. Mossman.,negative,0.5713897943496704
+2j,Dr. Mossman,Doctor please..,neutral,0.6203485131263733
+2j,Dr. Breen,So sorry Judith I am all out of time.,negative,0.9032807946205139
+2j,Alyx,Damn her! I dont believe this! Come on Gordon now we really have to hurry. Go on ahead I will disrupt the next level of security and will catch up to you when I can.,negative,0.8825495839118958
+2j,Alyx,"Quick get these set up, I see soldiers coming in from all directions.",neutral,0.7501019835472107
+2j,Alyx,Here they come!,neutral,0.5408507585525513
+2j,Alyx,Ok Gordon I am going to leave off here and catch up with you. be there as soon as I can.,neutral,0.6910508275032043
+2j,Alyx,"Sorry to take so long Gordon, I wont leave you again, now, lets go track down Mossman.",neutral,0.44373637437820435
+2j,Alyx,uh-oh,neutral,0.700893223285675
+2j,Alyx,Great another security station.,positive,0.886181652545929
+2j,Alyx,Alright Mossman where are you...,neutral,0.8578623533248901
+2j,Alyx,Ha! There you are!,positive,0.6777061820030212
+2j,Alyx,Ha! Got you now! Well come on Gordon we dont want to keep her waiting.,neutral,0.471415251493454
+2j,Alyx,Come on Gordon! Let me seal this door. No turning back now.,neutral,0.4760403037071228
+2j,Alyx,There she is. Leave the talking to me Gordon. We may need her to get out of here.,negative,0.5530412793159485
+2j,Dr. Mossman,Hello? Oh thank god.. Someone is here. Alyx? Gordon? How did you get in here?,positive,0.8640159368515015
+2j,Alyx,We know all about you and Breen. You have been a spy for the combine the whole time.,negative,0.5708944797515869
+2j,Dr. Mossman,What? What are you talking about?,neutral,0.6664333939552307
+2j,Alyx,"Dammit, move back Mossman we are coming in.",negative,0.6492029428482056
+2j,Dr. Mossman,Alyx whatever you may think I assure you I am working to protect your father.,positive,0.600365161895752
+2j,Alyx,Shut up and be glad you are still of some use to us! We are going to reconfigure this teleport and get the hell out of here.,negative,0.7188023924827576
+2j,Dr. Mossman,You see we are working to the same end. I have already modulated the teleporter to emulate a xen relay.,neutral,0.6649529933929443
+2j,Alyx,That is my fathers work you stole!,negative,0.8630163669586182
+2j,Dr. Mossman,Its my work to! And I had to prove to Dr. Breen that your father would be the most valuable member of any research effort going forward from here.,positive,0.895140528678894
+2j,Alyx,Enough of your bullshit!,negative,0.8939067721366882
+2j,Alyx,"Look Gordon there is my dad, I am going to bring him in.",positive,0.6259129643440247
+2j,Dr. Mossman,You found Eli?,neutral,0.8949075937271118
+2j,Alyx,No thanks to you! Just enter the coordinates for Dr. Klieners lab and lets get moving.,neutral,0.5226424336433411
+2j,Dr. Mossman,But we need access to the teleport platform and we are locked out.,negative,0.6944386959075928
+2j,Alyx,I will take care of that.,neutral,0.7354931831359863
+2j,Alyx,Lets get going.,positive,0.5408344268798828
+2j,Alyx,Oh my god. And you have been working with this thing? For how long?,negative,0.8598684072494507
+2j,Dr. Mossman,Never.. Until now. Though I did have a fairly good idea of what to expect.,neutral,0.6476721167564392
+2j,Alyx,I bet you did. It looks like it is waiting for us.,positive,0.5776242613792419
+2j,Dr. Mossman,"The combine use a peculiar pulse-forming network with a very long rise time, It takes quite a while to recharge.",neutral,0.5197761058807373
+2j,Alyx,So you have warmed it up for us. Good. And just in time.,positive,0.9542748928070068
+2j,Alyx,Dad down here. Sorry we took so long I hope that was not too bad for you.,negative,0.5597456693649292
+2j,Eli,Do not worry about me sweetheart. Judith! I see they set you free!,positive,0.7324312329292297
+2j,Alyx,Not exactly.,neutral,0.7467569708824158
+2j,Dr. Mossman,Eli! I was so worried about you!,negative,0.4945257604122162
+2j,Alyx,The coordinates Dr. Mossman.,neutral,0.8843340277671814
+2j,Eli,"So this is the combine portal, It is smaller than I imagined.",neutral,0.6137807965278625
+2j,Alyx,Hurry up Mossman!,neutral,0.4698447287082672
+2j,Alyx,Dr. Kleiner!,positive,0.5002434253692627
+2j,Dr. Kleiner,Yes Alyx where are you?,neutral,0.8587340712547302
+2j,Alyx,"We are in Nova Prospekt, and we are running the Xen emulation for the first time. Are you ready for us?",positive,0.5142902731895447
+2j,Dr. Kleiner,Ready! Willing! And fully enabled!,positive,0.8655973672866821
+2j,Alyx,"Good we will send my dad through first, he is in position for...",positive,0.736541748046875
+2j,Alyx,What was that? Hold on gotta bring this back down.,negative,0.5248934030532837
+2j,Alyx,No! Stop! What are you doing!,negative,0.8882595896720886
+2j,Dr. Mossman,"I am sorry Alyx, it is the only way.",negative,0.7933111786842346
+2j,Alyx,No! Get back here!,neutral,0.4694858491420746
+2j,Eli,Whats going on Alyx? Judith?,neutral,0.8114601373672485
+2j,Alyx,Dr. Kliener you have to stop them!,negative,0.4675600528717041
+2j,Dr. Kleiner,Stop who my dear?,neutral,0.5876867771148682
+2j,Alyx,Oh my god! What coordinates are these? Where did she take him!,negative,0.7188702821731567
+2j,Alyx,No.. Cover me Gordon I have to reset the portal. Use the turrets!,neutral,0.6397923231124878
+2j,Alyx,Thank god it is done lets get the hell out of here!,negative,0.7191939949989319
+2j,Alyx,My god we made it! But where is Dr. Kliener?,positive,0.9138181805610657
+2j,Alyx,Dr. Kliener let us out!,neutral,0.5864759087562561
+2j,Dr. Kleiner,Aylx? Gordon? My god how did you get here and when?,negative,0.6244786977767944
+2j,Alyx,What is wrong?,negative,0.6692633032798767
+2j,Dr. Kleiner,"My dear, I had given up hope of ever seeing you again.",negative,0.8540575504302979
+2j,Alyx,I was thinking the same. I think the teleport exploded just as we made it out.,neutral,0.528050422668457
+2j,Dr. Kleiner,Indeed it did. And the repercussions were felt far and wide.. but that was over a week ago.,negative,0.7777736783027649
+2j,Alyx,What do you mean? Gordon and I were just there a minute ago.,neutral,0.8820453882217407
+2j,Dr. Kiener,Fascinating. We seem to have developed a slow teleport. This suggests an entirely new line of investigation.,positive,0.7062888145446777
+2j,Alyx,A week..? Then what have we missed?,neutral,0.6082028150558472
+2j,Dr. Kleiner,A great deal my dear. The blow you struck at Nova Prospekt was taken as a signal to start the uprising.,positive,0.8246325850486755
+2j,Alyx,But what about my father?,neutral,0.7566311359405518
+2j,Dr. Kleiner,Well.. that is most disturbing. According to the vorigaunts he is a prisoner at the citadel.,negative,0.9034242033958435
+2j,Alyx,We have got to get my father out.,negative,0.698290228843689
+2j,Dr. Kleiner,Barney has been leading a push with that very aim in mind. And another of your friends arrived several days ago.,neutral,0.6760907769203186
+2j,Alyx,Dog! You made it!,positive,0.9543574452400208
+2j,Dr. Kleiner,So there. You see? Its not all hopeless.,neutral,0.5401646494865417
+2j,Alyx,I wish I shared your optimism doctor.,positive,0.6123330593109131
+2j,Barney,Doc come in.. are you there?,neutral,0.9322868585586548
+2j,Dr. Kleiner,Yes barney and I am no longer alone. Alyx and Gordon have just arrived.,neutral,0.5455276966094971
+2j,Barney,"Well man thats good news, I almost gave you guys up for lost. We are going to set up a staging area for the attack on the citadel.",positive,0.8666367530822754
+2j,Alyx,Gordon and dog can head your way. I want to get Dr. Kliener somewhere safer.,neutral,0.6124178767204285
+2j,Barney,I will take all the help I can get. Oh crap! Incoming!,negative,0.4546290636062622
+2j,Barney,Get going!,positive,0.5439832210540771
+2j,Anti,Citizen One,neutral,0.832388162612915
+2j,Resistance,"Well Gordon Freeman, and about time to",positive,0.5001124739646912
+2j,Resistance,Gordon you are here!,positive,0.6863253712654114
+2j,Resistance,Dr. Freeman we are coming with you,neutral,0.5702335238456726
+2j,Resistance,"Gordon Freeman? It is you isnt it! Give me a minute, Im gonna plant some charges and blow this open.",negative,0.820364773273468
+2j,Resistance,Looks nasty in there! Good thing you have that suit!,negative,0.8654178977012634
+2j,Resistance,"I see you made it through okay, I figured you would.",positive,0.8372730016708374
+2j,Resistance,Dr. Freeman? It is not safe here anymore. They are shelling the hell out of us. I will send word you are coming up ahead. Keep moving.,negative,0.8622549772262573
+2j,Alyx,"Gordon! I had a feeling I would find you here. I have got Dr. Kliener in a safe spot. Now we can join up with Barney. There is a command center downstairs, I am hoping to find information on generator locations. Ready? Lets go.",positive,0.8139021396636963
+2j,Alyx,"Well we are in luck, there is a generator in the square outside. We are trying to disable as many as we can to loosen the combines grip on the city. It will take me a few minutes to expose the core, then I will need you to hit it with a burst from the gravity gun. In the meantime watch my back.",neutral,0.48847246170043945
+2j,Alyx,"This should not take too long. As soon as it is down, I will open that gate and we can get out of here.",neutral,0.651358425617218
+2j,Alyx,Ok the core is exposed. Use the gravity gun Gordon!,neutral,0.6189849376678467
+2j,Alyx,"All right, I am opening the gate.",neutral,0.5891759991645813
+2j,Alyx,"Ok, Barney should be on the far side of that...canal. Well there used to be a bridge here. Let me see if I can scout a new path. Ah! Wait for me here.",neutral,0.6853511333465576
+2j,Alyx,Hey! Looks like we might be able to get through down there! Lets head that way!,positive,0.9252138733863831
+2j,Alyx,Ah! No! Gordon! Run! Get out of here!,negative,0.822161078453064
+2l,Resistance,"Dr. Freeman! Barney said you were on your way. We got split up by snipers, and he is pinned down in a warehouse up ahead. Go ahead, he is relying on you.",neutral,0.5820844769477844
+2l,Resistance,"Help! Is somebody up there? Help! Help me! We thought we would be safer down here. Little did we know the place was infested. The rest of them headed upstairs, took their chances with the snipers. I guess they are still up there.",negative,0.6782311201095581
+2l,Barney,"Over here! Gordon I cant move, these snipers have got me pinned down. Gordon lob a couple grenades, that will clear them out.",negative,0.8565912246704102
+2l,Barney,"Alright, thanks Gordon, now lets clear out of here.",neutral,0.5751928687095642
+2l,Barney,Let me get this gate. My Civil Protection status still gives me limited clearance. Did you hear a cat just now? That damn thing haunts me.,negative,0.9148849844932556
+2l,Barney,"There is an old building up ahead. A bank or museum or something like that. Whatever the hell it used to be, now it is a nexus for Overwatch in City 17. It is the main source of pain for this part of town, thanks to a huge suppression device that rains down hell from the roof of the place.",negative,0.9078315496444702
+2l,Barney,"There it is, the Overwatch nexus. Looks like they are mobilizing",positive,0.5833492875099182
+2l,Big,"time. You can sort of see the gate from here. I will show you when we get to street level. We have to get into that building to open the gate. Even then the suppression device will, suppress anyone who tries to come through unless we shut it down.",neutral,0.911099910736084
+2l,Barney,So much for stealth. We have been spotted!,neutral,0.4278641939163208
+2l,Barney,There is the gate I was telling you about. We have to come back here after we get it open. If we get it open. First we gotta get into the nexus building.,neutral,0.9102008938789368
+2l,Barney,"Uh-oh, turrets. You have the HEV suit, you deal with them. Then I will open the door.",neutral,0.8135841488838196
+2l,Barney,"Wow, with that much security there must be something good in there. Go for it doc. I will wait here until you shut I down.",positive,0.8502268195152283
+2l,Barney,"Ah here it is, roof access. I am going to stay here and help other resistance members come through.",neutral,0.5056785345077515
+2l,Resistance,"Dr. Freeman! Since you shut off the suppressor and opened the gate, we can really move people through now. The combine is really going to feel the squeeze! We dropped a crate of rockets across the plaza. If you can make it there you can take down the striders.",positive,0.6566083431243896
+2l,Barney,Dog! Here boy! Dog come back here! Damn it all! Gordon! Hey help me out here!,negative,0.5621482729911804
+2l,Barney,"Dog came crashing through the plaza, knocking over walls, I think he is looking for Alyx. He seems to have it set in his mind that she is in the citadel. I figured Alyx would not want him getting into any deeper trouble but hell, you try stopping him.",negative,0.48885369300842285
+2l,Barney,Hey dog! Not there! You cannot get through that way!,negative,0.8809237480163574
+2l,Barney,"Well I will be dammed. I think he wants you to go through Gordon, you had better hurry.",negative,0.8364464640617371
+2l,Barney,"And if you see Dr. Breen, tell him I said f--- -ou!*",negative,0.53290194272995
+2n,Dr. Mossman,"I will take him from here. Dont struggle, its no use. Until you are where he wants you there is nothing you can do. I am sorry Gordon.",negative,0.5977106690406799
+2n,Dr. Breen,"..ancient stars colonized by sentient fungi. Gas giants, inhabited by vast meteorological intelligences. Worlds stretched thin across the membranes where dimensions intersect...Impossible to describe with our limited vocabulary!",neutral,0.5289104580879211
+2n,Eli,"What I have seen is also beyond words Breen. Genocide, indescribable evil...Good god.",negative,0.9316456317901611
+2n,Dr. Breen,Well if it isnt Gordon Freeman at last.,negative,0.5957245230674744
+2n,Dr. Breen,Oh what is this? Put it over there.,neutral,0.5310362577438354
+2n,Dr. Breen,"You have my gratitude Dr. Freeman, first you lead me to the doorstep of my oldest friend, then you deliver yourself. If I had known you were going to come straight up to my office I would not have bothered hunting you in the first place. Having both of you in my keeping ensures I can dictate the terms of any bargain I care to make with the Combine.",positive,0.805435836315155
+2n,Dr. Mossman,Dr. Breen..Wallace..,neutral,0.8689859509468079
+2n,Dr. Breen,Yes what is it Judith?,neutral,0.8189682364463806
+2n,Dr. Mossman,The bargain we should be making is for his life so he can continue his research!,neutral,0.6578496098518372
+2n,Dr. Breen,Thanks to you we have everything we need in that regard. You are more than qualified to finish his research yourself. What neither you nor I can do is convince that rabble in the streets to give up their senseless struggle. Yet Eli refuses to speak the words that would save them all.,positive,0.5696649551391602
+2n,Eli,Save them?! For what?!,negative,0.7733786702156067
+2n,Dr. Breen,"Eli.. If you will not do this for the good of all people, maybe you will do it for one of them.",neutral,0.4726145267486572
+2n,Eli,Alyx..Honey..,neutral,0.736144483089447
+2n,Alyx,Dad! Huh.. Gordon? No..,neutral,0.6119140386581421
+2n,Eli,God damn you Breen! You let her go!,negative,0.9472070932388306
+2n,Dr. Breen,That is all up to you my old friend. Will you let your stubborn short sightedness doom the entire species? Or will you give your child the chance her mother never had?,negative,0.9151471853256226
+2n,Alyx,How dare you even mention her!,negative,0.9098394513130188
+2n,Dr. Breen,Alyx my dear you have your mothers eyes. But your fathers stubbornness.,neutral,0.48686715960502625
+2n,Alyx,You have not seen a bit of it yet.,neutral,0.7008523941040039
+2n,Dr. Breen,"Really? Well lets see how it serves you, on the far side of a combine portal.",negative,0.642581582069397
+2n,Eli,"Go ahead Breen! If that is the worst you can do, send us through your portal.",negative,0.5090236663818359
+2n,Dr. Breen,Oh it is hardly the worst. But you might find that hard to believe once you get there.,negative,0.5488812923431396
+2n,Dr. Mossman,It isnt necessary!,neutral,0.5538369417190552
+2n,Dr. Breen,I agree it is a total waste. Fortunately the resistance has shown it is willing to accept a new leader. And this one has proven to be a fine pawn for those who control him.,negative,0.6668078899383545
+2n,Eli,No!,neutral,0.4806743264198303
+2n,Alyx,Dont listen to him Gordon!,negative,0.8476679921150208
+2n,Dr. Breen,How about it Dr. Freeman? Did you realize your contract was open to the highest bidder?,neutral,0.8108814358711243
+2n,Alyx,Gordon would never make any kind of deal with you!,negative,0.8224644064903259
+2n,Dr. Breen,I understand if you dont wish to discuss this in front of your friends. I will send them on their way and then we can talk openly.,neutral,0.7023317813873291
+2n,Eli,Dont struggle honey.,neutral,0.4890301525592804
+2n,Alyx,Dad.. Im so sorry.,negative,0.8885142803192139
+2n,Eli,Alyx..sweetheart.,positive,0.9543619751930237
+2n,Dr. Breen,"Judith, what do you think you are doing?",neutral,0.8048146367073059
+2n,Dr. Mossman,We are doing what I could never do alone. We are stopping you.,neutral,0.5562373995780945
+2n,Alyx,Yes!,positive,0.7045764923095703
+2n,Dr. Breen,Guards! Get in here!,neutral,0.5994037985801697
+2n,Dr. Breen,"They know you betrayed them, they will turn on you, Judith.. Dr. Mossman please!",negative,0.8541058301925659
+2n,Dr. Mossman,"I am sorry Wallace, you are all out of time.",negative,0.9112686514854431
+2n,Dr. Mossman,Dont!,neutral,0.5891574025154114
+2n,Alyx,Hurry! Dad hang on!,positive,0.6679207682609558
+2n,Dr. Breen,You fool!,negative,0.7290684580802917
+2n,Alyx,Watch out he is gonna..,neutral,0.8093481659889221
+2n,Dr. Breen,No!,neutral,0.4806743264198303
+2n,Alyx,Dad!,positive,0.8921413421630859
+2n,Eli,Oh no no no. Dont worry about me honey.,negative,0.845503568649292
+2n,Dr. Mossman,"There is no time Alyx, he is on his way to the portal. You will need this.",neutral,0.5807424187660217
+2n,Alyx,Dr. Mossman..Judith.. Look after my father.,neutral,0.7442147731781006
+2n,Dr. Mossman,Dont you worry.,neutral,0.6365271210670471
+2n,Alyx,Dad I am not saying goodbye.,neutral,0.6414470076560974
+2n,Eli,Never.,neutral,0.4803040325641632
+2n,Alyx,"Come on Gordon, lets go.",neutral,0.5612375736236572
+2n,Alyx,"Gordon.. We have not known each other very long, but I know you did not have to do this. I had to rescue my father, but you.. well.. thanks for coming after me.",neutral,0.5595464706420898
+2n,Alyx,Hey listen!,positive,0.5173373222351074
+2n,Dr. Breen,"It is me you should be concerned about, I can still deliver earth but not without your help.",neutral,0.595251739025116
+2n,Alyx,That is him!,positive,0.6175968647003174
+2n,Dr. Breen,"The portal destination is untenable surely you can set the relay destination elsewhere. There is no way I can survive in that environment. A host body? You must be joking, there is no way I can possibly..",negative,0.8882622122764587
+2n,Alyx,There he is!,positive,0.8227157592773438
+2n,Dr. Breen,Oh alright dammit if that is what it takes. Just hurry! He is right behind me!,neutral,0.36019980907440186
+2n,Dr. Breen,Oh shit!,positive,0.35831519961357117
+2n,Alyx,Dammit! Not again! Huh! The gravity gun! He does not have a clue does he? I wonder where he is going.,negative,0.920181393623352
+2n,Alyx,Oh my god! This is the dark fusion reactor. It powers their tunneling entanglement device. We will never have a chance like this again. We have to stop him!,negative,0.8915116190910339
+2n,Alyx,"I cannot shut it down, looks like he has turned control over to the other side. You will have to go into the core and do what you can. Get into the elevator and I will let you in. Do not forget to charge up your suit.",neutral,0.7354089617729187
+2n,Alyx,Its Dr. Breen! There he is!,positive,0.6559647917747498
+2n,Dr. Breen,"Dr. Freeman, you really should not be out there. At the moment of synapse as I teleport this chamber will be bathed in deadly particles that have yet to be named by human science. Perhaps when I have the leisure to do the work myself, I will name one after you. That way you will not be completely forgotten. When the singularity collapses, I will be far away from here, in another universe in fact. You on the other hand will be destroyed in every way possible, and even some essentially impossible.",negative,0.8119685649871826
+2n,Alyx,"What the hell? Oh no, combine soldiers, where did they come from?",negative,0.9218660593032837
+2n,Dr. Breen,"I do not know what you can possibly hope to achieve, apart from your own annihilation.",negative,0.9306649565696716
+2n,Alyx,Do not listen to him Gordon!,negative,0.8310840129852295
+2n,Dr. Breen,I warned you this was futile.,negative,0.7645629644393921
+2n,Alyx,He is bluffing Gordon. Do not listen to him!,negative,0.7274323105812073
+2n,Alyx,"Great! Oh no, Breen has started his ascent! Hurry Gordon before he escapes!",positive,0.6271290183067322
+2n,Dr. Breen,I could have told you that was pointless Dr. Freeman.,negative,0.8653588891029358
+2n,Alyx,Go Gordon!,positive,0.8633858561515808
+2n,Dr. Breen,Are you still with us Dr. Freeman? Not for much longer I think.,neutral,0.9260891079902649
+2n,Alyx,"Oh my god, the portal is opening!",positive,0.8589202761650085
+2n,Dr. Breen,I hope you have said your farewells.,neutral,0.7523230314254761
+2n,Dr. Breen,"Go back Freeman, you have no idea what you are doing!",negative,0.8806765675544739
+2n,Dr. Breen,"You do not know what you will unleash, you could bring down this whole citadel. Think, man, think of the people below!",negative,0.9232704043388367
+2n,Dr. Breen,NO! You need me!,neutral,0.5280365347862244
+2n,Alyx,Yes!,positive,0.7045764923095703
+2n,Alyx,"Yeah! You did it! Come on Gordon we have got to get out of here, maybe we still have...",positive,0.7604190111160278
+2n,G-Man,"Time? Dr. Freeman? Is it really that time again? It seems as if you only just arrived. You have done a great deal in a small timespan. You have done so well that I have received some interesting offers for your services. Ordinarily I would not contemplate them, but these are extraordinary times. Rather than offer you the illusion of free choice, I will take the liberty of choosing for you. If and when the time comes again.",positive,0.9573733806610107
+2n,G-Man,"I do apologize for what must seem to you an arbitrary imposition, Dr. Freeman, I trust it will all make sense in the course of.. well.. I am really not at liberty to say.",neutral,0.5382880568504333
+2n,G-Man,"In the meantime, this is where I get off.",neutral,0.8595110774040222

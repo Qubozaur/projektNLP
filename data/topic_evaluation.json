@@ -1,0 +1,7 @@
+{
+  "topic_diversity": 0.9111,
+  "mean_intra_topic_coherence": 0.3018,
+  "topic_coverage": 0.8463,
+  "n_topics": 9,
+  "n_noise_docs": 87
+}

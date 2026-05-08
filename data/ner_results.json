@@ -1,0 +1,5580 @@
+[
+  {
+    "chapter_id": "2a",
+    "character": "G-Man",
+    "line": "Rise and shine Mr. Freeman, rise and shine. Not that I wish to imply that you have been sleeping on the job. No one is more deserving of a rest than you. And all the effort in the world would have gone to waste until.... Well lets just say your hour has come again. The right man in the wrong place can make all the difference in the world. So wake up Mr. Freeman, wake up and smell the ashes.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 19,
+        "end": 26
+      },
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 356,
+        "end": 363
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "I didnt see you get on. This is my third transfer this year.",
+    "entities": [
+      {
+        "text": "third",
+        "label": "ORDINAL",
+        "start": 35,
+        "end": 40
+      },
+      {
+        "text": "this year",
+        "label": "DATE",
+        "start": 50,
+        "end": 59
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "No matter how many times I get relocated I never get used to it.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Well, end of the line.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Dr. Breen",
+    "line": "Welcome, welcome to city 17, you have chosen or been chosen to relocate to one of our finest remaining urban centers. I thought so much of city 17 that I elected to establish my administration here, in the citadel so thoughtfully provided by our benefactors. I have been proud to call city 17 my home. So whether you are here to stay, or passing through on your way to parts unkown, welcome to city 17, it is safer here.",
+    "entities": [
+      {
+        "text": "17",
+        "label": "CARDINAL",
+        "start": 25,
+        "end": 27
+      },
+      {
+        "text": "one",
+        "label": "CARDINAL",
+        "start": 75,
+        "end": 78
+      },
+      {
+        "text": "17",
+        "label": "CARDINAL",
+        "start": 144,
+        "end": 146
+      },
+      {
+        "text": "17",
+        "label": "CARDINAL",
+        "start": 290,
+        "end": 292
+      },
+      {
+        "text": "17",
+        "label": "CARDINAL",
+        "start": 399,
+        "end": 401
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "First warning move away.",
+    "entities": [
+      {
+        "text": "First",
+        "label": "ORDINAL",
+        "start": 0,
+        "end": 5
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "It, Its all I have left.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "Move it.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Alright, alright I am moving, jeez.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Were you the only ones on that train? Overwatch stopped our train in the woods and took my husband for questioning. They said he would be on the next train, I am not sure when that was. They are being nice and letting me wait though.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Dont drink the water, they, they put something in it to make you forget, I dont even remember how I got here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Dr. Breen again? I was hoping I had seen the last of him in city 14.",
+    "entities": [
+      {
+        "text": "Breen",
+        "label": "PERSON",
+        "start": 4,
+        "end": 9
+      },
+      {
+        "text": "14",
+        "label": "CARDINAL",
+        "start": 65,
+        "end": 67
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "I wouldnt say that to loud, this is his base of operations.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "You, Citizen come with me.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Wai, Wait a minute where are you...",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "GET IN HERE!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "Go on!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "ME?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "I SAID MOVE!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "Dont move, hold it",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "You citizen, come with me.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "This must be a mistake, I got a standard relocation coupon just like everyone else.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "Get in! Need any help with this one?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "No I am good",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "Back up!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "Yeah I am gonna need me some privacy for this",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "Now...",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Barney",
+    "line": "About that beer I owed ya. Its me Gordon, barney from black mesa. Sorry for the scare I had to put on a show for the cameras. I have been working undercover with civil protection, I cant take too long or they will get suspicious, I am way behind on my beating quota",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 34,
+        "end": 40
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Dr. Kleiner",
+    "line": "Yes barney what is it? I am in the middle of a critical test.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Barney",
+    "line": "Sorry doc, but look whos here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Dr. Kleiner",
+    "line": "Great Scott! Gordon Freeman! I expected more warning.",
+    "entities": [
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 13,
+        "end": 27
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Barney",
+    "line": "Yeah you and me both doc. He was about to board the express train to Nova Prospekt.",
+    "entities": [
+      {
+        "text": "Nova Prospekt",
+        "label": "LOC",
+        "start": 69,
+        "end": 82
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Dr. Kleiner",
+    "line": "Well, Barney what do you intend to do?",
+    "entities": [
+      {
+        "text": "Barney",
+        "label": "PERSON",
+        "start": 6,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Barney",
+    "line": "Im thinking, Im thinking.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Dr. Kleiner",
+    "line": "Alyx is around here somewhere, she would have an idea of how to get him here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Barney",
+    "line": "Well, as long as he stays away from checkpoints we should be okay. Listen I gotta go doc, we are taking enough chances as it is.",
+    "entities": [
+      {
+        "text": "doc",
+        "label": "ORG",
+        "start": 85,
+        "end": 88
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Dr. Kleiner",
+    "line": "Very well. And eh Gordon? Its good to see you.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 18,
+        "end": 24
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Barney",
+    "line": "Okay Gordon your going to have to make your way to Dr. Klieners lab.",
+    "entities": [
+      {
+        "text": "Klieners",
+        "label": "PERSON",
+        "start": 55,
+        "end": 63
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Barney",
+    "line": "Oh man! That is what I was afraid of! Get in here Gordon! Before you blow my cover!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 50,
+        "end": 56
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Barney",
+    "line": "Pile up some stuff to get to that window and keep going till your in the plaza. I will meet up with you later.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "Pick up that can. Now put it in the trash can.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Civil Patrol",
+    "line": "Alright you can go.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "This is how it always starts, first one building, then the entire block.",
+    "entities": [
+      {
+        "text": "first",
+        "label": "ORDINAL",
+        "start": 30,
+        "end": 35
+      },
+      {
+        "text": "one",
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 39
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "They have no reason to come to our place.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Dont worry, they will find one.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Oh, I thought you were a cop.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Dont worry he is one of us.",
+    "entities": [
+      {
+        "text": "one",
+        "label": "CARDINAL",
+        "start": 17,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Look at them down there.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "I told you they would be coming for us next!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Just this once I hope you are wrong.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Announcer",
+    "line": "Attention residents, miscount detected in your sector",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Psst! Hey you! In here! Head for the roof! There is no time to lose!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Run for your life!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Civil Protection!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "CPs!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Here they come!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Get in here quick!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Citizen",
+    "line": "Head for the roof! I will keep them busy!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Alyx",
+    "line": "Over Here! Ha! No you dont!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Alyx",
+    "line": "Dr. Freeman I presume? We better hurry, the combine can be slow to wake, but once they are up you will have a hard time taking them down.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Alyx",
+    "line": "Dr. Kliener said you might be coming this way. I dont think it occurred to him that you might not have a map.",
+    "entities": [
+      {
+        "text": "Kliener",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Alyx",
+    "line": "Im Alyx Vance, my father worked with you back in black mesa, but im sure you dont remember him.",
+    "entities": [
+      {
+        "text": "Alyx Vance",
+        "label": "PERSON",
+        "start": 3,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Alyx",
+    "line": "Man of few words arent you?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Alyx",
+    "line": "Remember him from black mesa? Your old administrator?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2a",
+    "character": "Alyx",
+    "line": "Ha! Dont get my dad started on Dr. Breen.",
+    "entities": [
+      {
+        "text": "Breen",
+        "label": "PERSON",
+        "start": 35,
+        "end": 40
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Funny you showing up on this day in particular.",
+    "entities": [
+      {
+        "text": "this day",
+        "label": "DATE",
+        "start": 24,
+        "end": 32
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "We have been helping people escape the city on foot. Its a dangerous route to my fathers lab through the old canals, today we are finally on the verge of having a better way.",
+    "entities": [
+      {
+        "text": "today",
+        "label": "DATE",
+        "start": 117,
+        "end": 122
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Here lemme buy you a drink",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Oh and by the way, nice to finally meet you.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Blast that little.. where did she get to? Llamar? Come out of there.",
+    "entities": [
+      {
+        "text": "Llamar",
+        "label": "PERSON",
+        "start": 42,
+        "end": 48
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Uh-oh, everything alright Dr. Kliener?",
+    "entities": [
+      {
+        "text": "Kliener",
+        "label": "PERSON",
+        "start": 30,
+        "end": 37
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Oh, hello Alyx. Well almost alright, Llamar has gotten out of her crate again. If I didnt know better, I would suspect barney of trapping and.. My goodness, Gordon Freeman, It really is you isnt it?",
+    "entities": [
+      {
+        "text": "Alyx",
+        "label": "PERSON",
+        "start": 10,
+        "end": 14
+      },
+      {
+        "text": "Llamar",
+        "label": "PERSON",
+        "start": 37,
+        "end": 43
+      },
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 157,
+        "end": 171
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "I found him wandering around outside, bit of a troublemaker isnt he?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "We owe a great deal to Dr. Freeman, even if trouble does seem to follow in his wake.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 27,
+        "end": 34
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "I must say Gordon you have come at a very opportune time, Alyx has just installed the final piece in the resurrected teleport!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 11,
+        "end": 17
+      },
+      {
+        "text": "Alyx",
+        "label": "PERSON",
+        "start": 58,
+        "end": 62
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "I cant take any credit for the breakthrough doctor.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Nonsense, your talents surpass your loveliness.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Lets just see if this thing works ok?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Well is he here? There you are! Man Gordon you stirred up the hive!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 36,
+        "end": 42
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "We cant keep him here long doc, It will jeporadize everything we have worked for.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Dont worry he is coming with me.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Thats right Barney, this is a red letter day, we will inaugurate the new teleport with a double transmission.",
+    "entities": [
+      {
+        "text": "Barney",
+        "label": "PERSON",
+        "start": 12,
+        "end": 18
+      },
+      {
+        "text": "letter day",
+        "label": "DATE",
+        "start": 34,
+        "end": 44
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "You mean its working? For real this time? Because I still have nightmares about that cat.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "What cat?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Now now there is nothing to be worried about, we have made major strides since then. Major strides.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "What cat?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Doc, since he is not taking the streets you might as well get him out of his civvies.",
+    "entities": [
+      {
+        "text": "Doc",
+        "label": "ORG",
+        "start": 0,
+        "end": 3
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "What? Oh dear you are right, I almost forgot. Barney I will give you the honor.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "I have gotta get back on my shift but ok.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Here we go.. Awahh!",
+    "entities": [
+      {
+        "text": "Awahh",
+        "label": "PERSON",
+        "start": 13,
+        "end": 18
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Damn it! Get it off me!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Llamar! There you are!",
+    "entities": [
+      {
+        "text": "Llamar",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "I though you got rid of that pest!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Certainly not. Never fear Gordon, she is de-beaked and completely harmless. The worst she might try to do is couple with your head. Fruitlessly.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 26,
+        "end": 32
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Llamar",
+    "line": "Guwakkh!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Get that thing away from me!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Here my pet. Hop up!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "No not up there!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "No, No! Careful Llamar those are quite fragile.",
+    "entities": [
+      {
+        "text": "Llamar",
+        "label": "PERSON",
+        "start": 16,
+        "end": 22
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Oh fie! It will be another week before I can coax here out of there!",
+    "entities": [
+      {
+        "text": "another week",
+        "label": "DATE",
+        "start": 19,
+        "end": 31
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Yeah. Longer if we are lucky.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Barney.. You are not an animal person?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Ugh.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Well Gordon go ahead, slip into your suit now.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 5,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Well Gordon I see your HEV suit still fits you like a glove, at least the glove parts do.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 5,
+        "end": 11
+      },
+      {
+        "text": "HEV",
+        "label": "ORG",
+        "start": 23,
+        "end": 26
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "I have made a few modifications, but I will just acquaint you with the essentials, now lets see..",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "The Mark V Hazardous Environment Suit has been redesigned for comfort and utility..",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Oh dear!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Doc we dont have time for this. At least get that suit juiced up Gordon.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 65,
+        "end": 71
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Good idea, there is a charger on the wall. I have modified your suit to draw power from combine energy outlets, which are plentiful wherever they patrol.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Meanwhile, lets get this show on the road.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Gordon, why dont you position yourself near the panel over there and wait for my word?",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Eli",
+    "line": "Issac are you there?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kiener",
+    "line": "Yes, yes, Eli, a bit of a hold up on this end. You will never guess who found his way into our lab this morning.",
+    "entities": [
+      {
+        "text": "Eli",
+        "label": "ORG",
+        "start": 10,
+        "end": 13
+      },
+      {
+        "text": "this morning",
+        "label": "TIME",
+        "start": 99,
+        "end": 111
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Eli",
+    "line": "Thats not who I think it is, is it?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Indeed it is, and its our intention to send him packing straight away, in the company of your lovely daughter.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Are you ready for us dad?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Eli",
+    "line": "We are all set on this end.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Then lets do it",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Lets see, the massless field flux should self-limit and I have clamped the manifold parameters to include CY Hilbert and GC orbitfold inclusive. Conditions could not be more ideal.",
+    "entities": [
+      {
+        "text": "CY Hilbert",
+        "label": "PERSON",
+        "start": 106,
+        "end": 116
+      },
+      {
+        "text": "GC",
+        "label": "ORG",
+        "start": 121,
+        "end": 123
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Thats what you said last time.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Hey, uh, yeah, about that cat..",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Initializing in three.. two.. one.. Oh fiddlesticks what now?",
+    "entities": [
+      {
+        "text": "three",
+        "label": "CARDINAL",
+        "start": 16,
+        "end": 21
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Uh, doctor the plug.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Dear me, you are right, Gordon would you mind plugging us in.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 24,
+        "end": 30
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "You gonna let Gordon throw the switch?",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 14,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Gordon, go right ahead.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Very good, final sequence commencing..now.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "I cant look.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Uh, ok, oh ah ohhh!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Well, did it work?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Eli",
+    "line": "See for yourself",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "Hey doc!",
+    "entities": [
+      {
+        "text": "doc",
+        "label": "ORG",
+        "start": 4,
+        "end": 7
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Thank goodness, my relief is almost palpable",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Eli",
+    "line": "Fantastic work Izzy",
+    "entities": [
+      {
+        "text": "Fantastic",
+        "label": "NORP",
+        "start": 0,
+        "end": 9
+      },
+      {
+        "text": "Izzy",
+        "label": "GPE",
+        "start": 15,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Well I cant take all the credit, Dr. Freeman proved an able assistant",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 37,
+        "end": 44
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Eli",
+    "line": "Lets go ahead and bring Gordon through now.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 24,
+        "end": 30
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Right you are, speak to you again in a few moments.",
+    "entities": [
+      {
+        "text": "a few moments",
+        "label": "TIME",
+        "start": 37,
+        "end": 50
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Good job Gordon, throwing that switch and all, I can see your M.I.T. education really pays off.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 9,
+        "end": 15
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Alright Barney, your turn.",
+    "entities": [
+      {
+        "text": "Alright Barney",
+        "label": "ORG",
+        "start": 0,
+        "end": 14
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Gee thanks",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Gordon, as soon as you are in position we will send you to Eli.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "text": "Eli",
+        "label": "ORG",
+        "start": 59,
+        "end": 62
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "And not a moment too soon",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Excellent, initializing, in three.. two.. one.., eh Barney if you would be so kind?",
+    "entities": [
+      {
+        "text": "three",
+        "label": "CARDINAL",
+        "start": 28,
+        "end": 33
+      },
+      {
+        "text": "Barney",
+        "label": "PERSON",
+        "start": 52,
+        "end": 58
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Good luck out there Gordon",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 20,
+        "end": 26
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Yes indeed, we are ready to project you Gordon, best of luck in your future endeavors, and bon voyage, final sequence.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 40,
+        "end": 46
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "What the hell?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "What is it?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Its your pet the freaking head humper!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Llamar? Hedy! No!",
+    "entities": [
+      {
+        "text": "Llamar",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Look out!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "There he is!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Is Llamar with him?",
+    "entities": [
+      {
+        "text": "Llamar",
+        "label": "PERSON",
+        "start": 3,
+        "end": 9
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Forget about that thing!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "He is coming through dad!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Eli",
+    "line": "What is going on Judith?",
+    "entities": [
+      {
+        "text": "Judith",
+        "label": "PERSON",
+        "start": 17,
+        "end": 23
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Mossman",
+    "line": "Im not sure, it seems to be some kind of interference.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Eli",
+    "line": "Gordon stay put we will get ya out of there.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Mossman",
+    "line": "Something is drawing him away.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Breen",
+    "line": "What is the meaning of this? Who are you? How did you get in here?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "He is back, Im getting him outta there.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "You cant just wade into the field! It will peel you apart!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "We just lost Gordon what is going on?",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 13,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "I wish I knew, Im encountering unexpected interference",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Dont worry Gordon we will..",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 11,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Alyx",
+    "line": "There he is!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Mossman",
+    "line": "Ah! We are losing him again!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Breen",
+    "line": "The man I saw, im all but certaint it was... Gordon Freeman",
+    "entities": [
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 45,
+        "end": 59
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "What do you mean he is not there?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Eli",
+    "line": "He didnt come through.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Then where is he?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Eli",
+    "line": "Behind you.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Ahh!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Eli",
+    "line": "Shut it down! Shut it down!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Dr. Kleiner",
+    "line": "Gordon run! You must get out of here!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Get down outta sight I will come find you!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Gordon! I have never seen the citadel on full alert like that! Take the old canals out of city 17 to Eli, its dangerous but there is a whole network of resistance members who run the underground railroad. I would come with you but I have to look after Dr. Kliener. Oh and before I forget, I think you dropped this back at black mesa.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "text": "17",
+        "label": "CARDINAL",
+        "start": 95,
+        "end": 97
+      },
+      {
+        "text": "Eli",
+        "label": "ORG",
+        "start": 101,
+        "end": 104
+      },
+      {
+        "text": "Kliener",
+        "label": "PERSON",
+        "start": 256,
+        "end": 263
+      }
+    ]
+  },
+  {
+    "chapter_id": "2b",
+    "character": "Barney",
+    "line": "Good luck out there buddy, you are gonna need it.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "Help me! Stop we didnt do anything!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "They will be looking for you now. You should run there is nothing else you can do here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "Good god! Guess those sirens are for you huh? Good thing you found us, you are not the first to come through by a..",
+    "entities": [
+      {
+        "text": "first",
+        "label": "ORDINAL",
+        "start": 87,
+        "end": 92
+      }
+    ]
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Vortigaunt",
+    "line": "This is the freeman, the reckoning of the combine has come.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "Look we are just a lookout for the underground railroad. Main station is right around the corner. They will get you started on the right foot. Meanwhile let my vorigaunt friend here give you a jolt to get going.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Vortigaunt",
+    "line": "That is all we can spare.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "Be careful now, we REALLY cant afford to get noticed. Civil protection catches you down here, its bad news for the whole railroad.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Vortigaunt",
+    "line": "We serve the same mystery.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "Get outta here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "Wait. what are you.. no.. please.. dont shoot! Ahhh!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Radio",
+    "line": "Station 12 come in. Station 12 do you read?",
+    "entities": [
+      {
+        "text": "12",
+        "label": "CARDINAL",
+        "start": 8,
+        "end": 10
+      },
+      {
+        "text": "12",
+        "label": "CARDINAL",
+        "start": 28,
+        "end": 30
+      }
+    ]
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Radio",
+    "line": "This is station 8! We heard 12 go down and out! Surgical strike units are targeting the railway stations! Repeat Civil Protection is coming down on the stations! We are already getting refuges from 9 and outlying, looks like..(static)",
+    "entities": [
+      {
+        "text": "8",
+        "label": "CARDINAL",
+        "start": 16,
+        "end": 17
+      },
+      {
+        "text": "12",
+        "label": "CARDINAL",
+        "start": 28,
+        "end": 30
+      },
+      {
+        "text": "Repeat Civil Protection",
+        "label": "ORG",
+        "start": 106,
+        "end": 129
+      },
+      {
+        "text": "9",
+        "label": "CARDINAL",
+        "start": 198,
+        "end": 199
+      }
+    ]
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Radio",
+    "line": "Station 8 do you copy? Station 8 are you there? We have confirmed reports of manhacks. Repeat they are filling the underground with manhacks.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "Over here! Keep going friend that station was raided but there are still others up ahead. I am gonna stay here in case any others come through. Gotta keep the railway alive.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Civil Patrol",
+    "line": "Anyone else get a 647-E reading?",
+    "entities": [
+      {
+        "text": "647",
+        "label": "CARDINAL",
+        "start": 18,
+        "end": 21
+      }
+    ]
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Civil Patrol",
+    "line": "Check for miscount.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Civil Patrol",
+    "line": "Still getting that 647-E reading.",
+    "entities": [
+      {
+        "text": "647",
+        "label": "CARDINAL",
+        "start": 19,
+        "end": 22
+      }
+    ]
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Civil Patrol",
+    "line": "There he is!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "Get in here, hurry! Civil protection is on to us. We are tearing up the railroad, covering up our tracks. Looks like you are going to be the last one through. Be glad you are not the guy they are looking for. Poor bastard does not stand a chance. Sounds like they are calling in every CP unit in city 17. Now they are flooding the areas up ahead with manhacks. You better get going before they sweep through here",
+    "entities": [
+      {
+        "text": "CP",
+        "label": "ORG",
+        "start": 285,
+        "end": 287
+      },
+      {
+        "text": "17",
+        "label": "CARDINAL",
+        "start": 301,
+        "end": 303
+      }
+    ]
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "Oh shit!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "Thanks for your help. Look it isnt safe here, I will give you some supplies to get you going but then you have to leave. Good luck out there!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "Hey! You are Freeman arent you? We got word that you were coming. You got here at a bad time.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 13,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Alyx",
+    "line": "Black Mesa East to station 6 do you read? Dr. Freeman is on his way downriver. Lend him the airboat and give him all the help you can. Repeat Gordon Freeman has returned, it is critical he reaches Black Mesa East.",
+    "entities": [
+      {
+        "text": "Black Mesa East",
+        "label": "ORG",
+        "start": 0,
+        "end": 15
+      },
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 46,
+        "end": 53
+      },
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 142,
+        "end": 156
+      },
+      {
+        "text": "Black Mesa East",
+        "label": "ORG",
+        "start": 197,
+        "end": 212
+      }
+    ]
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "You better get going now.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2c",
+    "character": "Citizen",
+    "line": "Hey, Dr. Freeman I had been hoping you would show up, got this airboat all gassed up and ready to go. Its gonna be tough dodging civil protection out there in the open, but drive hard and you will make it. You will find more help at station 7, just up the river, its the red barn. Climb on in, and fire her up. You had better get going now!",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 9,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Citizen",
+    "line": "Hey! You down there! Supplies!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Citizen",
+    "line": "Look out below!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Dr. Breen",
+    "line": "We now have direct confirmation of a disruptor in our midst, one who has acquired an almost meesianic reputation in the minds of certain citizens. His figure is synonymous with the darkest urges of instinct, ignorance, and decay. Some of the worst excesses of the Black Mesa incident have been laid directly at his feet. And yet unsophisticated minds continue to imbue him with romantic power. Giving him such labels as, the one free man, or the opener of the way. Let me remind all citizens of the dangers of magical thinking. We have scarcely begun to climb from the dark pit of our the evolution of our species. Let us not slide backward into oblivion, just as we have finally",
+    "entities": [
+      {
+        "text": "Black Mesa",
+        "label": "ORG",
+        "start": 264,
+        "end": 274
+      },
+      {
+        "text": "one",
+        "label": "CARDINAL",
+        "start": 425,
+        "end": 428
+      }
+    ]
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Begun To See The Light. If You See This So Called Free",
+    "line": "man, report him.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Civic Deeds Do Not Go Un",
+    "line": "rewarded and likewise complicity with his cause will",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Not Go Un",
+    "line": "punished. Be wise. Be safe. Be aware.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Citizen",
+    "line": "Hey! You are freeman arent you?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Citizen",
+    "line": "Well! I wouldnt believe it if I couldnt see it with my own eyes. Dr. Gordon Freeman himself!",
+    "entities": [
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 69,
+        "end": 83
+      }
+    ]
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Citizen",
+    "line": "You are just in time doc, we have gotta move out before the combine picks us up, we are getting ready to pull out.",
+    "entities": [
+      {
+        "text": "doc",
+        "label": "ORG",
+        "start": 21,
+        "end": 24
+      }
+    ]
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Citizen",
+    "line": "We better hurry, we have to tear down this camp before the combine gets here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Vortigaunt",
+    "line": "Greetings to the Freeman.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Citizen",
+    "line": "Come on in, I will show you what you are up against.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Citizen",
+    "line": "Here take a look at this. This here is the dam just up ahead.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Citizen",
+    "line": "The hideout is here, a stones throw away from the apron and nestled in the old hydro plant. But getting there, with that hunter chopper on your ass, next to impossible. Good news is, the vorigaunt is working his magic on your airboat, so you will have a little more firepower going forward. I think he is just finishing up now. Go on out.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Citizen",
+    "line": "There we are. That gun came off of one of the same hunter choppers that you are up against. I always like to bring a little irony to a firefight.",
+    "entities": [
+      {
+        "text": "one",
+        "label": "CARDINAL",
+        "start": 35,
+        "end": 38
+      }
+    ]
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Vortigaunt",
+    "line": "The freeman will accept this weapon, or suffer greatly on the road ahead.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Citizen",
+    "line": "Farwell Dr. Freeman.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 12,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Vortigaunt",
+    "line": "For Freedom!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2d",
+    "character": "Citizen",
+    "line": "Give them hell doc.",
+    "entities": [
+      {
+        "text": "doc",
+        "label": "ORG",
+        "start": 15,
+        "end": 18
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "We have got something. Okay, its human. Hello? Take it easy in there you are safe now. You will have to forgive the scanning process we cant take any chances.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "Dr. Freeman? Gordon Freeman?! Is that you? You made it here this quickly? Well is Eli is going to be amazed, not to mention relieved. I am Dr. Mossman, Dr. Judith Mossman. I have been hearing about you since long before the Black Mesa incident. Oh! Black Mesa. I do so envy you working with Eli and Dr. Kliener when they were at the top of their field. Ah! There we go you can come through now.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      },
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 13,
+        "end": 27
+      },
+      {
+        "text": "Eli",
+        "label": "ORG",
+        "start": 82,
+        "end": 85
+      },
+      {
+        "text": "Mossman",
+        "label": "PERSON",
+        "start": 143,
+        "end": 150
+      },
+      {
+        "text": "Judith Mossman",
+        "label": "PERSON",
+        "start": 156,
+        "end": 170
+      },
+      {
+        "text": "Black Mesa",
+        "label": "ORG",
+        "start": 224,
+        "end": 234
+      },
+      {
+        "text": "Black Mesa",
+        "label": "ORG",
+        "start": 249,
+        "end": 259
+      },
+      {
+        "text": "Eli",
+        "label": "ORG",
+        "start": 291,
+        "end": 294
+      },
+      {
+        "text": "Kliener",
+        "label": "PERSON",
+        "start": 303,
+        "end": 310
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "I will take you down to Eli right away. He would never forgive me if I kept you waiting.",
+    "entities": [
+      {
+        "text": "Eli",
+        "label": "ORG",
+        "start": 24,
+        "end": 27
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "We could certainly use the extra help around here. We have covered a lot of ground in the last few months, but things would go much more faster if we had more people with your training. We are closing in on a reliable local teleport technology, something even the combine has not mastered. Eli thinks their portals are string based, similar to our Calabi-Yau model, but they have failed to factor in the dark energy equations. They can tunnel through from their universe, but once they are here they are dependent on local transportation. If they knew what we were doing with entanglement...",
+    "entities": [
+      {
+        "text": "the last few months",
+        "label": "DATE",
+        "start": 86,
+        "end": 105
+      },
+      {
+        "text": "Eli",
+        "label": "PERSON",
+        "start": 290,
+        "end": 293
+      },
+      {
+        "text": "Calabi-Yau",
+        "label": "PERSON",
+        "start": 348,
+        "end": 358
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "Oh listen to me, I sound like a post-doc. I am just so excited to think that we will finally get the chance to work together.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "Were was I? Oh yes, Dr. Kliener compressed the xen relay far beyond anything he imagined at Black Mesa. We figured out how to use xen as an unexpressed axis, effectively a dimensional slingshot so we can swing around the borderworld and come back in local space without having to pass through.",
+    "entities": [
+      {
+        "text": "Kliener",
+        "label": "PERSON",
+        "start": 24,
+        "end": 31
+      },
+      {
+        "text": "Black Mesa",
+        "label": "ORG",
+        "start": 92,
+        "end": 102
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "Oh! Here is Eli now.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "Alright good you keep right on it.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "Eli! Look who I found in the airlock.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "Gordon Freeman! Let me get a look at you man! My god man you havent changed one iota. How do you do it? Now lets see the last time I saw you, I sent you up for help after the resonance cascade. I never thought it would take you this long to get back to me. Welcome to the lab anyway, its not Black Mesa but it serves us well enough.",
+    "entities": [
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 0,
+        "end": 14
+      },
+      {
+        "text": "one",
+        "label": "CARDINAL",
+        "start": 76,
+        "end": 79
+      },
+      {
+        "text": "Black Mesa",
+        "label": "ORG",
+        "start": 292,
+        "end": 302
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "Its going to be a lot more like Black Mesa with Gordon here to help.",
+    "entities": [
+      {
+        "text": "Black Mesa",
+        "label": "ORG",
+        "start": 32,
+        "end": 42
+      },
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 48,
+        "end": 54
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "Right you are, M.I.T. graduates are few and far between these days. We will get you out of that hazard suit and back into your lab coat where you belong.",
+    "entities": [
+      {
+        "text": "these days",
+        "label": "DATE",
+        "start": 56,
+        "end": 66
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "Lemme just finish up some work and I will see what I can dig up. Dr. Freeman? It has been a real honor. I am looking forward to working together.",
+    "entities": [
+      {
+        "text": "Lemme",
+        "label": "PERSON",
+        "start": 0,
+        "end": 5
+      },
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 69,
+        "end": 76
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "Feel free to look around.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Ah! Gordon, the vorigaunts said you were here. I cannot believe you made it so quickly on foot.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 4,
+        "end": 10
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "I believe he broke your record honey.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Well he earned it. I guess you proved you can handle yourself out there.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "There is nothing Gordon cannot handle..with the possible exception of you.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 17,
+        "end": 23
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Dad!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "Haaaa",
+    "entities": [
+      {
+        "text": "Haaaa",
+        "label": "ORG",
+        "start": 0,
+        "end": 5
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "Take a look at this Gordon.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 20,
+        "end": 26
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "Alyx I though you were on watch?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "The vorigaunts relieved me show I could come see Gordon. Anyway I should be in here working on the portal.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 49,
+        "end": 55
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "I have the repairs well in hand. Someone misjudged the capacity of the combine thyristor..",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Are you blaming me?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "No it was a calculation error not a mechanical problem.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Then maybe you should let me do the calculations next time, as well as the installing.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "Alyx really, sometimes I think you deliberately misunderstand me.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "Ahem. Alyx why dont you take Gordon and show him the gravity gun.",
+    "entities": [
+      {
+        "text": "Ahem",
+        "label": "ORG",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 29,
+        "end": 35
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Sure, come on Gordon, lets go have some fun.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 14,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Dr. Mossman",
+    "line": "The zero point field energy manipulator is not a toy Alyx",
+    "entities": [
+      {
+        "text": "zero",
+        "label": "CARDINAL",
+        "start": 4,
+        "end": 8
+      },
+      {
+        "text": "Alyx",
+        "label": "PERSON",
+        "start": 53,
+        "end": 57
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Lets get out of here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "So I seen you met Dr. Mossman, she is one of the main reasons I spend so much time outside. You should hear her drone on about how it should have been her in the Black Mesa test chamber that day. I am sorry I shouldnt be talking behind her back, it just gets a bit cluastraphobic down here.",
+    "entities": [
+      {
+        "text": "Mossman",
+        "label": "PERSON",
+        "start": 22,
+        "end": 29
+      },
+      {
+        "text": "Black Mesa",
+        "label": "ORG",
+        "start": 162,
+        "end": 172
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Thats the old passage to Ravenholm. We dont go there anymore. Come on.",
+    "entities": [
+      {
+        "text": "Ravenholm",
+        "label": "PERSON",
+        "start": 25,
+        "end": 34
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "So here we are, the scrapyard. This is the gravity gun my father was talking about, you can call it the zero point energy field manipulator if you really want to.",
+    "entities": [
+      {
+        "text": "zero",
+        "label": "CARDINAL",
+        "start": 104,
+        "end": 108
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Its designed for handling hazardous materials, but we mainly use it for heavy lifting. Give it a try. The primary trigger emits a charge, you can punt stuff and send it flying. I found it handy for clearing minefields. The secondary trigger lets you grab things, you can send them flying with the primary. Once you have picked something up, you can drop it gently by pressing your secondary trigger again. Pick up some stuff and toss it. You can also pull stuff over from a distance. Try grabbing those barrels from that ledge up there. All right.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Now let me call dog, he loves to play fetch. Dog! Come!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Gordon this is dog, my dad built him to protect me when I was a kid.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "First Model Way About Yay",
+    "line": "high I have been adding to him ever since. Ok dog lets play catch with Gordon. You will need to use the gravity gun. Go ahead dog. Throw!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 71,
+        "end": 77
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Dog, go get your ball!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "When I told you that you would be playing fetch, I didnt tell you who would be fetching did I.",
+    "entities": [
+      {
+        "text": "I.",
+        "label": "ORG",
+        "start": 92,
+        "end": 94
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Ok Gordon lets try something else. Throw something bigger dog.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 3,
+        "end": 9
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "No Dog! No boy put that down! What is it dog?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Oh my god what was that? Scanners! The combine is sweeping the area! We have to head back to the lab come on Gordon!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 109,
+        "end": 115
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Dad its Alyx are you there?",
+    "entities": [
+      {
+        "text": "Alyx",
+        "label": "PERSON",
+        "start": 8,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "Alyx.. Honey",
+    "entities": [
+      {
+        "text": "Honey",
+        "label": "ORG",
+        "start": 7,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Whats going on in there?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "Where are you Alyx?",
+    "entities": [
+      {
+        "text": "Alyx",
+        "label": "PERSON",
+        "start": 14,
+        "end": 18
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "We are in the scrapyard airlock stuck in a full autocycle.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "Is Gordon still with you?",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 3,
+        "end": 9
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "He is right here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "Good, I want you two to..",
+    "entities": [
+      {
+        "text": "two",
+        "label": "CARDINAL",
+        "start": 17,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Dad?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Eli",
+    "line": "Take Gordon out of here, head for the coast! Do not go through raven..",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 5,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Dad? Dad! Damn it! Dog open the airlock get us out of here! Hurry now! Tear it apart if you have to, just get it open! Thats enough dog. Come on Gordon! Come on!",
+    "entities": [
+      {
+        "text": "Hurry",
+        "label": "PERSON",
+        "start": 60,
+        "end": 65
+      },
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 145,
+        "end": 151
+      }
+    ]
+  },
+  {
+    "chapter_id": "2e",
+    "character": "Alyx",
+    "line": "Gordon you need to get out of here, I cant leave my father. Dog, take Gordon to the Ravenholm tunnel, then circle around and try to meet up with me.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 70,
+        "end": 76
+      },
+      {
+        "text": "Ravenholm",
+        "label": "PERSON",
+        "start": 84,
+        "end": 93
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "For it was said that they had become like those peculiar demons which dwell in matter, but in which no light may be found.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "For the days of my life have vanished like smoke, and my bones are parched like ash, and let all my impurities be as fuel for that fire until nothing remains but the light alone.",
+    "entities": [
+      {
+        "text": "the days",
+        "label": "DATE",
+        "start": 4,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "May they become like dust before the wind, may the angel of the lord pursue them.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "But whos is this? Another life to save? I will keep my eye on you, more than that I cannot promise.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "Well done brother. Make free us of my traps. But take care not to fall in them yourself. Behind you!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "In Ravenholm, you do well to be vigilant.",
+    "entities": [
+      {
+        "text": "Ravenholm",
+        "label": "PERSON",
+        "start": 3,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "Better and Better! I am Father Gregori, you have already met my, congregation, aha aha ahaaa!",
+    "entities": [
+      {
+        "text": "Gregori",
+        "label": "PERSON",
+        "start": 31,
+        "end": 38
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "Ah! It is you brother! I apologize, but no harm done. My bullets are the least of your concerns.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "Although they call me crazy I care not, for thou art my helper my strength, and my savior.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "Here brother! Come closer. You have stirred up hell! A man after my own heart! Here I have a more suitable gun for you. You will need it. Catch!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "Good, now keep it close. My advice to you is..aim for the head. Hush!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "They come! There is no rest in Ravenholm! Move on and I will meet you at the church.",
+    "entities": [
+      {
+        "text": "Ravenholm",
+        "label": "PERSON",
+        "start": 31,
+        "end": 40
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "How came you here brother? This is the wrong side of town for you! Did I not tell you to seek the church? Mend your ways before it is too late!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "Ah, there you are! At last! I will send the cart for you brother! It will be but a moment! Patience brother! Guard yourself well!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "Almost there brother!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "Now brother step into the cart! The handbrake brother release it and come down!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "Greetings brother! And so we meet at last. You are to be commended for avoiding my traps. The work of a man who once had too much time on his hands, and now finds time for nothing but the work of salvation. I suspect you have little wish to remain in Ravenholm, so I will show you to the mines. As for me..A shepherd must tend to his flock... Especially when they have grown unruly. Follow me brother, and tread lightly, for this is hallowed ground.",
+    "entities": [
+      {
+        "text": "Ravenholm",
+        "label": "PERSON",
+        "start": 251,
+        "end": 260
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Father Gregori",
+    "line": "Farwell brother! I fear I deliver you to a darker place. May the light of lights be with you. Look to your own, salvation.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Who is hurt?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Winston has been hit.",
+    "entities": [
+      {
+        "text": "Winston",
+        "label": "GPE",
+        "start": 0,
+        "end": 7
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Patch him up and get him to the back as soon as he is stable.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Gordon Freeman? Its incredible you made it! We have been getting communications from Alyx. I will see if I can reach her again. Follow me.",
+    "entities": [
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 0,
+        "end": 14
+      },
+      {
+        "text": "Alyx",
+        "label": "PERSON",
+        "start": 85,
+        "end": 89
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Its Leon, we are all clear. And I have got Gordon Freeman!",
+    "entities": [
+      {
+        "text": "Leon",
+        "label": "PERSON",
+        "start": 4,
+        "end": 8
+      },
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 43,
+        "end": 57
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Dr. Freeman you are kidding? I have been on the line with Alyx. Her father has been captured.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      },
+      {
+        "text": "Alyx",
+        "label": "PERSON",
+        "start": 58,
+        "end": 62
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Over here Dr. Freeman.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 14,
+        "end": 21
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Vortigaunt",
+    "line": "The Eli Vance is indispensable to the liberation.",
+    "entities": [
+      {
+        "text": "The Eli Vance",
+        "label": "ORG",
+        "start": 0,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Alyx its Leon, and I have got Gordon Freeman with me.",
+    "entities": [
+      {
+        "text": "Leon",
+        "label": "PERSON",
+        "start": 9,
+        "end": 13
+      },
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 30,
+        "end": 44
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Alyx",
+    "line": "Gordon! You made it through Ravenholm? Thank god! I need your help! They have taken my father! He has been taken to Nova Prospekt. The vorigaunts tracked the ship that made off with him and Judith Mossman. While the trains are still running I am going to hitch a ride. Here is where you come in Gordon. I need you to make your way along the coast until you get to Nova Prospekt. It used to be a high security prison, its something much worse than that now. But I think it is still easier to sneak in than to break out.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "text": "Ravenholm",
+        "label": "PERSON",
+        "start": 28,
+        "end": 37
+      },
+      {
+        "text": "Nova Prospekt",
+        "label": "LOC",
+        "start": 116,
+        "end": 129
+      },
+      {
+        "text": "Judith Mossman",
+        "label": "PERSON",
+        "start": 190,
+        "end": 204
+      },
+      {
+        "text": "Gordon",
+        "label": "GPE",
+        "start": 295,
+        "end": 301
+      },
+      {
+        "text": "Nova Prospekt",
+        "label": "LOC",
+        "start": 364,
+        "end": 377
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "You want him to take the coast road? He wont last five minutes on foot. Its antlion spawning season.",
+    "entities": [
+      {
+        "text": "last five minutes",
+        "label": "TIME",
+        "start": 45,
+        "end": 62
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Alyx",
+    "line": "Thats why I called you Leon. I was hoping you still had the scout car we left with you last summer. The one my dad rigged with the tau cannon.",
+    "entities": [
+      {
+        "text": "Leon",
+        "label": "PERSON",
+        "start": 23,
+        "end": 27
+      },
+      {
+        "text": "last summer",
+        "label": "DATE",
+        "start": 87,
+        "end": 98
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Yeah good idea, hold on a sec.",
+    "entities": [
+      {
+        "text": "sec",
+        "label": "ORG",
+        "start": 26,
+        "end": 29
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Noriko? Bring the buggy out put it on the dock right now, Gordon Freeman will be driving it!",
+    "entities": [
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 58,
+        "end": 72
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Will do! I just finished mounting an ammo crate on the back.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Good timing. Ok Alyx we are all set.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Alyx",
+    "line": "Thanks Leon. Gordon I have not driven the coast in over a year, but I have no reason to think its gotten any safer. Meet me in the depot where the trains unload. Take care of yourself and I will see you in Nova Prospekt.",
+    "entities": [
+      {
+        "text": "Leon",
+        "label": "PERSON",
+        "start": 7,
+        "end": 11
+      },
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 13,
+        "end": 19
+      },
+      {
+        "text": "over a year",
+        "label": "DATE",
+        "start": 51,
+        "end": 62
+      },
+      {
+        "text": "Nova Prospekt",
+        "label": "LOC",
+        "start": 206,
+        "end": 219
+      }
+    ]
+  },
+  {
+    "chapter_id": "2f",
+    "character": "Citizen",
+    "line": "Bye Alyx. Ok doc, before you hit the road you might wanna grab some medkits, restock on ammo, maybe check the map see where you are headed. There is an ammo supply crate on the back of the car if that is any comfort. Stay with the car, make use of the thumpers, and you will stand a fair chance against the antlions. I will radio ahead to let the next base know you are coming.",
+    "entities": [
+      {
+        "text": "doc",
+        "label": "ORG",
+        "start": 13,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "chapter_id": "2g",
+    "character": "Citizen",
+    "line": "Hello Dr. Freeman, the car is all ready for you. Hop in and I will lower you down to the beach! Good here we go!",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 10,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "chapter_id": "2g",
+    "character": "Citizen",
+    "line": "Damn magnet is failing! Hold on!",
+    "entities": [
+      {
+        "text": "Damn",
+        "label": "PRODUCT",
+        "start": 0,
+        "end": 4
+      }
+    ]
+  },
+  {
+    "chapter_id": "2g",
+    "character": "Citizen",
+    "line": "Sorry doc!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2g",
+    "character": "Citizen",
+    "line": "Gordon Freeman! Hurry get in the basement! We are expecting gunships at any moment. Colonel Cubbage will be glad to see you made it.",
+    "entities": [
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 0,
+        "end": 14
+      },
+      {
+        "text": "Hurry",
+        "label": "PERSON",
+        "start": 16,
+        "end": 21
+      },
+      {
+        "text": "Cubbage",
+        "label": "PERSON",
+        "start": 92,
+        "end": 99
+      }
+    ]
+  },
+  {
+    "chapter_id": "2g",
+    "character": "Colonel Cubbage",
+    "line": "This steerable rocket launcher is our best bet for taking down a gunship. Ah! Hello, I will be right with you. Now.. where was I? Ah yes.. Using the laser guide, you can steer you rocket past the gunship defenses and prevent it from shooting down your rocket. This will only anger it at first. But if you can survive long enough to make several direct hits, you will be rewarded with a prize worthy of any mantle piece. Now? Who is going to be the lucky one to carry it into combat? Ah yes Gordon Freeman. I could not have asked for a finer volunteer.",
+    "entities": [
+      {
+        "text": "first",
+        "label": "ORDINAL",
+        "start": 287,
+        "end": 292
+      },
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 490,
+        "end": 504
+      }
+    ]
+  },
+  {
+    "chapter_id": "2g",
+    "character": "Colonel Cubbage",
+    "line": "Colonel Odessa Cubbage at your service.",
+    "entities": [
+      {
+        "text": "Odessa Cubbage",
+        "label": "PERSON",
+        "start": 8,
+        "end": 22
+      }
+    ]
+  },
+  {
+    "chapter_id": "2g",
+    "character": "Citizen",
+    "line": "Gunship!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2g",
+    "character": "Colonel Cubbage",
+    "line": "Damn! Let me just send a warning to lighthouse point, then I will come right up and lend a hand!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2g",
+    "character": "Colonel Cubbage",
+    "line": "Well thats that. I gather you have disposed of that gunship Dr. Freeman, your reputation is well deserved. I will have someone open the gate for you immediately.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 64,
+        "end": 71
+      }
+    ]
+  },
+  {
+    "chapter_id": "2h",
+    "character": "Citizen",
+    "line": "Hey over here! You made it! We are picking up radio chatter, they are looking for your car. Get you car in the garage.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2h",
+    "character": "Citizen",
+    "line": "Ok doc you will have to go on foot from here. There is a secret path along the cliffside, but no one is going anywhere until we fight off this attack. Having you here to fight alongside us is going to make a big difference for morale. Oh crap! Here come the dropships!",
+    "entities": [
+      {
+        "text": "doc",
+        "label": "ORG",
+        "start": 3,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2h",
+    "character": "Citizen",
+    "line": "This way Dr. Freeman, we will take the cliff path before the gunships find us. Right along there, and watch your step.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 13,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "chapter_id": "2h",
+    "character": "Citizen",
+    "line": "Hey you there! Dont move! Stay on the rocks! Stepping on the sand makes the antlions crazy!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2h",
+    "character": "Citizen",
+    "line": "Lazlo dont move!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2h",
+    "character": "Citizen",
+    "line": "Dear god! Poor Lazlo. The finest mind of his generation come to such an end. You go on. There is nothing else you can do here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2h",
+    "character": "Vortigaunt",
+    "line": "The freeman would be wise to heed out extraction of the myrmadonts aromatic pheropods, the process is not entirely hygienic so please, stand aside.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2h",
+    "character": "Vortigaunt",
+    "line": "The freeman will have need of these on the road ahead. Gather them now.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "I am glad you made it here in one piece. My dad is up there somewhere, in that holding area. Its gonna take some doing to get him out. Lets get out of here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "I am afraid that I am flying blind here. Every now and then a vorigaunt gets captured and sends back a little picture of this place. What we do know, is all bad.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "There he is!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Eli",
+    "line": "Alyx! Gordon! Is that really you? I cant believe you found me!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 6,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Dad are you alright?!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Eli",
+    "line": "Im fine but you have to get out of here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "We are here to get you out dad!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Eli",
+    "line": "Nevermind me save yourselves!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "No we are not leaving you! I think I can recalibrate the combine portal to get us out of here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Eli",
+    "line": "But where will you go?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "I talked to Dr. Kliener, his portal was almost working again. If he has managed to repair it then we will end up there. If he hasnt well... we would not be any worse off.",
+    "entities": [
+      {
+        "text": "Kliener",
+        "label": "PERSON",
+        "start": 16,
+        "end": 23
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Eli",
+    "line": "Its not worth the risk honey! I cant lost you! Get out while you still can!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "We are not leaving here without you, thats final!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Eli",
+    "line": "We cant leave without Judith either.",
+    "entities": [
+      {
+        "text": "Judith",
+        "label": "NORP",
+        "start": 22,
+        "end": 28
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Dont worry dad we will find her. For now I am going to send you to the teleport room. I am not saying goodbye dad. We will meet you there.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Eli",
+    "line": "I know you will honey.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Lets get out of here. I am going to head back to the security station and try to patch into your suit radio.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Hey it worked, lets see what I can do to clear the way for you, keep an eye out for Mossman. I will get my dad through the prison as far as I can then I will catch up to you.",
+    "entities": [
+      {
+        "text": "Mossman",
+        "label": "PERSON",
+        "start": 84,
+        "end": 91
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Hang on I will get that gate open.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Damn! It is jammed ok I have got an idea, head back to that office.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Be careful Gordon I am picking up a lot of soldiers ahead.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 11,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "I will start working on this gate, hang on.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "You are coming up to another control room, looks like it is still occupied.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "My guess is that there are a bunch more soldiers heading your way. Quick search the room. There should be some combine turrets nearby. I can reprogram these turrets to attack the enemy. You set them up to defend the control room. I cant shut down those fields from here. I am going to have to catch up with you to access them. I am picking up a lot of incoming soldiers, hold the fort until I get there.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Sorry it took me so long. Glad to see you are okay. Lets see if we can find Mossman. It looks like this station might give me better access.",
+    "entities": [
+      {
+        "text": "Mossman",
+        "label": "PERSON",
+        "start": 76,
+        "end": 83
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "There she is. Wait a minute. How did she..?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Breen",
+    "line": "...from your area",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "I am not calling about that, you promised you were not going to touch Eli",
+    "entities": [
+      {
+        "text": "Eli",
+        "label": "ORG",
+        "start": 70,
+        "end": 73
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "What is she up to? Oh my god.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Breen",
+    "line": "The soldiers were a bit overzealous I admit, but he was too tempting a prize to turn loose, especially in the absence of Gordon Freeman.",
+    "entities": [
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 121,
+        "end": 135
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "You would have had Freeman if you had just been patient and waited for my signal.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 19,
+        "end": 26
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Breen",
+    "line": "We were not entirely sure you were ever going to get around to that, human loyalties being what they are.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "Dr. Breen, as I have stated before you have to let Eli come around on his own, you cannot just..",
+    "entities": [
+      {
+        "text": "Breen",
+        "label": "PERSON",
+        "start": 4,
+        "end": 9
+      },
+      {
+        "text": "Eli",
+        "label": "PERSON",
+        "start": 51,
+        "end": 54
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Breen",
+    "line": "I have known Dr. Vance far longer than you my dear. I am afraid your feelings for him might have blinded you.",
+    "entities": [
+      {
+        "text": "Vance",
+        "label": "PERSON",
+        "start": 17,
+        "end": 22
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "Feelings? This has nothing to do with feelings. It is a simple truth that when Eli believes in our..",
+    "entities": [
+      {
+        "text": "Eli",
+        "label": "ORG",
+        "start": 79,
+        "end": 82
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Breen",
+    "line": "This is not open to debate Dr. Mossman.",
+    "entities": [
+      {
+        "text": "Mossman",
+        "label": "PERSON",
+        "start": 31,
+        "end": 38
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "Doctor please..",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Breen",
+    "line": "So sorry Judith I am all out of time.",
+    "entities": [
+      {
+        "text": "Judith",
+        "label": "PERSON",
+        "start": 9,
+        "end": 15
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Damn her! I dont believe this! Come on Gordon now we really have to hurry. Go on ahead I will disrupt the next level of security and will catch up to you when I can.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 39,
+        "end": 45
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Quick get these set up, I see soldiers coming in from all directions.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Here they come!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Ok Gordon I am going to leave off here and catch up with you. be there as soon as I can.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Sorry to take so long Gordon, I wont leave you again, now, lets go track down Mossman.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 22,
+        "end": 28
+      },
+      {
+        "text": "Mossman",
+        "label": "ORG",
+        "start": 78,
+        "end": 85
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "uh-oh",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Great another security station.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Alright Mossman where are you...",
+    "entities": [
+      {
+        "text": "Alright Mossman",
+        "label": "PERSON",
+        "start": 0,
+        "end": 15
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Ha! There you are!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Ha! Got you now! Well come on Gordon we dont want to keep her waiting.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 30,
+        "end": 36
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Come on Gordon! Let me seal this door. No turning back now.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "There she is. Leave the talking to me Gordon. We may need her to get out of here.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 38,
+        "end": 44
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "Hello? Oh thank god.. Someone is here. Alyx? Gordon? How did you get in here?",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 45,
+        "end": 51
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "We know all about you and Breen. You have been a spy for the combine the whole time.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "What? What are you talking about?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Dammit, move back Mossman we are coming in.",
+    "entities": [
+      {
+        "text": "Mossman",
+        "label": "PERSON",
+        "start": 18,
+        "end": 25
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "Alyx whatever you may think I assure you I am working to protect your father.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Shut up and be glad you are still of some use to us! We are going to reconfigure this teleport and get the hell out of here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "You see we are working to the same end. I have already modulated the teleporter to emulate a xen relay.",
+    "entities": [
+      {
+        "text": "xen",
+        "label": "NORP",
+        "start": 93,
+        "end": 96
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "That is my fathers work you stole!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "Its my work to! And I had to prove to Dr. Breen that your father would be the most valuable member of any research effort going forward from here.",
+    "entities": [
+      {
+        "text": "Breen",
+        "label": "PERSON",
+        "start": 42,
+        "end": 47
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Enough of your bullshit!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Look Gordon there is my dad, I am going to bring him in.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "You found Eli?",
+    "entities": [
+      {
+        "text": "Eli",
+        "label": "PERSON",
+        "start": 10,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "No thanks to you! Just enter the coordinates for Dr. Klieners lab and lets get moving.",
+    "entities": [
+      {
+        "text": "Klieners",
+        "label": "PERSON",
+        "start": 53,
+        "end": 61
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "But we need access to the teleport platform and we are locked out.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "I will take care of that.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Lets get going.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Oh my god. And you have been working with this thing? For how long?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "Never.. Until now. Though I did have a fairly good idea of what to expect.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "I bet you did. It looks like it is waiting for us.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "The combine use a peculiar pulse-forming network with a very long rise time, It takes quite a while to recharge.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "So you have warmed it up for us. Good. And just in time.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Dad down here. Sorry we took so long I hope that was not too bad for you.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Eli",
+    "line": "Do not worry about me sweetheart. Judith! I see they set you free!",
+    "entities": [
+      {
+        "text": "Judith",
+        "label": "PERSON",
+        "start": 34,
+        "end": 40
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Not exactly.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "Eli! I was so worried about you!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "The coordinates Dr. Mossman.",
+    "entities": [
+      {
+        "text": "Mossman",
+        "label": "PERSON",
+        "start": 20,
+        "end": 27
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Eli",
+    "line": "So this is the combine portal, It is smaller than I imagined.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Hurry up Mossman!",
+    "entities": [
+      {
+        "text": "Hurry up Mossman",
+        "label": "PERSON",
+        "start": 0,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Dr. Kleiner!",
+    "entities": [
+      {
+        "text": "Kleiner",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Kleiner",
+    "line": "Yes Alyx where are you?",
+    "entities": [
+      {
+        "text": "Alyx",
+        "label": "PERSON",
+        "start": 4,
+        "end": 8
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "We are in Nova Prospekt, and we are running the Xen emulation for the first time. Are you ready for us?",
+    "entities": [
+      {
+        "text": "Nova Prospekt",
+        "label": "LOC",
+        "start": 10,
+        "end": 23
+      },
+      {
+        "text": "first",
+        "label": "ORDINAL",
+        "start": 70,
+        "end": 75
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Kleiner",
+    "line": "Ready! Willing! And fully enabled!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Good we will send my dad through first, he is in position for...",
+    "entities": [
+      {
+        "text": "first",
+        "label": "ORDINAL",
+        "start": 33,
+        "end": 38
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "What was that? Hold on gotta bring this back down.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "No! Stop! What are you doing!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Mossman",
+    "line": "I am sorry Alyx, it is the only way.",
+    "entities": [
+      {
+        "text": "Alyx",
+        "label": "PERSON",
+        "start": 11,
+        "end": 15
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "No! Get back here!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Eli",
+    "line": "Whats going on Alyx? Judith?",
+    "entities": [
+      {
+        "text": "Alyx",
+        "label": "PERSON",
+        "start": 15,
+        "end": 19
+      },
+      {
+        "text": "Judith",
+        "label": "PERSON",
+        "start": 21,
+        "end": 27
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Dr. Kliener you have to stop them!",
+    "entities": [
+      {
+        "text": "Kliener",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Kleiner",
+    "line": "Stop who my dear?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Oh my god! What coordinates are these? Where did she take him!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "No.. Cover me Gordon I have to reset the portal. Use the turrets!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 14,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Thank god it is done lets get the hell out of here!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "My god we made it! But where is Dr. Kliener?",
+    "entities": [
+      {
+        "text": "Kliener",
+        "label": "PERSON",
+        "start": 36,
+        "end": 43
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Dr. Kliener let us out!",
+    "entities": [
+      {
+        "text": "Kliener",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Kleiner",
+    "line": "Aylx? Gordon? My god how did you get here and when?",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 6,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "What is wrong?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Kleiner",
+    "line": "My dear, I had given up hope of ever seeing you again.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "I was thinking the same. I think the teleport exploded just as we made it out.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Kleiner",
+    "line": "Indeed it did. And the repercussions were felt far and wide.. but that was over a week ago.",
+    "entities": [
+      {
+        "text": "a week ago",
+        "label": "DATE",
+        "start": 80,
+        "end": 90
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "What do you mean? Gordon and I were just there a minute ago.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 18,
+        "end": 24
+      },
+      {
+        "text": "a minute ago",
+        "label": "TIME",
+        "start": 47,
+        "end": 59
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Kiener",
+    "line": "Fascinating. We seem to have developed a slow teleport. This suggests an entirely new line of investigation.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "A week..? Then what have we missed?",
+    "entities": [
+      {
+        "text": "A week",
+        "label": "DATE",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Kleiner",
+    "line": "A great deal my dear. The blow you struck at Nova Prospekt was taken as a signal to start the uprising.",
+    "entities": [
+      {
+        "text": "Nova Prospekt",
+        "label": "FAC",
+        "start": 45,
+        "end": 58
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "But what about my father?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Kleiner",
+    "line": "Well.. that is most disturbing. According to the vorigaunts he is a prisoner at the citadel.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "We have got to get my father out.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Kleiner",
+    "line": "Barney has been leading a push with that very aim in mind. And another of your friends arrived several days ago.",
+    "entities": [
+      {
+        "text": "Barney",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "text": "several days ago",
+        "label": "DATE",
+        "start": 95,
+        "end": 111
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Dog! You made it!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Kleiner",
+    "line": "So there. You see? Its not all hopeless.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "I wish I shared your optimism doctor.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Barney",
+    "line": "Doc come in.. are you there?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Dr. Kleiner",
+    "line": "Yes barney and I am no longer alone. Alyx and Gordon have just arrived.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 46,
+        "end": 52
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Barney",
+    "line": "Well man thats good news, I almost gave you guys up for lost. We are going to set up a staging area for the attack on the citadel.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Gordon and dog can head your way. I want to get Dr. Kliener somewhere safer.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "text": "Kliener",
+        "label": "PERSON",
+        "start": 52,
+        "end": 59
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Barney",
+    "line": "I will take all the help I can get. Oh crap! Incoming!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Barney",
+    "line": "Get going!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Anti",
+    "line": "Citizen One",
+    "entities": [
+      {
+        "text": "Citizen One",
+        "label": "ORG",
+        "start": 0,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Resistance",
+    "line": "Well Gordon Freeman, and about time to",
+    "entities": [
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 5,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Resistance",
+    "line": "Gordon you are here!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Resistance",
+    "line": "Dr. Freeman we are coming with you",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Resistance",
+    "line": "Gordon Freeman? It is you isnt it! Give me a minute, Im gonna plant some charges and blow this open.",
+    "entities": [
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 0,
+        "end": 14
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Resistance",
+    "line": "Looks nasty in there! Good thing you have that suit!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Resistance",
+    "line": "I see you made it through okay, I figured you would.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Resistance",
+    "line": "Dr. Freeman? It is not safe here anymore. They are shelling the hell out of us. I will send word you are coming up ahead. Keep moving.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Gordon! I had a feeling I would find you here. I have got Dr. Kliener in a safe spot. Now we can join up with Barney. There is a command center downstairs, I am hoping to find information on generator locations. Ready? Lets go.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "text": "Kliener",
+        "label": "PERSON",
+        "start": 62,
+        "end": 69
+      },
+      {
+        "text": "Barney",
+        "label": "PERSON",
+        "start": 110,
+        "end": 116
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Well we are in luck, there is a generator in the square outside. We are trying to disable as many as we can to loosen the combines grip on the city. It will take me a few minutes to expose the core, then I will need you to hit it with a burst from the gravity gun. In the meantime watch my back.",
+    "entities": [
+      {
+        "text": "a few minutes",
+        "label": "TIME",
+        "start": 165,
+        "end": 178
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "This should not take too long. As soon as it is down, I will open that gate and we can get out of here.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Ok the core is exposed. Use the gravity gun Gordon!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 44,
+        "end": 50
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "All right, I am opening the gate.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Ok, Barney should be on the far side of that...canal. Well there used to be a bridge here. Let me see if I can scout a new path. Ah! Wait for me here.",
+    "entities": [
+      {
+        "text": "Barney",
+        "label": "PERSON",
+        "start": 4,
+        "end": 10
+      }
+    ]
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Hey! Looks like we might be able to get through down there! Lets head that way!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2j",
+    "character": "Alyx",
+    "line": "Ah! No! Gordon! Run! Get out of here!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 8,
+        "end": 14
+      }
+    ]
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Resistance",
+    "line": "Dr. Freeman! Barney said you were on your way. We got split up by snipers, and he is pinned down in a warehouse up ahead. Go ahead, he is relying on you.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      },
+      {
+        "text": "Barney",
+        "label": "PERSON",
+        "start": 13,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Resistance",
+    "line": "Help! Is somebody up there? Help! Help me! We thought we would be safer down here. Little did we know the place was infested. The rest of them headed upstairs, took their chances with the snipers. I guess they are still up there.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "Over here! Gordon I cant move, these snipers have got me pinned down. Gordon lob a couple grenades, that will clear them out.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 11,
+        "end": 17
+      },
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 70,
+        "end": 76
+      }
+    ]
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "Alright, thanks Gordon, now lets clear out of here.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 16,
+        "end": 22
+      }
+    ]
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "Let me get this gate. My Civil Protection status still gives me limited clearance. Did you hear a cat just now? That damn thing haunts me.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "There is an old building up ahead. A bank or museum or something like that. Whatever the hell it used to be, now it is a nexus for Overwatch in City 17. It is the main source of pain for this part of town, thanks to a huge suppression device that rains down hell from the roof of the place.",
+    "entities": [
+      {
+        "text": "Overwatch in City 17",
+        "label": "ORG",
+        "start": 131,
+        "end": 151
+      }
+    ]
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "There it is, the Overwatch nexus. Looks like they are mobilizing",
+    "entities": [
+      {
+        "text": "Overwatch",
+        "label": "ORG",
+        "start": 17,
+        "end": 26
+      }
+    ]
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Big",
+    "line": "time. You can sort of see the gate from here. I will show you when we get to street level. We have to get into that building to open the gate. Even then the suppression device will, suppress anyone who tries to come through unless we shut it down.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "So much for stealth. We have been spotted!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "There is the gate I was telling you about. We have to come back here after we get it open. If we get it open. First we gotta get into the nexus building.",
+    "entities": [
+      {
+        "text": "First",
+        "label": "ORDINAL",
+        "start": 110,
+        "end": 115
+      }
+    ]
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "Uh-oh, turrets. You have the HEV suit, you deal with them. Then I will open the door.",
+    "entities": [
+      {
+        "text": "HEV",
+        "label": "ORG",
+        "start": 29,
+        "end": 32
+      }
+    ]
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "Wow, with that much security there must be something good in there. Go for it doc. I will wait here until you shut I down.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "Ah here it is, roof access. I am going to stay here and help other resistance members come through.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Resistance",
+    "line": "Dr. Freeman! Since you shut off the suppressor and opened the gate, we can really move people through now. The combine is really going to feel the squeeze! We dropped a crate of rockets across the plaza. If you can make it there you can take down the striders.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "Dog! Here boy! Dog come back here! Damn it all! Gordon! Hey help me out here!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 48,
+        "end": 54
+      }
+    ]
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "Dog came crashing through the plaza, knocking over walls, I think he is looking for Alyx. He seems to have it set in his mind that she is in the citadel. I figured Alyx would not want him getting into any deeper trouble but hell, you try stopping him.",
+    "entities": [
+      {
+        "text": "Alyx",
+        "label": "PERSON",
+        "start": 84,
+        "end": 88
+      },
+      {
+        "text": "Alyx",
+        "label": "PERSON",
+        "start": 164,
+        "end": 168
+      }
+    ]
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "Hey dog! Not there! You cannot get through that way!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "Well I will be dammed. I think he wants you to go through Gordon, you had better hurry.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 58,
+        "end": 64
+      }
+    ]
+  },
+  {
+    "chapter_id": "2l",
+    "character": "Barney",
+    "line": "And if you see Dr. Breen, tell him I said f--- -ou!*",
+    "entities": [
+      {
+        "text": "Breen",
+        "label": "PERSON",
+        "start": 19,
+        "end": 24
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Mossman",
+    "line": "I will take him from here. Dont struggle, its no use. Until you are where he wants you there is nothing you can do. I am sorry Gordon.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 127,
+        "end": 133
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "..ancient stars colonized by sentient fungi. Gas giants, inhabited by vast meteorological intelligences. Worlds stretched thin across the membranes where dimensions intersect...Impossible to describe with our limited vocabulary!",
+    "entities": [
+      {
+        "text": "Worlds",
+        "label": "PERSON",
+        "start": 105,
+        "end": 111
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Eli",
+    "line": "What I have seen is also beyond words Breen. Genocide, indescribable evil...Good god.",
+    "entities": [
+      {
+        "text": "Breen",
+        "label": "PERSON",
+        "start": 38,
+        "end": 43
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Well if it isnt Gordon Freeman at last.",
+    "entities": [
+      {
+        "text": "Gordon Freeman",
+        "label": "PERSON",
+        "start": 16,
+        "end": 30
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Oh what is this? Put it over there.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "You have my gratitude Dr. Freeman, first you lead me to the doorstep of my oldest friend, then you deliver yourself. If I had known you were going to come straight up to my office I would not have bothered hunting you in the first place. Having both of you in my keeping ensures I can dictate the terms of any bargain I care to make with the Combine.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 26,
+        "end": 33
+      },
+      {
+        "text": "first",
+        "label": "ORDINAL",
+        "start": 35,
+        "end": 40
+      },
+      {
+        "text": "first",
+        "label": "ORDINAL",
+        "start": 225,
+        "end": 230
+      },
+      {
+        "text": "Combine",
+        "label": "NORP",
+        "start": 342,
+        "end": 349
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Mossman",
+    "line": "Dr. Breen..Wallace..",
+    "entities": [
+      {
+        "text": "Breen",
+        "label": "PERSON",
+        "start": 4,
+        "end": 9
+      },
+      {
+        "text": "Wallace",
+        "label": "PERSON",
+        "start": 11,
+        "end": 18
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Yes what is it Judith?",
+    "entities": [
+      {
+        "text": "Judith",
+        "label": "PERSON",
+        "start": 15,
+        "end": 21
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Mossman",
+    "line": "The bargain we should be making is for his life so he can continue his research!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Thanks to you we have everything we need in that regard. You are more than qualified to finish his research yourself. What neither you nor I can do is convince that rabble in the streets to give up their senseless struggle. Yet Eli refuses to speak the words that would save them all.",
+    "entities": [
+      {
+        "text": "Eli",
+        "label": "ORG",
+        "start": 228,
+        "end": 231
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Eli",
+    "line": "Save them?! For what?!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Eli.. If you will not do this for the good of all people, maybe you will do it for one of them.",
+    "entities": [
+      {
+        "text": "one",
+        "label": "CARDINAL",
+        "start": 83,
+        "end": 86
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Eli",
+    "line": "Alyx..Honey..",
+    "entities": [
+      {
+        "text": "Honey",
+        "label": "ORG",
+        "start": 6,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Dad! Huh.. Gordon? No..",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 11,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Eli",
+    "line": "God damn you Breen! You let her go!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "That is all up to you my old friend. Will you let your stubborn short sightedness doom the entire species? Or will you give your child the chance her mother never had?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "How dare you even mention her!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Alyx my dear you have your mothers eyes. But your fathers stubbornness.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "You have not seen a bit of it yet.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Really? Well lets see how it serves you, on the far side of a combine portal.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Eli",
+    "line": "Go ahead Breen! If that is the worst you can do, send us through your portal.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Oh it is hardly the worst. But you might find that hard to believe once you get there.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Mossman",
+    "line": "It isnt necessary!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "I agree it is a total waste. Fortunately the resistance has shown it is willing to accept a new leader. And this one has proven to be a fine pawn for those who control him.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Eli",
+    "line": "No!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Dont listen to him Gordon!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 19,
+        "end": 25
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "How about it Dr. Freeman? Did you realize your contract was open to the highest bidder?",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 17,
+        "end": 24
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Gordon would never make any kind of deal with you!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "I understand if you dont wish to discuss this in front of your friends. I will send them on their way and then we can talk openly.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Eli",
+    "line": "Dont struggle honey.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Dad.. Im so sorry.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Eli",
+    "line": "Alyx..sweetheart.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Judith, what do you think you are doing?",
+    "entities": [
+      {
+        "text": "Judith",
+        "label": "ORG",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Mossman",
+    "line": "We are doing what I could never do alone. We are stopping you.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Yes!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Guards! Get in here!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "They know you betrayed them, they will turn on you, Judith.. Dr. Mossman please!",
+    "entities": [
+      {
+        "text": "Judith",
+        "label": "PERSON",
+        "start": 52,
+        "end": 58
+      },
+      {
+        "text": "Mossman",
+        "label": "PERSON",
+        "start": 65,
+        "end": 72
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Mossman",
+    "line": "I am sorry Wallace, you are all out of time.",
+    "entities": [
+      {
+        "text": "Wallace",
+        "label": "PERSON",
+        "start": 11,
+        "end": 18
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Mossman",
+    "line": "Dont!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Hurry! Dad hang on!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "You fool!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Watch out he is gonna..",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "No!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Dad!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Eli",
+    "line": "Oh no no no. Dont worry about me honey.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Mossman",
+    "line": "There is no time Alyx, he is on his way to the portal. You will need this.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Dr. Mossman..Judith.. Look after my father.",
+    "entities": [
+      {
+        "text": "Mossman",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      },
+      {
+        "text": "Judith.. Look",
+        "label": "PERSON",
+        "start": 13,
+        "end": 26
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Mossman",
+    "line": "Dont you worry.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Dad I am not saying goodbye.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Eli",
+    "line": "Never.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Come on Gordon, lets go.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 8,
+        "end": 14
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Gordon.. We have not known each other very long, but I know you did not have to do this. I had to rescue my father, but you.. well.. thanks for coming after me.",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Hey listen!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "It is me you should be concerned about, I can still deliver earth but not without your help.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "That is him!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "The portal destination is untenable surely you can set the relay destination elsewhere. There is no way I can survive in that environment. A host body? You must be joking, there is no way I can possibly..",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "There he is!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Oh alright dammit if that is what it takes. Just hurry! He is right behind me!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Oh shit!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Dammit! Not again! Huh! The gravity gun! He does not have a clue does he? I wonder where he is going.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Oh my god! This is the dark fusion reactor. It powers their tunneling entanglement device. We will never have a chance like this again. We have to stop him!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "I cannot shut it down, looks like he has turned control over to the other side. You will have to go into the core and do what you can. Get into the elevator and I will let you in. Do not forget to charge up your suit.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Its Dr. Breen! There he is!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Dr. Freeman, you really should not be out there. At the moment of synapse as I teleport this chamber will be bathed in deadly particles that have yet to be named by human science. Perhaps when I have the leisure to do the work myself, I will name one after you. That way you will not be completely forgotten. When the singularity collapses, I will be far away from here, in another universe in fact. You on the other hand will be destroyed in every way possible, and even some essentially impossible.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 4,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "What the hell? Oh no, combine soldiers, where did they come from?",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "I do not know what you can possibly hope to achieve, apart from your own annihilation.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Do not listen to him Gordon!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 21,
+        "end": 27
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "I warned you this was futile.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "He is bluffing Gordon. Do not listen to him!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 15,
+        "end": 21
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Great! Oh no, Breen has started his ascent! Hurry Gordon before he escapes!",
+    "entities": [
+      {
+        "text": "Breen",
+        "label": "ORG",
+        "start": 14,
+        "end": 19
+      },
+      {
+        "text": "Hurry Gordon",
+        "label": "PERSON",
+        "start": 44,
+        "end": 56
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "I could have told you that was pointless Dr. Freeman.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 45,
+        "end": 52
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Go Gordon!",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 3,
+        "end": 9
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Are you still with us Dr. Freeman? Not for much longer I think.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 26,
+        "end": 33
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Oh my god, the portal is opening!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "I hope you have said your farewells.",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "Go back Freeman, you have no idea what you are doing!",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 8,
+        "end": 15
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "You do not know what you will unleash, you could bring down this whole citadel. Think, man, think of the people below!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Dr. Breen",
+    "line": "NO! You need me!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Yes!",
+    "entities": []
+  },
+  {
+    "chapter_id": "2n",
+    "character": "Alyx",
+    "line": "Yeah! You did it! Come on Gordon we have got to get out of here, maybe we still have...",
+    "entities": [
+      {
+        "text": "Gordon",
+        "label": "PERSON",
+        "start": 26,
+        "end": 32
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "G-Man",
+    "line": "Time? Dr. Freeman? Is it really that time again? It seems as if you only just arrived. You have done a great deal in a small timespan. You have done so well that I have received some interesting offers for your services. Ordinarily I would not contemplate them, but these are extraordinary times. Rather than offer you the illusion of free choice, I will take the liberty of choosing for you. If and when the time comes again.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 10,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "G-Man",
+    "line": "I do apologize for what must seem to you an arbitrary imposition, Dr. Freeman, I trust it will all make sense in the course of.. well.. I am really not at liberty to say.",
+    "entities": [
+      {
+        "text": "Freeman",
+        "label": "PERSON",
+        "start": 70,
+        "end": 77
+      }
+    ]
+  },
+  {
+    "chapter_id": "2n",
+    "character": "G-Man",
+    "line": "In the meantime, this is where I get off.",
+    "entities": []
+  }
+]

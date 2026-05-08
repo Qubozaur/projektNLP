@@ -8,6 +8,7 @@ dependencies = [
     "bertopic>=0.17.4",
     "dash>=4.1.0",
     "dash-bootstrap-components>=2.0.4",
+    "dotenv>=0.9.9",
     "hdbscan>=0.8.42",
     "numpy>=2.4.4",
     "openai>=2.34.0",
