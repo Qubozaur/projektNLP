@@ -112,7 +112,7 @@ chapter_id,character,text,sentiment,sentiment_score
 2b,Alyx,"Meanwhile, lets get this show on the road.",positive,0.6266464591026306
 2b,Dr. Kleiner,"Gordon, why dont you position yourself near the panel over there and wait for my word?",neutral,0.7516884803771973
 2b,Eli,Issac are you there?,neutral,0.9498759508132935
-2b,Dr. Kiener,"Yes, yes, Eli, a bit of a hold up on this end. You will never guess who found his way into our lab this morning.",neutral,0.5902687311172485
+2b,Dr. Kleiner,"Yes, yes, Eli, a bit of a hold up on this end. You will never guess who found his way into our lab this morning.",neutral,0.5902687311172485
 2b,Eli,"Thats not who I think it is, is it?",negative,0.703685462474823
 2b,Dr. Kleiner,"Indeed it is, and its our intention to send him packing straight away, in the company of your lovely daughter.",positive,0.6045733690261841
 2b,Alyx,Are you ready for us dad?,neutral,0.6035690307617188
@@ -431,7 +431,7 @@ chapter_id,character,text,sentiment,sentiment_score
 2j,Alyx,I was thinking the same. I think the teleport exploded just as we made it out.,neutral,0.528050422668457
 2j,Dr. Kleiner,Indeed it did. And the repercussions were felt far and wide.. but that was over a week ago.,negative,0.7777736783027649
 2j,Alyx,What do you mean? Gordon and I were just there a minute ago.,neutral,0.8820453882217407
-2j,Dr. Kiener,Fascinating. We seem to have developed a slow teleport. This suggests an entirely new line of investigation.,positive,0.7062888145446777
+2j,Dr. Kleiner,Fascinating. We seem to have developed a slow teleport. This suggests an entirely new line of investigation.,positive,0.7062888145446777
 2j,Alyx,A week..? Then what have we missed?,neutral,0.6082028150558472
 2j,Dr. Kleiner,A great deal my dear. The blow you struck at Nova Prospekt was taken as a signal to start the uprising.,positive,0.8246325850486755
 2j,Alyx,But what about my father?,neutral,0.7566311359405518

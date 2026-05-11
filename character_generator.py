@@ -1,8 +1,3 @@
-"""
-character_generator.py
-Generowanie wypowiedzi w stylu postaci HL2 — OpenAI API
-"""
-
 import json
 import re
 from openai import OpenAI
@@ -13,10 +8,6 @@ import pandas as pd
 from dotenv import load_dotenv
 
 load_dotenv()
-
-# ─────────────────────────────────────────────
-# Budowanie profilu postaci z danych
-# ─────────────────────────────────────────────
 
 CHARACTER_PROFILES = {
     "G-Man": {
@@ -94,12 +85,7 @@ CHARACTER_PROFILES = {
 }
 
 
-# ─────────────────────────────────────────────
-# Ekstrakcja stylistycznych cech z danych
-# ─────────────────────────────────────────────
-
 def build_character_corpus(df: pd.DataFrame) -> dict[str, list[str]]:
-    """Grupuje rzeczywiste dialogi per postać."""
     corpus = defaultdict(list)
     for _, row in df.iterrows():
         if row["character"] in CHARACTER_PROFILES:
@@ -108,7 +94,6 @@ def build_character_corpus(df: pd.DataFrame) -> dict[str, list[str]]:
 
 
 def get_style_stats(lines: list[str]) -> dict:
-    """Prosta analiza stylistyczna: długość zdań, interpunkcja, słowa kluczowe."""
     if not lines:
         return {}
 
@@ -117,7 +102,6 @@ def get_style_stats(lines: list[str]) -> dict:
     exclaim_ratio = sum(1 for l in lines if "!" in l) / len(lines)
     ellipsis_ratio = sum(1 for l in lines if "..." in l) / len(lines)
 
-    # Top 10 słów (bez stopwords)
     stopwords = {"the", "a", "an", "i", "you", "we", "he", "she", "it",
                  "to", "of", "and", "in", "is", "have", "that", "this",
                  "are", "was", "be", "not", "with", "for", "my", "your"}
@@ -139,15 +123,7 @@ def get_style_stats(lines: list[str]) -> dict:
     }
 
 
-# ─────────────────────────────────────────────
-# Generator wypowiedzi — OpenAI API
-# ─────────────────────────────────────────────
-
 class CharacterGenerator:
-    """
-    Generuje wypowiedzi w stylu postaci HL2 używając OpenAI API.
-    Opcjonalnie wzbogaca prompt o dane z analizy NLP.
-    """
 
     def __init__(
         self,
@@ -156,7 +132,7 @@ class CharacterGenerator:
         df: pd.DataFrame | None = None,
     ):
         try:
-            self.client = OpenAI(api_key=api_key)  # uses OPENAI_API_KEY if None
+            self.client = OpenAI(api_key=api_key)
         except OpenAIError as e:
             raise RuntimeError(
                 "Missing OpenAI credentials. Set OPENAI_API_KEY in .env or pass api_key explicitly."
@@ -211,15 +187,6 @@ RULES:
         sentiment_hint: str = "neutral",
         topic_context: str = "",
     ) -> str:
-        """
-        Generuje jedną wypowiedź postaci.
-
-        Args:
-            character      – nazwa postaci (klucz z CHARACTER_PROFILES)
-            situation      – opis sytuacji, na którą reaguje postać
-            sentiment_hint – "positive" / "negative" / "neutral"
-            topic_context  – temat wykryty przez BERTopic (opcjonalnie)
-        """
         if character not in CHARACTER_PROFILES:
             available = list(CHARACTER_PROFILES.keys())
             raise ValueError(f"Nieznana postać '{character}'. Dostępne: {available}")
@@ -250,10 +217,6 @@ RULES:
         situation: str,
         n_exchanges: int = 4,
     ) -> list[dict]:
-        """
-        Generuje małą scenę dialogową między postaciami.
-        Każda postać reaguje na poprzednią wypowiedź.
-        """
         scene: list[dict] = []
         context = f"Scene: {situation}\n\n"
 
@@ -271,10 +234,6 @@ RULES:
         self,
         requests: list[dict],
     ) -> list[dict]:
-        """
-        Batch generowanie dla wielu postaci/sytuacji.
-        requests: lista słowników z kluczami: character, situation, [sentiment_hint], [topic_context]
-        """
         results = []
         for req in requests:
             try:
@@ -295,17 +254,12 @@ RULES:
         character: str,
         generated_lines: list[str],
     ) -> dict:
-        """
-        Porównuje wygenerowane linie ze statystykami stylistycznymi oryginału.
-        Zwraca metryki zgodności stylu.
-        """
         original_stats = self.style_stats.get(character, {})
         generated_stats = get_style_stats(generated_lines)
 
         if not original_stats or not generated_stats:
             return {"error": "Brak danych do porównania"}
 
-        # Różnica procentowa dla każdej metryki
         comparison = {}
         for key in ["avg_words_per_line", "question_ratio", "exclamation_ratio", "ellipsis_ratio"]:
             orig = original_stats.get(key, 0)
@@ -315,7 +269,6 @@ RULES:
             comparison[f"{key}_generated"] = gen
             comparison[f"{key}_diff"] = round(diff, 3)
 
-        # Overlap słów kluczowych
         orig_words = set(original_stats.get("top_words", []))
         gen_words = set(generated_stats.get("top_words", []))
         overlap = len(orig_words & gen_words) / max(len(orig_words), 1)
@@ -324,14 +277,9 @@ RULES:
         return comparison
 
 
-# ─────────────────────────────────────────────
-# Demo
-# ─────────────────────────────────────────────
-
 if __name__ == "__main__":
     import os
 
-    # Wczytaj dane (jeśli pipeline już był uruchomiony)
     df = None
     if Path("data/full_analysis.csv").exists():
         df = pd.read_csv("data/full_analysis.csv")
@@ -341,7 +289,6 @@ if __name__ == "__main__":
         df=df,
     )
 
-    # Przykłady generowania
     print("═" * 60)
     print("GENEROWANIE WYPOWIEDZI W STYLU POSTACI HL2")
     print("═" * 60)

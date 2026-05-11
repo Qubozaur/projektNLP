@@ -1,0 +1,171 @@
+/* ── Half-Life 2 Dashboard — Global Theme ── */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+  --orange:  #e05c00;
+  --orange2: #ff7a1a;
+  --blue:    #1a6b9a;
+  --bg:      #0a0e14;
+  --surface: #111820;
+  --grid:    #1e2833;
+  --text:    #c8cdd5;
+  --dim:     #6b7585;
+}
+
+/* ── Base ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body, html {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  font-family: 'Share Tech Mono', 'Courier New', monospace !important;
+  font-size: 15px !important;
+  margin: 0; padding: 0;
+}
+
+/* ── Scanline overlay ── */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 3px,
+    rgba(0, 0, 0, 0.08) 3px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ── Subtle grid background on main content ── */
+#page-content {
+  background-image:
+    linear-gradient(rgba(30, 40, 51, 0.4) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 40, 51, 0.4) 1px, transparent 1px) !important;
+  background-size: 40px 40px !important;
+}
+
+/* ── Custom scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--orange2); }
+
+/* ── Text selection ── */
+::selection { background: var(--orange); color: #000; }
+
+/* ── Lambda logo in sidebar ── */
+.lambda-logo {
+  font-size: 56px;
+  font-weight: bold;
+  color: var(--orange);
+  text-align: center;
+  line-height: 1;
+  letter-spacing: -2px;
+  text-shadow:
+    0 0 12px rgba(224, 92, 0, 0.9),
+    0 0 30px rgba(224, 92, 0, 0.5),
+    0 0 60px rgba(224, 92, 0, 0.2);
+  padding: 28px 0 4px;
+  display: block;
+  user-select: none;
+  font-family: 'Share Tech Mono', 'Courier New', monospace;
+}
+
+/* ── Sidebar title glow ── */
+.sidebar-title {
+  text-shadow:
+    0 0 8px rgba(224, 92, 0, 0.8),
+    0 0 20px rgba(224, 92, 0, 0.3);
+}
+
+/* ── Nav items ── */
+.nav-item {
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  border-left: 3px solid transparent !important;
+  position: relative;
+}
+.nav-item:hover {
+  background: rgba(224, 92, 0, 0.08) !important;
+  color: var(--orange) !important;
+  border-left-color: var(--orange) !important;
+}
+.nav-item-active {
+  background: rgba(224, 92, 0, 0.12) !important;
+  color: var(--orange) !important;
+  border-left-color: var(--orange) !important;
+}
+
+/* ── Orange glow on section headings ── */
+h2 {
+  text-shadow: 0 0 18px rgba(224, 92, 0, 0.4) !important;
+  border-bottom: 1px solid var(--grid);
+  padding-bottom: 10px;
+}
+
+/* ── HEV-style metric cards ── */
+.metric-card {
+  box-shadow: 0 0 0 1px var(--grid), inset 0 0 20px rgba(224, 92, 0, 0.03);
+  transition: box-shadow 0.2s;
+}
+.metric-card:hover {
+  box-shadow: 0 0 12px rgba(224, 92, 0, 0.25), 0 0 0 1px var(--orange);
+}
+
+/* ── Plotly graphs ── */
+.js-plotly-plot .plotly .main-svg { background: transparent !important; }
+
+/* ── Dropdown ── */
+.Select-control,
+.VirtualizedSelectFocusedOption,
+.Select-menu-outer {
+  background: var(--surface) !important;
+  border-color: var(--grid) !important;
+  color: var(--text) !important;
+}
+.Select-option.is-focused { background: rgba(224, 92, 0, 0.15) !important; }
+.Select-value-label { color: var(--text) !important; }
+
+/* ── HEV "power" bar at top of sidebar ── */
+.hev-bar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--orange), var(--orange2), var(--blue));
+  box-shadow: 0 0 8px rgba(224, 92, 0, 0.7);
+  width: 100%;
+  display: block;
+}
+
+/* ── Divider lines ── */
+hr {
+  border-color: var(--grid) !important;
+  box-shadow: 0 1px 4px rgba(224, 92, 0, 0.1);
+}
+
+/* ── Textarea / input in generator ── */
+textarea, input[type="text"] {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--grid) !important;
+  font-family: 'Share Tech Mono', 'Courier New', monospace !important;
+}
+textarea:focus, input[type="text"]:focus {
+  border-color: var(--orange) !important;
+  box-shadow: 0 0 8px rgba(224, 92, 0, 0.3) !important;
+  outline: none !important;
+}
+
+/* ── Blinking cursor on sidebar subtitle ── */
+.sidebar-sub::after {
+  content: "_";
+  animation: blink 1s step-end infinite;
+  color: var(--orange);
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}

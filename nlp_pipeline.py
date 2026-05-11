@@ -143,6 +143,128 @@ class NLPPipeline:
             print(f"  {k}: {v}")
         return metrics
 
+    def evaluate_topics_coherence(self) -> dict:
+        import re
+        from gensim.corpora import Dictionary
+        from gensim.models.coherencemodel import CoherenceModel
+        from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
+
+        if self.topic_model is None or self.topics is None:
+            raise RuntimeError("Najpierw wywołaj run_bertopic()")
+
+        tokenized = []
+        for text in self.df["text"].tolist():
+            tokens = re.findall(r'\b[a-z]{2,}\b', text.lower())
+            tokenized.append([t for t in tokens if t not in ENGLISH_STOP_WORDS])
+
+        topic_info = self.topic_model.get_topic_info()
+        valid_topics = [t for t in topic_info["Topic"] if t != -1]
+        topics_words = []
+        for tid in valid_topics:
+            words = self.topic_model.get_topic(tid) or []
+            topics_words.append([w for w, _ in words[:10]])
+
+        dictionary = Dictionary(tokenized)
+        cm = CoherenceModel(
+            topics=topics_words,
+            texts=tokenized,
+            dictionary=dictionary,
+            coherence="c_v",
+        )
+        per_topic = cm.get_coherence_per_topic()
+        mean_cv = cm.get_coherence()
+
+        result = {
+            "mean_coherence_cv": round(mean_cv, 4),
+            "per_topic_coherence_cv": {
+                str(tid): round(score, 4)
+                for tid, score in zip(valid_topics, per_topic)
+            },
+        }
+        with open("data/topic_coherence_cv.json", "w") as f:
+            json.dump(result, f, indent=2)
+        print(f"\n[Coherence Cv] Średnia: {mean_cv:.4f}")
+        for tid, score in zip(valid_topics, per_topic):
+            print(f"  T{tid}: {score:.4f}")
+        return result
+
+    def character_arc_analysis(self) -> pd.DataFrame:
+        if "sentiment" not in self.df.columns:
+            raise RuntimeError("Najpierw wywołaj run_sentiment()")
+
+        chapter_order = ["2a","2b","2c","2d","2e","2f","2g","2h","2i","2j","2k","2l","2m","2n"]
+        sentiment_map = {"positive": 1.0, "neutral": 0.0, "negative": -1.0}
+
+        df2 = self.df.copy()
+        df2["sentiment_val"] = df2["sentiment"].map(sentiment_map).fillna(0.0)
+
+        main_chars = df2["character"].value_counts().head(10).index.tolist()
+
+        records = []
+        for char in main_chars:
+            char_df = df2[df2["character"] == char]
+            for ch in chapter_order:
+                ch_df = char_df[char_df["chapter_id"] == ch]
+                if len(ch_df) == 0:
+                    continue
+                records.append({
+                    "character": char,
+                    "chapter_id": ch,
+                    "mean_sentiment": round(ch_df["sentiment_val"].mean(), 3),
+                    "n_lines": len(ch_df),
+                    "pos_ratio": round((ch_df["sentiment"] == "positive").mean(), 3),
+                    "neg_ratio": round((ch_df["sentiment"] == "negative").mean(), 3),
+                })
+
+        arc_df = pd.DataFrame(records)
+        arc_df.to_csv("data/character_arcs.csv", index=False)
+        print(f"\n[Character Arcs] {len(arc_df)} wpisów zapisanych do data/character_arcs.csv")
+        return arc_df
+
+    def speech_style_analysis(self) -> pd.DataFrame:
+        import re
+
+        stop_words = {
+            "i", "a", "the", "and", "to", "of", "in", "you", "it", "is", "that",
+            "this", "was", "he", "she", "they", "we", "be", "are", "have", "has",
+            "had", "do", "does", "did", "not", "but", "on", "at", "by", "for",
+            "with", "his", "her", "my", "your", "our", "what", "all", "there",
+            "from", "will", "an", "can", "if", "as", "me", "him", "them", "us",
+            "just", "so", "up", "out", "no", "get", "oh", "well", "yes",
+        }
+
+        records = []
+        for char, group in self.df.groupby("character"):
+            if len(group) < 3:
+                continue
+            texts = group["text"].tolist()
+
+            avg_words = np.mean([len(t.split()) for t in texts])
+            question_ratio = sum(1 for t in texts if "?" in t) / len(texts)
+            exclamation_ratio = sum(1 for t in texts if "!" in t) / len(texts)
+            ellipsis_ratio = sum(1 for t in texts if "..." in t) / len(texts)
+
+            all_words = []
+            for t in texts:
+                tokens = re.findall(r'\b[a-z]{2,}\b', t.lower())
+                all_words.extend([w for w in tokens if w not in stop_words])
+            vocab_richness = len(set(all_words)) / len(all_words) if all_words else 0.0
+
+            records.append({
+                "character": char,
+                "n_lines": len(group),
+                "avg_words_per_line": round(avg_words, 2),
+                "question_ratio": round(question_ratio, 3),
+                "exclamation_ratio": round(exclamation_ratio, 3),
+                "ellipsis_ratio": round(ellipsis_ratio, 3),
+                "vocabulary_richness": round(vocab_richness, 3),
+            })
+
+        style_df = pd.DataFrame(records).sort_values("n_lines", ascending=False)
+        style_df.to_csv("data/speech_style.csv", index=False)
+        print(f"\n[Speech Style] Analiza {len(style_df)} postaci zapisana do data/speech_style.csv")
+        return style_df
+
     def run_sentiment(
         self,
         model_name: str = "cardiffnlp/twitter-roberta-base-sentiment-latest",
@@ -258,8 +380,11 @@ class NLPPipeline:
             self.load_embeddings()
         topic_info = self.run_bertopic(n_topics=10)
         eval_metrics = self.evaluate_topics()
+        coherence_cv = self.evaluate_topics_coherence()
         self.run_sentiment()
         self.run_ner()
+        arc_df = self.character_arc_analysis()
+        style_df = self.speech_style_analysis()
         sim_df = self.character_similarity_matrix()
         timeline = self.topic_timeline()
         self.df.to_csv("data/full_analysis.csv", index=False)
@@ -268,8 +393,11 @@ class NLPPipeline:
             "df": self.df,
             "topic_info": topic_info,
             "eval_metrics": eval_metrics,
+            "coherence_cv": coherence_cv,
             "similarity": sim_df,
             "timeline": timeline,
+            "character_arcs": arc_df,
+            "speech_style": style_df,
         }
 
 

@@ -907,7 +907,7 @@
     {
       "chapter_id": "2b",
       "chapter_name": "A Red Letter Day",
-      "character": "Dr. Kiener",
+      "character": "Dr. Kleiner",
       "is_main_character": false,
       "text": "Yes, yes, Eli, a bit of a hold up on this end. You will never guess who found his way into our lab this morning.",
       "line_index": 113
@@ -3459,7 +3459,7 @@
     {
       "chapter_id": "2j",
       "chapter_name": "Entanglement",
-      "character": "Dr. Kiener",
+      "character": "Dr. Kleiner",
       "is_main_character": false,
       "text": "Fascinating. We seem to have developed a slow teleport. This suggests an entirely new line of investigation.",
       "line_index": 432

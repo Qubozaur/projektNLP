@@ -1,22 +1,12 @@
-"""
-dashboard.py
-Interaktywny dashboard Dash — wizualizacja analizy NLP Half-Life 2
-
-Uruchomienie:  python dashboard.py
-Otwórz:        http://127.0.0.1:8050
-"""
-
 import json
 import os
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
-import plotly.express as px
-from plotly.subplots import make_subplots
 from pathlib import Path
 import dash
 from dash import dcc, html, Input, Output, State, callback_context, no_update
-import dash_bootstrap_components as dbc  # pip install dash-bootstrap-components
+import dash_bootstrap_components as dbc
 from dotenv import load_dotenv
 
 try:
@@ -27,9 +17,6 @@ except ImportError:
 load_dotenv()
 
 
-# ─────────────────────────────────────────────
-# Wczytanie danych
-# ─────────────────────────────────────────────
 
 def load_data() -> dict:
     data = {}
@@ -37,7 +24,6 @@ def load_data() -> dict:
     if Path("data/full_analysis.csv").exists():
         data["df"] = pd.read_csv("data/full_analysis.csv")
     else:
-        # Dane demo jeśli pipeline nie był uruchomiony
         data["df"] = _generate_demo_data()
 
     if Path("data/topic_info.csv").exists():
@@ -58,11 +44,20 @@ def load_data() -> dict:
     if Path("data/topic_timeline.csv").exists():
         data["timeline"] = pd.read_csv("data/topic_timeline.csv")
 
+    if Path("data/topic_coherence_cv.json").exists():
+        with open("data/topic_coherence_cv.json") as f:
+            data["coherence_cv"] = json.load(f)
+
+    if Path("data/character_arcs.csv").exists():
+        data["character_arcs"] = pd.read_csv("data/character_arcs.csv")
+
+    if Path("data/speech_style.csv").exists():
+        data["speech_style"] = pd.read_csv("data/speech_style.csv")
+
     return data
 
 
 def _fallback_topic_motif(words: list[str]) -> str:
-    """Prosty fallback opisu motywu bez wywołania API."""
     if not words:
         return "Motyw ogólny dialogów bez wyraźnych słów kluczowych."
     head = ", ".join(words[:3])
@@ -86,10 +81,6 @@ def _save_topic_motif_cache(cache_path: Path, payload: dict) -> None:
 
 
 def generate_topic_motifs(topic_words: dict) -> dict[str, str]:
-    """
-    Generuje krótkie opisy motywów tematów na podstawie słów kluczowych.
-    Używa OpenAI (jeśli dostępny klucz), a wyniki cache'uje do pliku.
-    """
     if not topic_words:
         return {}
 
@@ -158,7 +149,6 @@ def generate_topic_motifs(topic_words: dict) -> dict[str, str]:
 
 
 def _generate_demo_data() -> pd.DataFrame:
-    """Dane demo gdy pipeline nie był uruchomiony."""
     import random
     random.seed(42)
 
@@ -192,15 +182,12 @@ def _generate_demo_data() -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-# ─────────────────────────────────────────────
-# Kolory i styl HL2
-# ─────────────────────────────────────────────
 
 HL2_COLORS = {
     "bg": "#0a0e14",
     "surface": "#111820",
-    "accent": "#e05c00",       # pomarańczowy HEV
-    "accent2": "#1a6b9a",      # niebieski kombajn
+    "accent": "#e05c00",
+    "accent2": "#1a6b9a",
     "text": "#c8cdd5",
     "text_dim": "#6b7585",
     "positive": "#3ddc84",
@@ -225,6 +212,40 @@ CHARACTER_COLORS = {
     "Radio": "#aaaaaa",
 }
 
+CHAPTER_NAMES = {
+    "2a": "Point Insertion",
+    "2b": "A Red Letter Day",
+    "2c": "Route Kanal",
+    "2d": "Water Hazard",
+    "2e": "Black Mesa East",
+    "2f": "We Don't Go To Ravenholm",
+    "2g": "Highway 17",
+    "2h": "Sandtraps",
+    "2i": "Nova Prospekt",
+    "2j": "Entanglement",
+    "2k": "Anti-citizen One",
+    "2l": "Follow Freeman!",
+    "2m": "Our Benefactors",
+    "2n": "Dark Energy",
+}
+
+CHAPTER_SUMMARIES = {
+    "2a": "Gordon Freeman przybywa pociągiem do City 17 — zdewastowanego miasta pod kontrolą Kombinatu. Barney Calhoun, stary znajomy z Black Mesa, pomaga mu uciec przed policją Kombinatu. Gordon przemierza smutne ulice, obserwując opresję i strach panujące wśród zwykłych obywateli. Jego celem jest dotarcie do laboratorium dr. Kleinera, gdzie działa prymitywny teleporter. Misja kończy się chaotyczną teleportacją i rozdzieleniem z Alyx.",
+    "2b": "Gordon trafia do laboratorium dr. Kleinera, gdzie spotyka Alyx Vance i jej kota — Lamarr'a. Kleiner i Eli Vance wyjaśniają Gordonowi obecną sytuację oraz plany Ruchu Oporu. Próba teleportacji do Eli kończy się niepowodzeniem — laboratorium zostaje wykryte przez siły Kombinatu. Gordon i Alyx uciekają osobno, a Kleiner wzywa ruch oporu do działania za pomocą radia.",
+    "2c": "Gordon przedostaje się kanałami ściekowymi City 17, unikając patroli Kombinatu i Metrocops. Spotyka grupy obywateli ukrywających się przed władzami i pomaga im przetrwać. Trasa prowadzi przez zalane tunele pełne min i wrogich stworzeń. Ruch Oporu przekazuje mu łódź motorową na dalszą drogę. Rozdział kończy się wyjazdem na otwarte wody.",
+    "2d": "Gordon płynie łodzią motorową przez zalane obszary poza City 17, ścigany przez helikopter Kombinatu. Przemierza zatopione wioski i punkty kontrolne, strącając helikopter improwizowanymi środkami. Po drodze napotyka posterunki Oporu i dostaje wskazówki dotyczące trasy do Black Mesa East. Krajobraz stopniowo zmienia się z miejskiego na podmiejski i wiejski. Rozdział kończy się dotarciem do kryjówki Oporu.",
+    "2e": "Gordon przybywa do bazy Black Mesa East, gdzie spotyka Eliego Vance'a i dr. Judith Mossman. Eli demonstruje technologię Gravity Gun i przedstawia plany ataku na Kombinat. Alyx i Gordon zwiedzają laboratorium pełne votrigauntów współpracujących z Oporem. Bazę niespodziewanie atakują Myśliwi i Kombinator — Eli zostaje pojmany. Gordon i Alyx uciekają w różnych kierunkach.",
+    "2f": "Gordon trafia do Ravenholm — opuszczonego miasteczka zainfekowanego przez headcraby zrzucone przez Kombinat. Prawie wszyscy mieszkańcy zostali zmienieni w zombie; jedynym ocalałym jest ojciec Grzegorz — ekscentryczny ksiądz. Grzegorz porusza się sprawnie po dachach i zabija zombie z entuzjazmem, pomagając Gordonowi przejść. Rozdział to jeden z najbardziej horrorowych momentów gry, pozbawiony muzyki akcji. Gordon wydostaje się z Ravenholm przez stary szyb kopalni.",
+    "2g": "Gordon przemierza autostradę wzdłuż wybrzeża, gdzie Kombinat zniszczył większość zabudowań. Walczy ze stacjonarnymi działami i pojazdami wroga przy wsparciu Oporu. Po drodze spotyka osamotnione grupy ludzi broniące się w domach na klifach. Rebellion dostarcza mu ulepszony pojazd — dune buggy — do szybszego przemieszczania. Rozdział kończy się dotarciem do obozu Pułkownika Cubbidge'a i zniszczeniem wrogiego myśliwca.",
+    "2h": "Gordon porusza się przez plaże zdominowane przez piasek, po którym nie można biegać — hałas wabi Chwytacze Piasku. Musi ostrożnie przemieszczać się po kamieniach i deskach, rozwiązując przestrzenne łamigłówki. Cichy, napięty rozdział wymaga skupienia i cierpliwości zamiast walki. W kulminacji Gordon używa improwizowanego pojazdu wodnego, by ominąć pułapki. Rozdział kończy się dotarciem do więzienia Nova Prospekt.",
+    "2i": "Gordon szturmuje ogromne więzienie Kombinatu — Nova Prospekt — gdzie przetrzymywana jest Alyx lub jej ojciec. Walczy przez kolejne skrzydła więzienia wspierany przez votrigaunty z Oporu. Wraz z Alyx udaje im się uruchomić sieć teleportacyjną wewnątrz kompleksu. Oboje wysyłają sygnał do Oporu i starają się utrzymać pozycję przed przeważającymi siłami. Niespodziewana teleportacja przenosi ich oboje z powrotem do City 17.",
+    "2j": "Gordon i Alyx budzą się w luksusowym apartamencie w City 17 — okazuje się, że minęła tydzień od teleportacji. Dr. Mossman zdradza swoją lojalność wobec Kombinatu, przekazując lokalizację Eliego. Breen negocjuje z Kombinatem warunki własnego przeniesienia poza Ziemię. Gordon walczy ze siłami Kombinatu, by powstrzymać wywiezienie Eliego. Rozdział kończy się otwarciem bram Cytadeli i pełnoskalowym atakiem na miasto.",
+    "2k": "Wybuchło pełne powstanie — ulice City 17 to pole walki między Oporem a Kombinatem. Gordon walczy ramię w ramię z rebeliantami, odbijając kolejne dzielnice. Kombinat używa ciężkiego sprzętu — kroków, śmigłowców i Myśliwców — by zdławić rebelię. Alyx i Gordon stopniowo zbliżają się do Cytadeli przez chaos bitewny. Rozdział to szczytowy moment narracji — długa, intensywna sekwencja walki.",
+    "2l": "Rebelianci przejmują inicjatywę i Gordon pomaga w finałowym natarciu na Cytadelę. Maszeruje przez zrujnowane ulice, inspirując obywateli do walki. Siły Kombinatu cofają się, ale nadal stawiają zaciekły opór w kluczowych punktach. Gordon i Alyx wchodzą do Cytadeli przez wyłom w murach. Rozdział stanowi bezpośrednie przejście do finałowych rozdziałów gry.",
+    "2m": "Gordon i Alyx wnikają głęboko w Cytadelę — gigantyczną twierdzę Kombinatu. Odkrywają, że Breen planuje użyć Ciemnej Energii do przesłania sygnału do macierzystej cywilizacji Kombinatu. Gordon traci Gravity Gun — zostaje ona naładowana energią Cytadeli i staje się potężniejsza. Walczy przez kolejne poziomy wieży, napotykając strażników i bariery energetyczne. Napięcie dramatyczne osiąga szczyt przed finałową konfrontacją.",
+    "2n": "Gordon dociera na sam szczyt Cytadeli, gdzie Breen próbuje uciec przez portal Ciemnej Energii. Po krótkiej konfrontacji Gordon niszczy reaktor portalu, zabijając Breena i wywołując eksplozję. G-Man zatrzymuje czas i wygłasza tajemniczy monolog do Gordona, sugerując, że działa na zlecenie nieznanej organizacji. Następnie ponownie 'zatrudnia' Gordona i zamraża go do następnej misji. Gra kończy się zawieszeniem między śmiercią a kontynuacją — cliffhangerem prowadzącym do Episode One.",
+}
+
 PLOTLY_TEMPLATE = dict(
     layout=dict(
         paper_bgcolor=HL2_COLORS["bg"],
@@ -237,12 +258,8 @@ PLOTLY_TEMPLATE = dict(
 )
 
 
-# ─────────────────────────────────────────────
-# Wykresy
-# ─────────────────────────────────────────────
 
 def fig_dialogue_distribution(df: pd.DataFrame) -> go.Figure:
-    """Liczba linii dialogowych per postać."""
     counts = df["character"].value_counts().head(12).reset_index()
     counts.columns = ["character", "count"]
 
@@ -268,7 +285,6 @@ def fig_dialogue_distribution(df: pd.DataFrame) -> go.Figure:
 
 
 def fig_sentiment_timeline(df: pd.DataFrame) -> go.Figure:
-    """Sentyment w czasie (per rozdział)."""
     chapter_order = ["2a","2b","2c","2d","2e","2f","2g","2h","2i","2j","2k","2l","2m","2n"]
     chapter_labels = {
         "2a": "Point\nInsertion", "2b": "Red Letter\nDay", "2c": "Route\nKanal",
@@ -291,7 +307,6 @@ def fig_sentiment_timeline(df: pd.DataFrame) -> go.Figure:
 
     fig = go.Figure()
 
-    # Obszar pod krzywą
     fig.add_trace(go.Scatter(
         x=list(grouped.index),
         y=grouped.values,
@@ -322,7 +337,6 @@ def fig_sentiment_timeline(df: pd.DataFrame) -> go.Figure:
 
 
 def fig_sentiment_per_character(df: pd.DataFrame) -> go.Figure:
-    """Rozkład sentymentu dla każdej głównej postaci."""
     main_chars = list(CHARACTER_COLORS.keys())
     df_main = df[df["character"].isin(main_chars)]
 
@@ -360,7 +374,6 @@ def fig_sentiment_per_character(df: pd.DataFrame) -> go.Figure:
 
 
 def fig_topic_timeline(df: pd.DataFrame, topic_words: dict) -> go.Figure:
-    """Heatmapa: rozdziały × tematy."""
     chapter_order = ["2a","2b","2c","2d","2e","2f","2g","2h","2i","2j","2k","2l","2m","2n"]
 
     if "topic" not in df.columns:
@@ -374,7 +387,6 @@ def fig_topic_timeline(df: pd.DataFrame, topic_words: dict) -> go.Figure:
         .reindex(chapter_order, fill_value=0)
     )
 
-    # Etykiety tematów
     topic_labels = {
         int(k): f"T{k}: {', '.join(v[:2])}"
         for k, v in topic_words.items()
@@ -382,9 +394,11 @@ def fig_topic_timeline(df: pd.DataFrame, topic_words: dict) -> go.Figure:
 
     y_labels = [topic_labels.get(int(c), f"Temat {c}") for c in pivot.columns]
 
+    x_labels = [CHAPTER_NAMES.get(c, c) for c in pivot.index.tolist()]
+
     fig = go.Figure(go.Heatmap(
         z=pivot.values.T,
-        x=pivot.index.tolist(),
+        x=x_labels,
         y=y_labels,
         colorscale=[[0, HL2_COLORS["surface"]], [0.5, HL2_COLORS["accent2"]], [1, HL2_COLORS["accent"]]],
         showscale=True,
@@ -395,14 +409,13 @@ def fig_topic_timeline(df: pd.DataFrame, topic_words: dict) -> go.Figure:
         template=PLOTLY_TEMPLATE,
         title=dict(text="Tematy BERTopic × rozdziały (heatmapa)", font=dict(size=14, color=HL2_COLORS["accent"])),
         height=400,
-        margin=dict(l=200, r=40, t=60, b=60),
-        xaxis=dict(tickangle=-30, **PLOTLY_TEMPLATE["layout"]["xaxis"]),
+        margin=dict(l=200, r=40, t=60, b=80),
+        xaxis=dict(tickangle=-35, **PLOTLY_TEMPLATE["layout"]["xaxis"]),
     )
     return fig
 
 
 def fig_character_similarity(sim_df: pd.DataFrame) -> go.Figure:
-    """Heatmapa podobieństwa postaci (cosine similarity embeddingów)."""
     fig = go.Figure(go.Heatmap(
         z=sim_df.values,
         x=sim_df.columns.tolist(),
@@ -426,7 +439,6 @@ def fig_character_similarity(sim_df: pd.DataFrame) -> go.Figure:
 
 
 def fig_chapter_activity(df: pd.DataFrame) -> go.Figure:
-    """Aktywność dialogowa per rozdział + breakdown postaci."""
     chapter_order = ["2a","2b","2c","2d","2e","2f","2g","2h","2i","2j","2k","2l","2m","2n"]
     chapter_labels = {
         "2a": "Point Insertion", "2b": "Red Letter Day", "2c": "Route Kanal",
@@ -465,14 +477,115 @@ def fig_chapter_activity(df: pd.DataFrame) -> go.Figure:
     return fig
 
 
-def card_metrics(eval_metrics: dict) -> list:
-    """Karty z metrykami ewaluacji tematów."""
+def fig_character_arcs(arc_df: pd.DataFrame) -> go.Figure:
+    chapter_order = ["2a","2b","2c","2d","2e","2f","2g","2h","2i","2j","2k","2l","2m","2n"]
+    chapter_labels = {
+        "2a": "Point Insertion", "2b": "Red Letter Day", "2c": "Route Kanal",
+        "2d": "Water Hazard", "2e": "Black Mesa East", "2f": "Ravenholm",
+        "2g": "Highway 17", "2h": "Sandtraps", "2i": "Nova Prospekt",
+        "2j": "Entanglement", "2k": "Anti-citizen One", "2l": "Follow Freeman",
+        "2m": "Our Benefactors", "2n": "Dark Energy",
+    }
+
+    fig = go.Figure()
+
+    chars_with_enough = (
+        arc_df.groupby("character")
+        .filter(lambda g: len(g) >= 3 and g["n_lines"].sum() >= 8)
+        ["character"].unique()
+    )
+
+    for char in chars_with_enough:
+        char_data = (
+            arc_df[arc_df["character"] == char]
+            .set_index("chapter_id")
+            .reindex(chapter_order)
+        )
+        valid = char_data["mean_sentiment"].dropna()
+        if len(valid) < 2:
+            continue
+        color = CHARACTER_COLORS.get(char, HL2_COLORS["text_dim"])
+        fig.add_trace(go.Scatter(
+            x=valid.index.tolist(),
+            y=valid.values,
+            mode="lines+markers",
+            name=char,
+            line=dict(color=color, width=2),
+            marker=dict(color=color, size=7),
+            hovertemplate=f"<b>{char}</b><br>Rozdział: %{{x}}<br>Sentyment: %{{y:.2f}}<extra></extra>",
+        ))
+
+    fig.add_hline(y=0, line_dash="dash", line_color=HL2_COLORS["text_dim"], line_width=1)
+    fig.update_layout(
+        template=PLOTLY_TEMPLATE,
+        title=dict(text="Arc postaci — sentyment przez rozdziały", font=dict(size=14, color=HL2_COLORS["accent"])),
+        xaxis=dict(
+            tickvals=chapter_order,
+            ticktext=[chapter_labels.get(c, c) for c in chapter_order],
+            tickangle=-25,
+            **PLOTLY_TEMPLATE["layout"]["xaxis"],
+        ),
+        yaxis=dict(title="Śr. sentyment (−1 neg / +1 poz)", **PLOTLY_TEMPLATE["layout"]["yaxis"]),
+        height=420,
+        margin=dict(l=60, r=40, t=60, b=100),
+        legend=dict(
+            bgcolor=HL2_COLORS["surface"], bordercolor=HL2_COLORS["grid"],
+            orientation="h", y=-0.35,
+        ),
+    )
+    return fig
+
+
+def fig_speech_style_heatmap(style_df: pd.DataFrame) -> go.Figure:
+    metrics = ["avg_words_per_line", "question_ratio", "exclamation_ratio", "ellipsis_ratio", "vocabulary_richness"]
+    metric_labels = ["Śr. słów", "Pytania", "Wykrzykniki", "Wielokropki", "Bogactwo słownika"]
+
+    top_chars = style_df[style_df["n_lines"] >= 5].copy()
+    if top_chars.empty:
+        return go.Figure().update_layout(template=PLOTLY_TEMPLATE, title="Brak danych stylu")
+
+    normalized = top_chars[metrics].copy()
+    for col in metrics:
+        col_min, col_max = normalized[col].min(), normalized[col].max()
+        if col_max > col_min:
+            normalized[col] = (normalized[col] - col_min) / (col_max - col_min)
+
+    raw_values = top_chars[metrics].values
+    hover_text = [
+        [f"{raw_values[i, j]:.3f}" for j in range(len(metrics))]
+        for i in range(len(top_chars))
+    ]
+
+    fig = go.Figure(go.Heatmap(
+        z=normalized[metrics].values,
+        x=metric_labels,
+        y=top_chars["character"].tolist(),
+        colorscale=[[0, HL2_COLORS["surface"]], [0.5, HL2_COLORS["accent2"]], [1, HL2_COLORS["accent"]]],
+        showscale=True,
+        text=hover_text,
+        hovertemplate="<b>%{y}</b><br>%{x}<br>Wartość: %{text}<extra></extra>",
+        texttemplate="%{z:.2f}",
+        textfont=dict(size=10, color=HL2_COLORS["text"]),
+    ))
+    fig.update_layout(
+        template=PLOTLY_TEMPLATE,
+        title=dict(text="Profile stylistyczne postaci (znormalizowane)", font=dict(size=14, color=HL2_COLORS["accent"])),
+        height=420,
+        margin=dict(l=140, r=40, t=60, b=60),
+        xaxis=dict(side="bottom", **PLOTLY_TEMPLATE["layout"]["xaxis"]),
+    )
+    return fig
+
+
+def card_metrics(eval_metrics: dict, coherence_cv: dict = None) -> list:
     if not eval_metrics:
         return [html.P("Brak danych ewaluacji.", style={"color": HL2_COLORS["text_dim"]})]
 
+    cv_value = round(coherence_cv.get("mean_coherence_cv", 0), 3) if coherence_cv else "—"
     items = [
         ("Topic Diversity", eval_metrics.get("topic_diversity", "—"), "Unikalność słów kluczowych tematów"),
-        ("Topic Coherence", eval_metrics.get("mean_intra_topic_coherence", "—"), "Śr. cos. similarity w tematach"),
+        ("Coherence Cv", cv_value, "Standardowa spójność tematów (gensim)"),
+        ("Intra-Coherence", eval_metrics.get("mean_intra_topic_coherence", "—"), "Śr. cos. similarity w tematach"),
         ("Coverage", f"{int(eval_metrics.get('topic_coverage', 0)*100)}%", "% linii z przypisanym tematem"),
         ("Liczba tematów", eval_metrics.get("n_topics", "—"), "Wykrytych przez BERTopic"),
         ("Szum (−1)", eval_metrics.get("n_noise_docs", "—"), "Linie bez przypisanego tematu"),
@@ -486,8 +599,8 @@ def card_metrics(eval_metrics: dict) -> list:
                     "fontSize": "28px", "fontWeight": "bold",
                     "color": HL2_COLORS["accent"], "fontFamily": "Courier New",
                 }),
-                html.Div(label, style={"color": HL2_COLORS["text"], "fontSize": "13px", "marginTop": "2px"}),
-                html.Div(desc, style={"color": HL2_COLORS["text_dim"], "fontSize": "11px", "marginTop": "4px"}),
+                html.Div(label, style={"color": HL2_COLORS["text"], "fontSize": "16px", "marginTop": "2px"}),
+                html.Div(desc, style={"color": HL2_COLORS["text_dim"], "fontSize": "14px", "marginTop": "4px"}),
             ], style={
                 "background": HL2_COLORS["surface"],
                 "border": f"1px solid {HL2_COLORS['grid']}",
@@ -501,9 +614,6 @@ def card_metrics(eval_metrics: dict) -> list:
     return cards
 
 
-# ─────────────────────────────────────────────
-# Layout aplikacji Dash
-# ─────────────────────────────────────────────
 
 def create_app(data: dict) -> dash.Dash:
     df = data["df"]
@@ -511,6 +621,9 @@ def create_app(data: dict) -> dash.Dash:
     topic_motifs = data.get("topic_motifs", {})
     sim_df = data.get("similarity")
     eval_metrics = data.get("eval_metrics", {})
+    coherence_cv = data.get("coherence_cv", {})
+    arc_df = data.get("character_arcs")
+    style_df = data.get("speech_style")
 
     app = dash.Dash(
         __name__,
@@ -518,44 +631,61 @@ def create_app(data: dict) -> dash.Dash:
         suppress_callback_exceptions=True,
     )
 
-    # ── Sidebar ──────────────────────────────────────────────────────────
     sidebar = html.Div([
-        html.Div("HL2 NLP", style={
-            "fontSize": "22px", "fontWeight": "bold", "letterSpacing": "4px",
+        html.Span(className="hev-bar"),
+
+        html.Span("λ", className="lambda-logo"),
+
+        html.Div("HL2 NLP", className="sidebar-title", style={
+            "fontSize": "20px", "fontWeight": "bold", "letterSpacing": "5px",
             "color": HL2_COLORS["accent"], "fontFamily": "Courier New",
-            "padding": "24px 20px 8px",
+            "textAlign": "center", "padding": "4px 20px 2px",
         }),
-        html.Div("NARRATIVE ANALYSIS", style={
-            "fontSize": "10px", "letterSpacing": "3px",
-            "color": HL2_COLORS["text_dim"], "padding": "0 20px 24px",
+        html.Div("NARRATIVE ANALYSIS", className="sidebar-sub", style={
+            "fontSize": "12px", "letterSpacing": "3px",
+            "color": HL2_COLORS["text_dim"], "padding": "0 20px 20px",
+            "textAlign": "center",
         }),
         html.Hr(style={"borderColor": HL2_COLORS["grid"], "margin": "0"}),
 
-        # Nav items
         *[
-            html.Div(label, id=f"nav-{tab_id}", style={
-                "padding": "14px 24px",
+            html.Div(label, id=f"nav-{tab_id}", className="nav-item", style={
+                "padding": "13px 24px",
                 "cursor": "pointer",
                 "color": HL2_COLORS["text"],
-                "fontSize": "12px",
+                "fontSize": "14px",
                 "letterSpacing": "1px",
                 "borderLeft": "3px solid transparent",
             })
             for tab_id, label in [
-                ("overview", "► PRZEGLĄD"),
-                ("sentiment", "► SENTYMENT"),
-                ("topics", "► TEMATY (BERTopic)"),
-                ("characters", "► POSTACI"),
-                ("generator", "► GENERATOR POSTACI"),
+                ("overview",   "λ  PRZEGLĄD"),
+                ("sentiment",  "λ  SENTYMENT"),
+                ("topics",     "λ  TEMATY (BERTopic)"),
+                ("characters", "λ  POSTACI"),
+                ("arc_style",  "λ  ARC & STYL"),
+                ("generator",  "λ  GENERATOR POSTACI"),
             ]
         ],
 
         html.Hr(style={"borderColor": HL2_COLORS["grid"], "margin": "16px 0 8px"}),
         html.Div([
-            html.Div(f"Linie dialogowe: {len(df)}", style={"color": HL2_COLORS["text_dim"], "fontSize": "11px"}),
-            html.Div(f"Postaci: {df['character'].nunique()}", style={"color": HL2_COLORS["text_dim"], "fontSize": "11px"}),
-            html.Div(f"Rozdziałów: {df['chapter_id'].nunique()}", style={"color": HL2_COLORS["text_dim"], "fontSize": "11px"}),
+            html.Div(f"// linie: {len(df)}", style={"color": HL2_COLORS["text_dim"], "fontSize": "13px"}),
+            html.Div(f"// postaci: {df['character'].nunique()}", style={"color": HL2_COLORS["text_dim"], "fontSize": "13px"}),
+            html.Div(f"// rozdziałów: {df['chapter_id'].nunique()}", style={"color": HL2_COLORS["text_dim"], "fontSize": "13px"}),
         ], style={"padding": "8px 24px"}),
+
+        html.Div([
+            html.Div("HALF-LIFE 2", style={
+                "fontSize": "12px", "letterSpacing": "4px",
+                "color": HL2_COLORS["accent"], "opacity": "0.5",
+                "textAlign": "center", "marginBottom": "2px",
+            }),
+            html.Div("BLACK MESA RESEARCH", style={
+                "fontSize": "12px", "letterSpacing": "2px",
+                "color": HL2_COLORS["text_dim"], "opacity": "0.4",
+                "textAlign": "center",
+            }),
+        ], style={"position": "absolute", "bottom": "16px", "left": "0", "right": "0"}),
     ], style={
         "width": "220px",
         "minHeight": "100vh",
@@ -566,7 +696,6 @@ def create_app(data: dict) -> dash.Dash:
         "overflowY": "auto",
     })
 
-    # ── Główna treść ──────────────────────────────────────────────────────
     content = html.Div(
         id="page-content",
         style={
@@ -583,9 +712,7 @@ def create_app(data: dict) -> dash.Dash:
 
     app.layout = html.Div([dcc_store, sidebar, content])
 
-    # ── Callbacks ─────────────────────────────────────────────────────────
-
-    nav_ids = ["nav-overview", "nav-sentiment", "nav-topics", "nav-characters", "nav-generator"]
+    nav_ids = ["nav-overview", "nav-sentiment", "nav-topics", "nav-characters", "nav-arc_style", "nav-generator"]
 
     @app.callback(
         Output("current-tab", "data"),
@@ -602,6 +729,7 @@ def create_app(data: dict) -> dash.Dash:
             "nav-sentiment": "sentiment",
             "nav-topics": "topics",
             "nav-characters": "characters",
+            "nav-arc_style": "arc_style",
             "nav-generator": "generator",
         }
         return tab_map.get(triggered_id, "overview")
@@ -612,18 +740,19 @@ def create_app(data: dict) -> dash.Dash:
     )
     def render_page(tab):
         if tab == "overview":
-            return render_overview(df, eval_metrics, topic_words)
+            return render_overview(df, eval_metrics, coherence_cv)
         elif tab == "sentiment":
             return render_sentiment(df)
         elif tab == "topics":
             return render_topics(df, topic_words, topic_motifs)
         elif tab == "characters":
             return render_characters(df, sim_df)
+        elif tab == "arc_style":
+            return render_arc_style(arc_df, style_df)
         elif tab == "generator":
             return render_generator()
         return html.Div("Wybierz sekcję z menu.")
 
-    # Generator callback (single line)
     @app.callback(
         Output("generator-output", "children"),
         Input("btn-generate", "n_clicks"),
@@ -657,10 +786,9 @@ def create_app(data: dict) -> dash.Dash:
         except Exception as e:
             return html.Div([
                 html.Div("Błąd generowania:", style={"color": HL2_COLORS["negative"]}),
-                html.Code(str(e), style={"fontSize": "11px", "color": HL2_COLORS["text_dim"]}),
+                html.Code(str(e), style={"fontSize": "14px", "color": HL2_COLORS["text_dim"]}),
             ])
 
-    # Generator callback (chat mode)
     @app.callback(
         Output("chat-history-store", "data"),
         Output("chat-window", "children"),
@@ -684,7 +812,7 @@ def create_app(data: dict) -> dash.Dash:
         if triggered_id == "btn-chat-clear":
             welcome = html.Div(
                 "Czat wyczyszczony. Napisz pierwszą wiadomość.",
-                style={"color": HL2_COLORS["text_dim"], "fontSize": "12px"},
+                style={"color": HL2_COLORS["text_dim"], "fontSize": "15px"},
             )
             return [], [welcome], ""
 
@@ -727,7 +855,7 @@ def create_app(data: dict) -> dash.Dash:
                     "border": f"1px solid {HL2_COLORS['grid']}",
                     "borderLeft": f"3px solid {HL2_COLORS['accent']}" if not is_user else f"3px solid {HL2_COLORS['accent2']}",
                     "color": HL2_COLORS["text"],
-                    "fontSize": "13px",
+                    "fontSize": "16px",
                     "lineHeight": "1.45",
                 },
             ))
@@ -737,39 +865,37 @@ def create_app(data: dict) -> dash.Dash:
     return app
 
 
-# ─────────────────────────────────────────────
-# Strony
-# ─────────────────────────────────────────────
 
-TITLE_STYLE = {"fontSize": "20px", "fontWeight": "bold", "color": "#e05c00",
-               "letterSpacing": "2px", "marginBottom": "24px", "fontFamily": "Courier New"}
-SUBTITLE_STYLE = {"fontSize": "14px", "color": "#6b7585", "marginBottom": "16px",
-                  "fontFamily": "Courier New", "letterSpacing": "1px"}
+TITLE_STYLE = {
+    "fontSize": "20px", "fontWeight": "bold", "color": "#e05c00",
+    "letterSpacing": "3px", "marginBottom": "24px", "fontFamily": "Courier New",
+    "textShadow": "0 0 16px rgba(224,92,0,0.5), 0 0 40px rgba(224,92,0,0.2)",
+    "borderBottom": f"1px solid {HL2_COLORS['grid']}", "paddingBottom": "10px",
+}
+SUBTITLE_STYLE = {
+    "fontSize": "14px", "color": "#6b7585", "marginBottom": "16px",
+    "fontFamily": "Courier New", "letterSpacing": "2px",
+    "borderLeft": f"3px solid {HL2_COLORS['accent2']}",
+    "paddingLeft": "10px",
+}
 
 
-def section(title: str, content):
+def render_overview(df, eval_metrics, coherence_cv=None):
     return html.Div([
-        html.H3(title, style=TITLE_STYLE),
-        content,
-    ], style={"marginBottom": "40px"})
-
-
-def render_overview(df, eval_metrics, topic_words):
-    return html.Div([
-        html.H2("ANALIZA NARRACYJNA — HALF-LIFE 2", style={
+        html.H2([html.Span("λ ", style={"opacity": "0.7"}), "ANALIZA NARRACYJNA — HALF-LIFE 2"], style={
             "fontSize": "24px", "fontWeight": "bold", "letterSpacing": "4px",
             "color": HL2_COLORS["accent"], "marginBottom": "8px",
+            "textShadow": "0 0 20px rgba(224,92,0,0.5), 0 0 50px rgba(224,92,0,0.2)",
         }),
         html.Div("BERTopic • Sentiment Analysis • NER • Character Embeddings",
-                 style={"color": HL2_COLORS["text_dim"], "marginBottom": "32px", "fontSize": "12px"}),
+                 style={"color": HL2_COLORS["text_dim"], "marginBottom": "32px", "fontSize": "15px",
+                        "borderLeft": f"3px solid {HL2_COLORS['accent2']}", "paddingLeft": "10px"}),
 
-        # Metryki ewaluacji
         html.Div("METRYKI EWALUACJI TEMATÓW", style=SUBTITLE_STYLE),
-        html.Div(card_metrics(eval_metrics), style={
+        html.Div(card_metrics(eval_metrics, coherence_cv), style={
             "display": "flex", "gap": "16px", "flexWrap": "wrap", "marginBottom": "32px",
         }),
 
-        # Rozkład dialogów
         dcc.Graph(figure=fig_dialogue_distribution(df), config={"displayModeBar": False}),
 
         html.Div(style={"height": "32px"}),
@@ -782,20 +908,31 @@ def render_sentiment(df):
         html.H2("ANALIZA SENTYMENTU", style=TITLE_STYLE),
 
         dcc.Graph(figure=fig_sentiment_timeline(df), config={"displayModeBar": False}),
-        html.Div(style={"height": "24px"}),
-        dcc.Graph(figure=fig_sentiment_per_character(df), config={"displayModeBar": False}),
 
-        # Filtr postaci
-        html.Div("FILTRUJ PO POSTACI", style={**SUBTITLE_STYLE, "marginTop": "32px"}),
+        html.Div(style={"height": "24px"}),
+        html.Div("ROZKŁAD SENTYMENTU PER POSTAĆ", style={**SUBTITLE_STYLE, "marginTop": "8px"}),
+        html.Div("Filtruj postaci:", style={"color": HL2_COLORS["text_dim"], "fontSize": "14px", "marginBottom": "6px"}),
         dcc.Dropdown(
             id="sentiment-char-filter",
             options=[{"label": c, "value": c} for c in sorted(df["character"].unique())],
             multi=True,
             placeholder="Wszystkie postaci...",
-            style={"background": HL2_COLORS["surface"], "color": HL2_COLORS["text"]},
+            style={"background": HL2_COLORS["surface"], "color": HL2_COLORS["text"], "marginBottom": "16px"},
         ),
         dcc.Graph(id="sentiment-filtered-graph", config={"displayModeBar": False}),
     ])
+
+
+def _dominant_chapter_for_topic(df: pd.DataFrame, tid) -> str:
+    if "topic" not in df.columns or "chapter_id" not in df.columns:
+        return ""
+    try:
+        sub = df[df["topic"] == int(tid)]
+        if sub.empty:
+            return ""
+        return sub["chapter_id"].value_counts().idxmax()
+    except Exception:
+        return ""
 
 
 def render_topics(df, topic_words, topic_motifs=None):
@@ -803,19 +940,31 @@ def render_topics(df, topic_words, topic_motifs=None):
     return html.Div([
         html.H2("TOPIC MODELING — BERTopic", style=TITLE_STYLE),
 
-        # Opisy motywów + słowa kluczowe
         html.Div("WYKRYTE TEMATY: MOTYW + SŁOWA KLUCZOWE", style=SUBTITLE_STYLE),
         html.Div([
             html.Div([
-                html.Div(f"Temat {tid}", style={"color": HL2_COLORS["accent"], "fontWeight": "bold", "fontSize": "12px"}),
+                html.Div(f"Temat {tid}", style={"color": HL2_COLORS["accent"], "fontWeight": "bold", "fontSize": "15px"}),
                 html.Div(
                     topic_motifs.get(str(tid), _fallback_topic_motif(words)),
-                    style={"color": HL2_COLORS["text"], "fontSize": "13px", "marginTop": "8px", "lineHeight": "1.5"},
+                    style={"color": HL2_COLORS["text"], "fontSize": "16px", "marginTop": "8px", "lineHeight": "1.5"},
                 ),
                 html.Div(
                     f"Słowa kluczowe: {', '.join(words)}",
-                    style={"color": HL2_COLORS["text_dim"], "fontSize": "12px", "marginTop": "8px"},
+                    style={"color": HL2_COLORS["text_dim"], "fontSize": "15px", "marginTop": "8px"},
                 ),
+                *([
+                    html.Div([
+                        html.Span(
+                            f"Dominujący rozdział: {CHAPTER_NAMES.get(dom_ch, dom_ch)}  ",
+                            style={"color": HL2_COLORS["accent2"], "fontWeight": "bold", "fontSize": "14px"},
+                        ),
+                        html.Br(),
+                        html.Span(
+                            CHAPTER_SUMMARIES.get(dom_ch, ""),
+                            style={"color": HL2_COLORS["text_dim"], "fontSize": "15px", "lineHeight": "1.6"},
+                        ),
+                    ], style={"marginTop": "10px", "paddingTop": "8px", "borderTop": f"1px solid {HL2_COLORS['grid']}"})
+                ] if (dom_ch := _dominant_chapter_for_topic(df, tid)) and CHAPTER_SUMMARIES.get(dom_ch) else []),
             ], style={
                 "padding": "10px 16px",
                 "background": HL2_COLORS["surface"],
@@ -844,7 +993,6 @@ def render_characters(df, sim_df):
             style={"color": HL2_COLORS["text_dim"]}
         ))
 
-    # Statystyki per postać
     content.append(html.Div("STATYSTYKI PER POSTAĆ", style={**SUBTITLE_STYLE, "marginTop": "32px"}))
 
     char_stats = []
@@ -870,151 +1018,202 @@ def render_characters(df, sim_df):
 
 
 def render_generator():
-    return html.Div([
-        html.H2("GENERATOR POSTACI", style=TITLE_STYLE),
-        html.Div("Generowanie wypowiedzi i czat w stylu postaci HL2 — OpenAI API",
-                 style={"color": HL2_COLORS["text_dim"], "marginBottom": "28px", "fontSize": "12px"}),
+    LABEL = {"color": HL2_COLORS["text_dim"], "fontSize": "13px", "letterSpacing": "2px", "marginBottom": "6px"}
+    BTN_BASE = {"fontFamily": "Courier New", "letterSpacing": "2px", "fontSize": "15px", "cursor": "pointer", "border": "none"}
+    TEXTAREA = {
+        "width": "100%", "background": HL2_COLORS["surface"], "color": HL2_COLORS["text"],
+        "border": f"1px solid {HL2_COLORS['grid']}", "padding": "12px",
+        "fontFamily": "Courier New", "fontSize": "15px", "resize": "vertical",
+    }
+
+    left_col = html.Div([
+        html.Div("GENEROWANIE WYPOWIEDZI", style=SUBTITLE_STYLE),
 
         html.Div([
-            html.Div([
-                html.Label("POSTAĆ", style={"color": HL2_COLORS["text_dim"], "fontSize": "11px", "letterSpacing": "2px"}),
-                dcc.Dropdown(
-                    id="gen-character",
-                    options=[
-                        {"label": c, "value": c}
-                        for c in ["G-Man", "Alyx", "Dr. Breen", "Barney", "Dr. Kleiner",
-                                  "Eli", "Father Gregori", "Vortigaunt", "Dr. Mossman"]
-                    ],
-                    placeholder="Wybierz postać...",
-                    style={"marginTop": "6px"},
-                ),
-            ], style={"marginBottom": "20px"}),
-
-            html.Div([
-                html.Label("SYTUACJA", style={"color": HL2_COLORS["text_dim"], "fontSize": "11px", "letterSpacing": "2px"}),
-                dcc.Textarea(
-                    id="gen-situation",
-                    placeholder="Opisz sytuację, np. 'Gordon właśnie pokonał strażnika Combine'",
-                    style={
-                        "width": "100%", "height": "80px", "marginTop": "6px",
-                        "background": HL2_COLORS["surface"], "color": HL2_COLORS["text"],
-                        "border": f"1px solid {HL2_COLORS['grid']}", "padding": "10px",
-                        "fontFamily": "Courier New", "resize": "vertical",
-                    },
-                ),
-            ], style={"marginBottom": "20px"}),
-
-            html.Div([
-                html.Label("TON", style={"color": HL2_COLORS["text_dim"], "fontSize": "11px", "letterSpacing": "2px"}),
-                dcc.RadioItems(
-                    id="gen-sentiment",
-                    options=[
-                        {"label": " Pozytywny", "value": "positive"},
-                        {"label": " Neutralny", "value": "neutral"},
-                        {"label": " Negatywny", "value": "negative"},
-                    ],
-                    value="neutral",
-                    inline=True,
-                    style={"color": HL2_COLORS["text"], "marginTop": "8px", "gap": "16px"},
-                ),
-            ], style={"marginBottom": "24px"}),
-
-            html.Button("GENERUJ WYPOWIEDŹ", id="btn-generate", n_clicks=0, style={
-                "background": HL2_COLORS["accent"],
-                "color": "#fff",
-                "border": "none",
-                "padding": "12px 28px",
-                "fontFamily": "Courier New",
-                "letterSpacing": "2px",
-                "fontSize": "13px",
-                "cursor": "pointer",
-                "marginBottom": "28px",
-            }),
-
-            html.Div("CZAT Z POSTACIĄ", style={**SUBTITLE_STYLE, "marginBottom": "10px"}),
-            dcc.Store(id="chat-history-store", data=[]),
-            html.Div(id="chat-window", children=[
-                html.Div(
-                    "Napisz wiadomość i kliknij WYŚLIJ, aby rozpocząć rozmowę.",
-                    style={"color": HL2_COLORS["text_dim"], "fontSize": "12px"},
-                )
-            ], style={
-                "minHeight": "220px",
-                "maxHeight": "320px",
-                "overflowY": "auto",
-                "display": "flex",
-                "flexDirection": "column",
-                "padding": "12px",
-                "background": HL2_COLORS["bg"],
-                "border": f"1px solid {HL2_COLORS['grid']}",
-                "borderRadius": "4px",
-                "marginBottom": "10px",
-            }),
-            dcc.Textarea(
-                id="chat-input",
-                placeholder="Napisz do postaci...",
-                style={
-                    "width": "100%", "height": "70px", "marginTop": "6px",
-                    "background": HL2_COLORS["surface"], "color": HL2_COLORS["text"],
-                    "border": f"1px solid {HL2_COLORS['grid']}", "padding": "10px",
-                    "fontFamily": "Courier New", "resize": "vertical",
-                },
+            html.Label("POSTAĆ", style=LABEL),
+            dcc.Dropdown(
+                id="gen-character",
+                options=[{"label": c, "value": c} for c in [
+                    "G-Man", "Alyx", "Dr. Breen", "Barney", "Dr. Kleiner",
+                    "Eli", "Father Gregori", "Vortigaunt", "Dr. Mossman",
+                ]],
+                placeholder="Wybierz postać...",
+                style={"marginTop": "4px", "fontSize": "15px"},
             ),
-            html.Div([
-                html.Button("WYŚLIJ", id="btn-chat-send", n_clicks=0, style={
-                    "background": HL2_COLORS["accent2"],
-                    "color": "#fff",
-                    "border": "none",
-                    "padding": "10px 18px",
-                    "fontFamily": "Courier New",
-                    "letterSpacing": "1px",
-                    "fontSize": "12px",
-                    "cursor": "pointer",
-                }),
-                html.Button("WYCZYŚĆ CZAT", id="btn-chat-clear", n_clicks=0, style={
-                    "background": "transparent",
-                    "color": HL2_COLORS["text_dim"],
-                    "border": f"1px solid {HL2_COLORS['grid']}",
-                    "padding": "10px 14px",
-                    "fontFamily": "Courier New",
-                    "letterSpacing": "1px",
-                    "fontSize": "12px",
-                    "cursor": "pointer",
-                }),
-            ], style={"display": "flex", "gap": "10px", "marginTop": "10px", "marginBottom": "24px"}),
-        ], style={"maxWidth": "600px"}),
+        ], style={"marginBottom": "20px"}),
 
-        html.Div(id="generator-output", style={
-            "minHeight": "80px",
-            "padding": "20px",
-            "background": HL2_COLORS["surface"],
-            "border": f"1px solid {HL2_COLORS['grid']}",
-            "borderRadius": "4px",
-            "maxWidth": "700px",
+        html.Div([
+            html.Label("SYTUACJA", style=LABEL),
+            dcc.Textarea(
+                id="gen-situation",
+                placeholder="Opisz sytuację, np. 'Gordon właśnie pokonał strażnika Combine'",
+                style={**TEXTAREA, "height": "90px", "marginTop": "4px"},
+            ),
+        ], style={"marginBottom": "20px"}),
+
+        html.Div([
+            html.Label("TON WYPOWIEDZI", style=LABEL),
+            dcc.RadioItems(
+                id="gen-sentiment",
+                options=[
+                    {"label": html.Span("▲ POZYTYWNY", style={"color": HL2_COLORS["positive"], "fontWeight": "bold"}), "value": "positive"},
+                    {"label": html.Span("■ NEUTRALNY",  style={"color": HL2_COLORS["neutral"],  "fontWeight": "bold"}), "value": "neutral"},
+                    {"label": html.Span("▼ NEGATYWNY",  style={"color": HL2_COLORS["negative"], "fontWeight": "bold"}), "value": "negative"},
+                ],
+                value="neutral",
+                inline=True,
+                labelStyle={
+                    "display": "inline-flex", "alignItems": "center", "gap": "6px",
+                    "padding": "8px 16px", "marginRight": "8px", "cursor": "pointer",
+                    "border": f"1px solid {HL2_COLORS['grid']}", "fontSize": "14px",
+                    "letterSpacing": "1px", "fontFamily": "Courier New",
+                },
+                inputStyle={"accentColor": HL2_COLORS["accent"], "width": "14px", "height": "14px"},
+                style={"marginTop": "10px", "display": "flex", "flexWrap": "wrap", "gap": "4px"},
+            ),
+        ], style={"marginBottom": "28px"}),
+
+        html.Button("λ  GENERUJ WYPOWIEDŹ", id="btn-generate", n_clicks=0, style={
+            **BTN_BASE,
+            "background": HL2_COLORS["accent"],
+            "color": "#fff",
+            "padding": "14px 32px",
+            "marginBottom": "24px",
+            "boxShadow": "0 0 12px rgba(224,92,0,0.4)",
         }),
 
-        html.Div([
-            html.Div("JAK TO DZIAŁA", style={"color": HL2_COLORS["accent"], "fontWeight": "bold", "marginBottom": "12px", "fontSize": "13px"}),
-            html.Div([
-                html.P("1. Profil postaci: opis stylu + przykładowe linie z oryginalnego skryptu"),
-                html.P("2. Dane stylistyczne: średnia długość zdania, częstotliwość pytań/wykrzyknień"),
-                html.P("3. OpenAI API generuje wypowiedź i odpowiedzi czatu w stylu postaci"),
-                html.P("4. Ustaw ton: pozytywny / neutralny / negatywny"),
-                html.P("5. Wymagana zmienna środowiskowa: OPENAI_API_KEY"),
-            ], style={"color": HL2_COLORS["text_dim"], "fontSize": "12px", "lineHeight": "1.8"}),
-        ], style={
-            "marginTop": "32px", "padding": "20px",
-            "background": HL2_COLORS["surface"],
+        html.Div(id="generator-output", style={
+            "minHeight": "100px",
+            "padding": "20px",
+            "background": HL2_COLORS["bg"],
             "border": f"1px solid {HL2_COLORS['grid']}",
-            "borderLeft": f"3px solid {HL2_COLORS['accent2']}",
-            "maxWidth": "700px",
+            "borderLeft": f"3px solid {HL2_COLORS['accent']}",
+            "fontSize": "15px",
+            "lineHeight": "1.7",
+        }),
+    ], style={
+        "flex": "1", "minWidth": "0", "paddingRight": "28px",
+        "borderRight": f"1px solid {HL2_COLORS['grid']}",
+    })
+
+    right_col = html.Div([
+        html.Div("CZAT Z POSTACIĄ", style=SUBTITLE_STYLE),
+        dcc.Store(id="chat-history-store", data=[]),
+
+        html.Div(id="chat-window", children=[
+            html.Div(
+                "Wybierz postać i napisz wiadomość, aby rozpocząć rozmowę.",
+                style={"color": HL2_COLORS["text_dim"], "fontSize": "15px"},
+            )
+        ], style={
+            "minHeight": "300px",
+            "maxHeight": "440px",
+            "overflowY": "auto",
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "10px",
+            "padding": "16px",
+            "background": HL2_COLORS["bg"],
+            "border": f"1px solid {HL2_COLORS['grid']}",
+            "marginBottom": "14px",
+        }),
+
+        dcc.Textarea(
+            id="chat-input",
+            placeholder="Napisz do postaci...",
+            style={**TEXTAREA, "height": "90px"},
+        ),
+
+        html.Div([
+            html.Button("λ  WYŚLIJ", id="btn-chat-send", n_clicks=0, style={
+                **BTN_BASE,
+                "background": HL2_COLORS["accent2"],
+                "color": "#fff",
+                "padding": "12px 24px",
+                "boxShadow": "0 0 10px rgba(26,107,154,0.4)",
+            }),
+            html.Button("WYCZYŚĆ", id="btn-chat-clear", n_clicks=0, style={
+                **BTN_BASE,
+                "background": "transparent",
+                "color": HL2_COLORS["text_dim"],
+                "border": f"1px solid {HL2_COLORS['grid']}",
+                "padding": "12px 20px",
+                "letterSpacing": "1px",
+            }),
+        ], style={"display": "flex", "gap": "12px", "marginTop": "12px"}),
+    ], style={"flex": "1", "minWidth": "0", "paddingLeft": "28px"})
+
+    return html.Div([
+        html.H2("λ  GENERATOR POSTACI", style=TITLE_STYLE),
+        html.Div("Generowanie wypowiedzi i czat w stylu postaci HL2 przy wykorzystaniu OPENAI",
+                 style={"color": HL2_COLORS["text_dim"], "marginBottom": "32px", "fontSize": "15px",
+                        "borderLeft": f"3px solid {HL2_COLORS['accent2']}", "paddingLeft": "10px"}),
+
+        html.Div([left_col, right_col], style={
+            "display": "flex",
+            "gap": "0",
+            "alignItems": "flex-start",
         }),
     ])
 
 
-# ─────────────────────────────────────────────
-# Callback dla filtru sentymentu
-# ─────────────────────────────────────────────
+def render_arc_style(arc_df, style_df):
+    content = [
+        html.H2("ARC POSTACI & STYL WYPOWIEDZI", style=TITLE_STYLE),
+    ]
+
+    if arc_df is not None and not arc_df.empty:
+        content.append(html.Div("EWOLUCJA SENTYMENTU POSTACI", style=SUBTITLE_STYLE))
+        content.append(dcc.Graph(figure=fig_character_arcs(arc_df), config={"displayModeBar": False}))
+        content.append(html.Div(style={"height": "32px"}))
+    else:
+        content.append(html.P(
+            "Dane arc postaci niedostępne — uruchom nlp_pipeline.py",
+            style={"color": HL2_COLORS["text_dim"]},
+        ))
+
+    if style_df is not None and not style_df.empty:
+        content.append(html.Div("PROFIL STYLISTYCZNY POSTACI", style={**SUBTITLE_STYLE, "marginTop": "8px"}))
+        content.append(dcc.Graph(figure=fig_speech_style_heatmap(style_df), config={"displayModeBar": False}))
+
+        content.append(html.Div("LEGENDA METRYK", style={**SUBTITLE_STYLE, "marginTop": "32px"}))
+        content.append(html.Div([
+            html.Div([
+                html.Span("Śr. słów", style={"color": HL2_COLORS["accent"], "fontWeight": "bold"}),
+                html.Span(" — średnia liczba słów per wypowiedź (długość zdań)", style={"color": HL2_COLORS["text_dim"]}),
+            ], style={"marginBottom": "6px", "fontSize": "15px"}),
+            html.Div([
+                html.Span("Pytania", style={"color": HL2_COLORS["accent"], "fontWeight": "bold"}),
+                html.Span(" — odsetek linii zawierających znak '?'", style={"color": HL2_COLORS["text_dim"]}),
+            ], style={"marginBottom": "6px", "fontSize": "15px"}),
+            html.Div([
+                html.Span("Wykrzykniki", style={"color": HL2_COLORS["accent"], "fontWeight": "bold"}),
+                html.Span(" — odsetek linii zawierających '!'", style={"color": HL2_COLORS["text_dim"]}),
+            ], style={"marginBottom": "6px", "fontSize": "15px"}),
+            html.Div([
+                html.Span("Wielokropki", style={"color": HL2_COLORS["accent"], "fontWeight": "bold"}),
+                html.Span(" — odsetek linii z '...' (zawahania, niedopowiedzenia)", style={"color": HL2_COLORS["text_dim"]}),
+            ], style={"marginBottom": "6px", "fontSize": "15px"}),
+            html.Div([
+                html.Span("Bogactwo słownika", style={"color": HL2_COLORS["accent"], "fontWeight": "bold"}),
+                html.Span(" — TTR: unikalne słowa / wszystkie słowa (leksykalne zróżnicowanie)", style={"color": HL2_COLORS["text_dim"]}),
+            ], style={"marginBottom": "6px", "fontSize": "15px"}),
+        ], style={
+            "padding": "16px 20px",
+            "background": HL2_COLORS["surface"],
+            "border": f"1px solid {HL2_COLORS['grid']}",
+            "borderLeft": f"3px solid {HL2_COLORS['accent2']}",
+            "maxWidth": "700px",
+        }))
+    else:
+        content.append(html.P(
+            "Dane stylu niedostępne — uruchom nlp_pipeline.py",
+            style={"color": HL2_COLORS["text_dim"]},
+        ))
+
+    return html.Div(content)
+
+
 
 def register_callbacks(app, df):
     @app.callback(
@@ -1026,7 +1225,7 @@ def register_callbacks(app, df):
         return fig_sentiment_per_character(filtered)
 
 
-# ─────────────────────────────────────────────
+
 if __name__ == "__main__":
     print("[Dashboard] Wczytywanie danych...")
     data = load_data()

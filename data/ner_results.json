@@ -1023,7 +1023,7 @@
   },
   {
     "chapter_id": "2b",
-    "character": "Dr. Kiener",
+    "character": "Dr. Kleiner",
     "line": "Yes, yes, Eli, a bit of a hold up on this end. You will never guess who found his way into our lab this morning.",
     "entities": [
       {
@@ -4278,7 +4278,7 @@
   },
   {
     "chapter_id": "2j",
-    "character": "Dr. Kiener",
+    "character": "Dr. Kleiner",
     "line": "Fascinating. We seem to have developed a slow teleport. This suggests an entirely new line of investigation.",
     "entities": []
   },
