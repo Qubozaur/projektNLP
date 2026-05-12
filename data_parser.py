@@ -1,11 +1,10 @@
 import re
 import json
 from pathlib import Path
-from dataclasses import dataclass, asdict
-from typing import Optional
-import pdfplumber 
+import pdfplumber
 
-CHAPTERS = {
+# nazwy rozdzialow w grze
+ROZDZIALY = {
     "2a": "Point Insertion",
     "2b": "A Red Letter Day",
     "2c": "Route Kanal",
@@ -22,7 +21,8 @@ CHAPTERS = {
     "2n": "Dark Energy",
 }
 
-CHARACTER_ALIASES = {
+# w skrypcie postacie sa pisane roznie, tu sprowadzam do jednej nazwy
+ALIASY = {
     "gman": "G-Man",
     "g-man": "G-Man",
     "barney": "Barney",
@@ -33,7 +33,7 @@ CHARACTER_ALIASES = {
     "kliener": "Dr. Kleiner",
     "kiener": "Dr. Kleiner",
     "alyx": "Alyx",
-    "aylx": "Alyx", 
+    "aylx": "Alyx",
     "eli": "Eli",
     "dr. breen": "Dr. Breen",
     "breen": "Dr. Breen",
@@ -53,172 +53,208 @@ CHARACTER_ALIASES = {
     "warning voice": "Announcer",
 }
 
-MAIN_CHARACTERS = {"G-Man", "Barney", "Dr. Kleiner", "Alyx", "Eli", "Dr. Breen", "Dr. Mossman", "Father Gregori", "Colonel Cubbage", "Vortigaunt"}
-
-@dataclass
-class DialogueLine:
-    chapter_id: str
-    chapter_name: str
-    character: str
-    is_main_character: bool
-    text: str
-    line_index: int       
+GLOWNE_POSTACIE = {"G-Man", "Barney", "Dr. Kleiner", "Alyx", "Eli", "Dr. Breen", "Dr. Mossman", "Father Gregori", "Colonel Cubbage", "Vortigaunt"}
 
 
-@dataclass
-class StageDirection:
-    chapter_id: str
-    text: str
+class Dialog:
+    def __init__(self, chapter_id, chapter_name, character, is_main_character, text, line_index):
+        self.chapter_id = chapter_id
+        self.chapter_name = chapter_name
+        self.character = character
+        self.is_main_character = is_main_character
+        self.text = text
+        self.line_index = line_index
 
 
-class HL2ScriptParser:
-    DIALOGUE_RE = re.compile(r'^([A-Za-z0-9 ./\-]+?)\s*[-–]\s*(.+)$')
-    STAGE_RE = re.compile(r'^\((.+)\)$', re.DOTALL)
-    CHAPTER_SEP_RE = re.compile(r'^\s*(2[a-n])\.\s+(.+?)\s*$', re.IGNORECASE | re.MULTILINE)
-    PAGE_MARKER_RE = re.compile(r'^--\s*\d+\s+of\s+\d+\s*--$', re.IGNORECASE)
-    SCRIPT_TITLE_RE = re.compile(r'^half-life\s*2\s*script$', re.IGNORECASE)
-    TOC_LINE_RE = re.compile(r'^(table of contents|[12]\.\s+\w+|2[a-n]\.\s+.+)$', re.IGNORECASE)
+class Stage:
+    def __init__(self, chapter_id, text):
+        self.chapter_id = chapter_id
+        self.text = text
 
-    def __init__(self, pdf_path: str):
+
+class Parser:
+    RE_DIALOG = re.compile(r'^([A-Za-z0-9 ./\-]+?)\s*[-–]\s*(.+)$')
+    RE_STAGE = re.compile(r'^\((.+)\)$', re.DOTALL)
+    RE_ROZDZIAL = re.compile(r'^\s*(2[a-n])\.\s+(.+?)\s*$', re.IGNORECASE | re.MULTILINE)
+    RE_STRONA = re.compile(r'^--\s*\d+\s+of\s+\d+\s*--$', re.IGNORECASE)
+    RE_TYTUL = re.compile(r'^half-life\s*2\s*script$', re.IGNORECASE)
+    RE_SPIS = re.compile(r'^(table of contents|[12]\.\s+\w+|2[a-n]\.\s+.+)$', re.IGNORECASE)
+
+    def __init__(self, pdf_path):
         self.pdf_path = Path(pdf_path)
-        self.raw_text = ""
-        self.dialogues: list[DialogueLine] = []
-        self.stage_directions: list[StageDirection] = []
+        self.tekst = ""
+        self.dialogi = []
+        self.stage_dir = []
 
-    def extract_text(self) -> str:
+    def wczytaj_pdf(self):
         with pdfplumber.open(self.pdf_path) as pdf:
-            pages = [page.extract_text() or "" for page in pdf.pages]
-        self.raw_text = "\n".join(pages)
-        return self.raw_text
+            strony = []
+            for strona in pdf.pages:
+                t = strona.extract_text() or ""
+                strony.append(t)
+        self.tekst = "\n".join(strony)
+        return self.tekst
 
-    def _is_noise_line(self, line: str) -> bool:
-        candidate = line.strip()
-        if not candidate:
+    def _smieci(self, linia):
+        l = linia.strip()
+        if not l:
             return True
-        if self.PAGE_MARKER_RE.match(candidate):
+        if self.RE_STRONA.match(l):
             return True
-        if self.SCRIPT_TITLE_RE.match(candidate):
+        if self.RE_TYTUL.match(l):
             return True
-        return bool(self.TOC_LINE_RE.match(candidate))
+        if self.RE_SPIS.match(l):
+            return True
+        return False
 
-    def _clean_text(self, text: str) -> str:
-        cleaned = re.sub(r'\s+', ' ', text).strip()
-        cleaned = cleaned.replace(" .", ".").replace(" ,", ",").replace(" !", "!").replace(" ?", "?")
-        return cleaned
+    def _oczysc(self, tekst):
+        t = re.sub(r'\s+', ' ', tekst).strip()
+        t = t.replace(" .", ".")
+        t = t.replace(" ,", ",")
+        t = t.replace(" !", "!")
+        t = t.replace(" ?", "?")
+        return t
 
-    def split_chapters(self) -> dict[str, str]:
-        chapters: dict[str, str] = {}
-        separators = []
-        script_start = 0
-        if "Table Of contents" in self.raw_text:
-            toc_end = 0
-            for m in self.CHAPTER_SEP_RE.finditer(self.raw_text):
+    def podziel_na_rozdzialy(self):
+        rozdzialy = {}
+        separatory = []
+        start = 0
+
+        if "Table Of contents" in self.tekst:
+            koniec_spisu = 0
+            for m in self.RE_ROZDZIAL.finditer(self.tekst):
                 if m.start() < 5000:
-                    toc_end = m.end()
+                    koniec_spisu = m.end()
                 else:
                     break
-            if toc_end:
-                script_start = toc_end
-        for m in self.CHAPTER_SEP_RE.finditer(self.raw_text):
-            if m.start() < script_start:
-                continue
-            sep_id = m.group(1).lower()       
-            sep_name = m.group(2).strip()
-            separators.append((m.start(), m.end(), sep_id, sep_name))
-        if separators:
-            preface = self.raw_text[script_start:separators[0][0]].strip()
-            if preface:
-                first_id = separators[0][2]
-                missing_intro_id = "2a" if first_id != "2a" else "intro"
-                chapters[missing_intro_id] = preface
-        for i, (start, end, ch_id, _) in enumerate(separators):
-            next_start = separators[i + 1][0] if i + 1 < len(separators) else len(self.raw_text)
-            chapters[ch_id] = self.raw_text[end:next_start]
-        if not separators:
-            chapters["2a"] = self.raw_text[script_start:] if script_start else self.raw_text
-        return chapters
+            if koniec_spisu:
+                start = koniec_spisu
 
-    def _parse_chapter(self, chapter_id: str, chapter_text: str, line_counter: list):
-        chapter_name = CHAPTERS.get(chapter_id, chapter_id)
-        lines = chapter_text.split('\n')
+        for m in self.RE_ROZDZIAL.finditer(self.tekst):
+            if m.start() < start:
+                continue
+            id_r = m.group(1).lower()
+            nazwa = m.group(2).strip()
+            separatory.append((m.start(), m.end(), id_r, nazwa))
+
+        if separatory:
+            przed = self.tekst[start:separatory[0][0]].strip()
+            if przed:
+                pierwszy_id = separatory[0][2]
+                if pierwszy_id != "2a":
+                    rozdzialy["2a"] = przed
+                else:
+                    rozdzialy["intro"] = przed
+
+        for i in range(len(separatory)):
+            poczatek = separatory[i][1]
+            id_r = separatory[i][2]
+            if i + 1 < len(separatory):
+                koniec = separatory[i + 1][0]
+            else:
+                koniec = len(self.tekst)
+            rozdzialy[id_r] = self.tekst[poczatek:koniec]
+
+        if not separatory:
+            if start:
+                rozdzialy["2a"] = self.tekst[start:]
+            else:
+                rozdzialy["2a"] = self.tekst
+
+        return rozdzialy
+
+    def _parsuj_rozdzial(self, chapter_id, tekst_rozdzialu, licznik):
+        nazwa = ROZDZIALY.get(chapter_id, chapter_id)
+        linie = tekst_rozdzialu.split('\n')
         i = 0
-        while i < len(lines):
-            line = lines[i].strip()
-            if not line:
+        while i < len(linie):
+            linia = linie[i].strip()
+            if not linia:
                 i += 1
                 continue
-            if self._is_noise_line(line):
+            if self._smieci(linia):
                 i += 1
                 continue
-            if line.startswith('('):
-                full = line
-                while not full.endswith(')') and i + 1 < len(lines):
+
+            if linia.startswith('('):
+                cala = linia
+                while not cala.endswith(')') and i + 1 < len(linie):
                     i += 1
-                    full += ' ' + lines[i].strip()
-                inner = self._clean_text(full.strip('()'))
-                if inner and not self._is_noise_line(inner):
-                    self.stage_directions.append(StageDirection(chapter_id, inner))
+                    cala += ' ' + linie[i].strip()
+                srodek = self._oczysc(cala.strip('()'))
+                if srodek and not self._smieci(srodek):
+                    self.stage_dir.append(Stage(chapter_id, srodek))
                 i += 1
                 continue
-            m = self.DIALOGUE_RE.match(line)
+
+            m = self.RE_DIALOG.match(linia)
             if m:
-                raw_char = m.group(1).strip().lower()
-                text = m.group(2).strip()
-                while (i + 1 < len(lines)
-                       and lines[i + 1].strip()
-                       and not self.DIALOGUE_RE.match(lines[i + 1].strip())
-                       and not lines[i + 1].strip().startswith('(')
-                       and not lines[i + 1].strip().startswith('=')
-                       and not self._is_noise_line(lines[i + 1].strip())):
+                raw_postac = m.group(1).strip().lower()
+                tekst = m.group(2).strip()
+                while (i + 1 < len(linie)
+                       and linie[i + 1].strip()
+                       and not self.RE_DIALOG.match(linie[i + 1].strip())
+                       and not linie[i + 1].strip().startswith('(')
+                       and not linie[i + 1].strip().startswith('=')
+                       and not self._smieci(linie[i + 1].strip())):
                     i += 1
-                    text += ' ' + lines[i].strip()
-                text = self._clean_text(text)
-                if not text or self._is_noise_line(text):
+                    tekst += ' ' + linie[i].strip()
+                tekst = self._oczysc(tekst)
+                if not tekst or self._smieci(tekst):
                     i += 1
                     continue
-                character = self._resolve_character(raw_char)
-                is_main = character in MAIN_CHARACTERS
-                self.dialogues.append(DialogueLine(
+                postac = self._postac(raw_postac)
+                czy_glowna = postac in GLOWNE_POSTACIE
+                d = Dialog(
                     chapter_id=chapter_id,
-                    chapter_name=chapter_name,
-                    character=character,
-                    is_main_character=is_main,
-                    text=text,
-                    line_index=line_counter[0],
-                ))
-                line_counter[0] += 1
+                    chapter_name=nazwa,
+                    character=postac,
+                    is_main_character=czy_glowna,
+                    text=tekst,
+                    line_index=licznik[0],
+                )
+                self.dialogi.append(d)
+                licznik[0] += 1
             i += 1
 
-    def _resolve_character(self, raw: str) -> str:
-        raw_lower = raw.lower().strip()
-        if raw_lower in CHARACTER_ALIASES:
-            return CHARACTER_ALIASES[raw_lower]
-        for alias, canonical in CHARACTER_ALIASES.items():
-            if raw_lower.startswith(alias):
-                return canonical
+    def _postac(self, raw):
+        r = raw.lower().strip()
+        if r in ALIASY:
+            return ALIASY[r]
+        for alias in ALIASY:
+            if r.startswith(alias):
+                return ALIASY[alias]
         return raw.title().strip()
 
-    def parse(self) -> tuple[list[DialogueLine], list[StageDirection]]:
-        self.extract_text()
-        chapters = self.split_chapters()
-        counter = [0]
-        for ch_id, ch_text in chapters.items():
-            self._parse_chapter(ch_id, ch_text, counter)
-        print(f"[Parser] Wyodrębniono {len(self.dialogues)} linii dialogowych")
-        print(f"[Parser] Wyodrębniono {len(self.stage_directions)} stage directions")
-        return self.dialogues, self.stage_directions
+    def parsuj(self):
+        self.wczytaj_pdf()
+        rozdzialy = self.podziel_na_rozdzialy()
+        licznik = [0]
+        for id_r in rozdzialy:
+            tekst_r = rozdzialy[id_r]
+            self._parsuj_rozdzial(id_r, tekst_r, licznik)
+        print("Wyciagnieto", len(self.dialogi), "linii dialogowych")
+        print("Wyciagnieto", len(self.stage_dir), "stage directions")
+        return self.dialogi, self.stage_dir
 
-    def save_json(self, out_path: str = "data/dialogues.json"):
+    def zapisz(self, out_path="data/dialogues.json"):
         Path(out_path).parent.mkdir(parents=True, exist_ok=True)
-        data = {
-            "dialogues": [asdict(d) for d in self.dialogues],
-            "stage_directions": [asdict(s) for s in self.stage_directions],
+        lista_dial = []
+        for d in self.dialogi:
+            lista_dial.append(d.__dict__)
+        lista_stage = []
+        for s in self.stage_dir:
+            lista_stage.append(s.__dict__)
+        dane = {
+            "dialogues": lista_dial,
+            "stage_directions": lista_stage,
         }
         with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"[Parser] Zapisano do {out_path}")
+            json.dump(dane, f, ensure_ascii=False, indent=2)
+        print("Zapisano do", out_path)
+
 
 if __name__ == "__main__":
-    parser = HL2ScriptParser("data/half_life_2_script.pdf")
-    dialogues, stage_dirs = parser.parse()
-    parser.save_json("data/dialogues.json")
+    p = Parser("data/half_life_2_script.pdf")
+    dialogi, stage = p.parsuj()
+    p.zapisz("data/dialogues.json")

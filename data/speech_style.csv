@@ -1,7 +1,7 @@
 character,n_lines,avg_words_per_line,question_ratio,exclamation_ratio,ellipsis_ratio,vocabulary_richness
 Alyx,166,14.33,0.223,0.392,0.03,0.43
 Citizen,78,16.15,0.141,0.449,0.013,0.569
-Dr. Kleiner,60,12.03,0.317,0.217,0.0,0.692
+Dr. Kleiner,62,12.32,0.306,0.21,0.0,0.692
 Barney,55,14.91,0.091,0.345,0.0,0.619
 Eli,45,8.62,0.222,0.244,0.022,0.66
 Dr. Mossman,43,17.58,0.209,0.209,0.023,0.633

@@ -112,7 +112,7 @@ chapter_id,chapter_name,character,is_main_character,text,line_index,topic,topic_
 2b,A Red Letter Day,Alyx,True,"Meanwhile, lets get this show on the road.",110,-1,0.29119923624270433,positive,0.6266464591026306,positive
 2b,A Red Letter Day,Dr. Kleiner,True,"Gordon, why dont you position yourself near the panel over there and wait for my word?",111,3,1.0,neutral,0.7516884803771973,neutral
 2b,A Red Letter Day,Eli,True,Issac are you there?,112,-1,0.11288233618636129,neutral,0.9498759508132935,neutral
-2b,A Red Letter Day,Dr. Kleiner,False,"Yes, yes, Eli, a bit of a hold up on this end. You will never guess who found his way into our lab this morning.",113,1,0.1479668914342745,neutral,0.5902687311172485,neutral
+2b,A Red Letter Day,Dr. Kleiner,True,"Yes, yes, Eli, a bit of a hold up on this end. You will never guess who found his way into our lab this morning.",113,1,0.1479668914342745,neutral,0.5902687311172485,neutral
 2b,A Red Letter Day,Eli,True,"Thats not who I think it is, is it?",114,1,1.0,negative,0.703685462474823,negative
 2b,A Red Letter Day,Dr. Kleiner,True,"Indeed it is, and its our intention to send him packing straight away, in the company of your lovely daughter.",115,0,0.553490471624425,positive,0.6045733690261841,positive
 2b,A Red Letter Day,Alyx,True,Are you ready for us dad?,116,0,0.7464049130006855,neutral,0.6035690307617188,neutral
@@ -431,7 +431,7 @@ chapter_id,chapter_name,character,is_main_character,text,line_index,topic,topic_
 2j,Entanglement,Alyx,True,I was thinking the same. I think the teleport exploded just as we made it out.,429,2,1.0,neutral,0.528050422668457,neutral
 2j,Entanglement,Dr. Kleiner,True,Indeed it did. And the repercussions were felt far and wide.. but that was over a week ago.,430,6,0.2409303410852203,negative,0.7777736783027649,negative
 2j,Entanglement,Alyx,True,What do you mean? Gordon and I were just there a minute ago.,431,3,0.312129015755879,neutral,0.8820453882217407,neutral
-2j,Entanglement,Dr. Kleiner,False,Fascinating. We seem to have developed a slow teleport. This suggests an entirely new line of investigation.,432,2,1.0,positive,0.7062888145446777,positive
+2j,Entanglement,Dr. Kleiner,True,Fascinating. We seem to have developed a slow teleport. This suggests an entirely new line of investigation.,432,2,1.0,positive,0.7062888145446777,positive
 2j,Entanglement,Alyx,True,A week..? Then what have we missed?,433,6,0.5025069824086124,neutral,0.6082028150558472,neutral
 2j,Entanglement,Dr. Kleiner,True,A great deal my dear. The blow you struck at Nova Prospekt was taken as a signal to start the uprising.,434,2,1.0,positive,0.8246325850486755,positive
 2j,Entanglement,Alyx,True,But what about my father?,435,0,1.0,neutral,0.7566311359405518,neutral

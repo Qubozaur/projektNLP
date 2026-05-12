@@ -2,58 +2,46 @@ import json
 import numpy as np
 import pandas as pd
 from pathlib import Path
-from typing import Optional
-from collections import defaultdict
 
 
-
-class NLPPipeline:
-    def __init__(self, dialogues_json: str = "data/dialogues.json"):
-        with open(dialogues_json, encoding="utf-8") as f:
-            data = json.load(f)
-        self.df = pd.DataFrame(data["dialogues"])
-        self.embeddings: Optional[np.ndarray] = None
-        self.topics: Optional[list[int]] = None
+class Analiza:
+    def __init__(self, plik="data/dialogues.json"):
+        with open(plik, encoding="utf-8") as f:
+            dane = json.load(f)
+        self.df = pd.DataFrame(dane["dialogues"])
+        self.embeddings = None
+        self.topics = None
         self.topic_model = None
-        self.sentiment_results: list[dict] = []
-        self.ner_results: list[dict] = []
+        self.ner_results = []
 
-
-    def compute_embeddings(self, model_name: str = "all-MiniLM-L6-v2") -> np.ndarray:
+    def zrob_embeddingi(self, model_name="all-MiniLM-L6-v2"):
         from sentence_transformers import SentenceTransformer
-        print(f"[Embeddings] Ładowanie modelu: {model_name}")
+        print("Laduje model embeddingow:", model_name)
         model = SentenceTransformer(model_name)
-        texts = self.df["text"].tolist()
-        print(f"[Embeddings] Kodowanie {len(texts)} wypowiedzi...")
+        teksty = self.df["text"].tolist()
+        print("Koduje", len(teksty), "wypowiedzi...")
         self.embeddings = model.encode(
-            texts,
+            teksty,
             batch_size=32,
             show_progress_bar=True,
             normalize_embeddings=True,
         )
-        print(f"[Embeddings] Shape: {self.embeddings.shape}")
+        print("Wymiary embeddingow:", self.embeddings.shape)
         np.save("data/embeddings.npy", self.embeddings)
         return self.embeddings
 
-    def load_embeddings(self) -> np.ndarray:
+    def wczytaj_embeddingi(self):
         self.embeddings = np.load("data/embeddings.npy")
         return self.embeddings
 
-
-    def run_bertopic(
-        self,
-        n_topics: int = 10,
-        min_topic_size: int = 3,
-        use_mmr: bool = True,
-        ) -> pd.DataFrame:
-    
+    def tematy(self, n_topics=10, min_topic_size=3, use_mmr=True):
         from bertopic import BERTopic
         from umap import UMAP
         from hdbscan import HDBSCAN
         from sklearn.feature_extraction.text import CountVectorizer
 
         if self.embeddings is None:
-            raise RuntimeError("Najpierw wywołaj compute_embeddings()")
+            raise RuntimeError("Najpierw zrob embeddingi")
 
         umap_model = UMAP(
             n_neighbors=10,
@@ -70,161 +58,205 @@ class NLPPipeline:
             prediction_data=True,
         )
 
-        vectorizer = CountVectorizer(
+        vect = CountVectorizer(
             stop_words="english",
-            ngram_range=(1, 2),    
+            ngram_range=(1, 2),
             min_df=2,
         )
 
         self.topic_model = BERTopic(
             umap_model=umap_model,
             hdbscan_model=hdbscan_model,
-            vectorizer_model=vectorizer,
-            representation_model=None, 
+            vectorizer_model=vect,
+            representation_model=None,
             nr_topics=n_topics,
             top_n_words=10,
             verbose=True,
             calculate_probabilities=True,
         )
 
-        texts = self.df["text"].tolist()
-        self.topics, probs = self.topic_model.fit_transform(texts, self.embeddings)
+        teksty = self.df["text"].tolist()
+        self.topics, probs = self.topic_model.fit_transform(teksty, self.embeddings)
         self.df["topic"] = self.topics
-        self.df["topic_prob"] = [max(p) if hasattr(p, '__iter__') else p for p in probs]
-        topic_info = self.topic_model.get_topic_info()
-        topic_info.to_csv("data/topic_info.csv", index=False)
-        topic_words = {}
-        for tid in topic_info["Topic"].tolist():
+
+        proby = []
+        for p in probs:
+            if hasattr(p, '__iter__'):
+                proby.append(max(p))
+            else:
+                proby.append(p)
+        self.df["topic_prob"] = proby
+
+        info = self.topic_model.get_topic_info()
+        info.to_csv("data/topic_info.csv", index=False)
+
+        slowa = {}
+        for tid in info["Topic"].tolist():
             if tid == -1:
                 continue
-            words = self.topic_model.get_topic(tid)
-            if words:
-                topic_words[tid] = [w for w, _ in words[:5]]
+            w = self.topic_model.get_topic(tid)
+            if w:
+                top5 = []
+                for slowo, _ in w[:5]:
+                    top5.append(slowo)
+                slowa[tid] = top5
         with open("data/topic_words.json", "w") as f:
-            json.dump(topic_words, f, indent=2)
-        print(f"[BERTopic] Znaleziono {len(topic_info)-1} tematów (bez szumu)")
-        print(topic_info.head(15).to_string())
-        return topic_info
+            json.dump(slowa, f, indent=2)
 
-    def evaluate_topics(self) -> dict:
+        print("Znaleziono", len(info) - 1, "tematow (bez szumu)")
+        print(info.head(15).to_string())
+        return info
+
+    def ocena(self):
         if self.topic_model is None or self.embeddings is None:
-            raise RuntimeError("Najpierw wywołaj run_bertopic() i compute_embeddings()")
+            raise RuntimeError("Najpierw zrob tematy i embeddingi")
         from sklearn.metrics.pairwise import cosine_similarity
-        topic_info = self.topic_model.get_topic_info()
-        valid_topics = [t for t in topic_info["Topic"] if t != -1]
-        all_top_words = []
-        for tid in valid_topics:
-            words = self.topic_model.get_topic(tid) or []
-            all_top_words.extend([w for w, _ in words[:10]])
-        diversity = len(set(all_top_words)) / len(all_top_words) if all_top_words else 0.0
-        coherence_scores = []
-        for tid in valid_topics:
-            mask = np.array(self.topics) == tid
-            if mask.sum() < 2:
+
+        info = self.topic_model.get_topic_info()
+        ok_tematy = []
+        for t in info["Topic"]:
+            if t != -1:
+                ok_tematy.append(t)
+
+        wszystkie_slowa = []
+        for tid in ok_tematy:
+            w = self.topic_model.get_topic(tid) or []
+            for slowo, _ in w[:10]:
+                wszystkie_slowa.append(slowo)
+        if wszystkie_slowa:
+            diversity = len(set(wszystkie_slowa)) / len(wszystkie_slowa)
+        else:
+            diversity = 0.0
+
+        wyniki = []
+        for tid in ok_tematy:
+            maska = np.array(self.topics) == tid
+            if maska.sum() < 2:
                 continue
-            topic_embs = self.embeddings[mask]
-            sim_matrix = cosine_similarity(topic_embs)
-            upper = sim_matrix[np.triu_indices_from(sim_matrix, k=1)]
-            coherence_scores.append(upper.mean())
-        mean_coherence = float(np.mean(coherence_scores)) if coherence_scores else 0.0
-        assigned = sum(1 for t in self.topics if t != -1)
-        coverage = assigned / len(self.topics)
-        metrics = {
+            embs = self.embeddings[maska]
+            sim = cosine_similarity(embs)
+            gora = sim[np.triu_indices_from(sim, k=1)]
+            wyniki.append(gora.mean())
+        if wyniki:
+            coherence = float(np.mean(wyniki))
+        else:
+            coherence = 0.0
+
+        przypisane = 0
+        for t in self.topics:
+            if t != -1:
+                przypisane += 1
+        coverage = przypisane / len(self.topics)
+
+        szum = 0
+        for t in self.topics:
+            if t == -1:
+                szum += 1
+
+        metryki = {
             "topic_diversity": round(diversity, 4),
-            "mean_intra_topic_coherence": round(mean_coherence, 4),
+            "mean_intra_topic_coherence": round(coherence, 4),
             "topic_coverage": round(coverage, 4),
-            "n_topics": len(valid_topics),
-            "n_noise_docs": sum(1 for t in self.topics if t == -1),
+            "n_topics": len(ok_tematy),
+            "n_noise_docs": szum,
         }
         with open("data/topic_evaluation.json", "w") as f:
-            json.dump(metrics, f, indent=2)
-        print("\n[Ewaluacja tematów]")
-        for k, v in metrics.items():
-            print(f"  {k}: {v}")
-        return metrics
+            json.dump(metryki, f, indent=2)
+        print("\nOcena tematow:")
+        for k in metryki:
+            print(" ", k, ":", metryki[k])
+        return metryki
 
-    def evaluate_topics_coherence(self) -> dict:
+    def coherence(self):
         import re
         from gensim.corpora import Dictionary
         from gensim.models.coherencemodel import CoherenceModel
         from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 
         if self.topic_model is None or self.topics is None:
-            raise RuntimeError("Najpierw wywołaj run_bertopic()")
+            raise RuntimeError("Najpierw zrob tematy")
 
-        tokenized = []
-        for text in self.df["text"].tolist():
-            tokens = re.findall(r'\b[a-z]{2,}\b', text.lower())
-            tokenized.append([t for t in tokens if t not in ENGLISH_STOP_WORDS])
+        tokeny = []
+        for tekst in self.df["text"].tolist():
+            t = re.findall(r'\b[a-z]{2,}\b', tekst.lower())
+            t2 = []
+            for w in t:
+                if w not in ENGLISH_STOP_WORDS:
+                    t2.append(w)
+            tokeny.append(t2)
 
-        topic_info = self.topic_model.get_topic_info()
-        valid_topics = [t for t in topic_info["Topic"] if t != -1]
-        topics_words = []
-        for tid in valid_topics:
-            words = self.topic_model.get_topic(tid) or []
-            topics_words.append([w for w, _ in words[:10]])
+        info = self.topic_model.get_topic_info()
+        ok_tematy = []
+        for t in info["Topic"]:
+            if t != -1:
+                ok_tematy.append(t)
+        slowa_tematow = []
+        for tid in ok_tematy:
+            w = self.topic_model.get_topic(tid) or []
+            top10 = []
+            for slowo, _ in w[:10]:
+                top10.append(slowo)
+            slowa_tematow.append(top10)
 
-        dictionary = Dictionary(tokenized)
+        slownik = Dictionary(tokeny)
         cm = CoherenceModel(
-            topics=topics_words,
-            texts=tokenized,
-            dictionary=dictionary,
+            topics=slowa_tematow,
+            texts=tokeny,
+            dictionary=slownik,
             coherence="c_v",
         )
-        per_topic = cm.get_coherence_per_topic()
-        mean_cv = cm.get_coherence()
+        per_temat = cm.get_coherence_per_topic()
+        srednia = cm.get_coherence()
 
-        result = {
-            "mean_coherence_cv": round(mean_cv, 4),
-            "per_topic_coherence_cv": {
-                str(tid): round(score, 4)
-                for tid, score in zip(valid_topics, per_topic)
-            },
+        per_temat_dict = {}
+        for tid, score in zip(ok_tematy, per_temat):
+            per_temat_dict[str(tid)] = round(score, 4)
+
+        wynik = {
+            "mean_coherence_cv": round(srednia, 4),
+            "per_topic_coherence_cv": per_temat_dict,
         }
         with open("data/topic_coherence_cv.json", "w") as f:
-            json.dump(result, f, indent=2)
-        print(f"\n[Coherence Cv] Średnia: {mean_cv:.4f}")
-        for tid, score in zip(valid_topics, per_topic):
-            print(f"  T{tid}: {score:.4f}")
-        return result
+            json.dump(wynik, f, indent=2)
+        print("\nCoherence Cv - srednia:", round(srednia, 4))
+        for tid, score in zip(ok_tematy, per_temat):
+            print("  T" + str(tid) + ":", round(score, 4))
+        return wynik
 
-    def character_arc_analysis(self) -> pd.DataFrame:
+    def arc_postaci(self):
         if "sentiment" not in self.df.columns:
-            raise RuntimeError("Najpierw wywołaj run_sentiment()")
+            raise RuntimeError("Najpierw zrob sentyment")
 
-        chapter_order = ["2a","2b","2c","2d","2e","2f","2g","2h","2i","2j","2k","2l","2m","2n"]
-        sentiment_map = {"positive": 1.0, "neutral": 0.0, "negative": -1.0}
-
+        rozdzialy = ["2a", "2b", "2c", "2d", "2e", "2f", "2g", "2h", "2i", "2j", "2k", "2l", "2m", "2n"]
+        mapa = {"positive": 1.0, "neutral": 0.0, "negative": -1.0}
         df2 = self.df.copy()
-        df2["sentiment_val"] = df2["sentiment"].map(sentiment_map).fillna(0.0)
+        df2["sentiment_val"] = df2["sentiment"].map(mapa).fillna(0.0)
+        glowne = df2["character"].value_counts().head(10).index.tolist()
 
-        main_chars = df2["character"].value_counts().head(10).index.tolist()
-
-        records = []
-        for char in main_chars:
-            char_df = df2[df2["character"] == char]
-            for ch in chapter_order:
-                ch_df = char_df[char_df["chapter_id"] == ch]
-                if len(ch_df) == 0:
+        wpisy = []
+        for postac in glowne:
+            df_p = df2[df2["character"] == postac]
+            for r in rozdzialy:
+                df_r = df_p[df_p["chapter_id"] == r]
+                if len(df_r) == 0:
                     continue
-                records.append({
-                    "character": char,
-                    "chapter_id": ch,
-                    "mean_sentiment": round(ch_df["sentiment_val"].mean(), 3),
-                    "n_lines": len(ch_df),
-                    "pos_ratio": round((ch_df["sentiment"] == "positive").mean(), 3),
-                    "neg_ratio": round((ch_df["sentiment"] == "negative").mean(), 3),
+                wpisy.append({
+                    "character": postac,
+                    "chapter_id": r,
+                    "mean_sentiment": round(df_r["sentiment_val"].mean(), 3),
+                    "n_lines": len(df_r),
+                    "pos_ratio": round((df_r["sentiment"] == "positive").mean(), 3),
+                    "neg_ratio": round((df_r["sentiment"] == "negative").mean(), 3),
                 })
 
-        arc_df = pd.DataFrame(records)
-        arc_df.to_csv("data/character_arcs.csv", index=False)
-        print(f"\n[Character Arcs] {len(arc_df)} wpisów zapisanych do data/character_arcs.csv")
-        return arc_df
+        arc = pd.DataFrame(wpisy)
+        arc.to_csv("data/character_arcs.csv", index=False)
+        print("\nArc postaci -", len(arc), "wpisow zapisano do data/character_arcs.csv")
+        return arc
 
-    def speech_style_analysis(self) -> pd.DataFrame:
+    def styl(self):
         import re
-
-        stop_words = {
+        stopwordy = {
             "i", "a", "the", "and", "to", "of", "in", "you", "it", "is", "that",
             "this", "was", "he", "she", "they", "we", "be", "are", "have", "has",
             "had", "do", "does", "did", "not", "but", "on", "at", "by", "for",
@@ -233,174 +265,217 @@ class NLPPipeline:
             "just", "so", "up", "out", "no", "get", "oh", "well", "yes",
         }
 
-        records = []
-        for char, group in self.df.groupby("character"):
-            if len(group) < 3:
+        wpisy = []
+        for postac, grupa in self.df.groupby("character"):
+            if len(grupa) < 3:
                 continue
-            texts = group["text"].tolist()
+            teksty = grupa["text"].tolist()
 
-            avg_words = np.mean([len(t.split()) for t in texts])
-            question_ratio = sum(1 for t in texts if "?" in t) / len(texts)
-            exclamation_ratio = sum(1 for t in texts if "!" in t) / len(texts)
-            ellipsis_ratio = sum(1 for t in texts if "..." in t) / len(texts)
+            dlug = []
+            for t in teksty:
+                dlug.append(len(t.split()))
+            srednia_slow = np.mean(dlug)
 
-            all_words = []
-            for t in texts:
-                tokens = re.findall(r'\b[a-z]{2,}\b', t.lower())
-                all_words.extend([w for w in tokens if w not in stop_words])
-            vocab_richness = len(set(all_words)) / len(all_words) if all_words else 0.0
+            ile_p = 0
+            ile_w = 0
+            ile_e = 0
+            for t in teksty:
+                if "?" in t:
+                    ile_p += 1
+                if "!" in t:
+                    ile_w += 1
+                if "..." in t:
+                    ile_e += 1
+            ratio_p = ile_p / len(teksty)
+            ratio_w = ile_w / len(teksty)
+            ratio_e = ile_e / len(teksty)
 
-            records.append({
-                "character": char,
-                "n_lines": len(group),
-                "avg_words_per_line": round(avg_words, 2),
-                "question_ratio": round(question_ratio, 3),
-                "exclamation_ratio": round(exclamation_ratio, 3),
-                "ellipsis_ratio": round(ellipsis_ratio, 3),
-                "vocabulary_richness": round(vocab_richness, 3),
+            wszystkie = []
+            for t in teksty:
+                tokeny = re.findall(r'\b[a-z]{2,}\b', t.lower())
+                for w in tokeny:
+                    if w not in stopwordy:
+                        wszystkie.append(w)
+            if wszystkie:
+                bogactwo = len(set(wszystkie)) / len(wszystkie)
+            else:
+                bogactwo = 0.0
+
+            wpisy.append({
+                "character": postac,
+                "n_lines": len(grupa),
+                "avg_words_per_line": round(srednia_slow, 2),
+                "question_ratio": round(ratio_p, 3),
+                "exclamation_ratio": round(ratio_w, 3),
+                "ellipsis_ratio": round(ratio_e, 3),
+                "vocabulary_richness": round(bogactwo, 3),
             })
 
-        style_df = pd.DataFrame(records).sort_values("n_lines", ascending=False)
-        style_df.to_csv("data/speech_style.csv", index=False)
-        print(f"\n[Speech Style] Analiza {len(style_df)} postaci zapisana do data/speech_style.csv")
-        return style_df
+        styl_df = pd.DataFrame(wpisy).sort_values("n_lines", ascending=False)
+        styl_df.to_csv("data/speech_style.csv", index=False)
+        print("\nStyl -", len(styl_df), "postaci zapisano do data/speech_style.csv")
+        return styl_df
 
-    def run_sentiment(
-        self,
-        model_name: str = "cardiffnlp/twitter-roberta-base-sentiment-latest",
-        batch_size: int = 16,
-    ) -> pd.DataFrame:
+    def sentyment(self, model_name="cardiffnlp/twitter-roberta-base-sentiment-latest", batch_size=16):
         from transformers import pipeline
-        print(f"[Sentiment] Ładowanie modelu: {model_name}")
-        sentiment_pipe = pipeline(
+        print("Laduje model sentymentu:", model_name)
+        sent = pipeline(
             "sentiment-analysis",
             model=model_name,
             tokenizer=model_name,
             truncation=True,
             max_length=512,
-            device=-1, 
+            device=-1,
         )
-        texts = self.df["text"].tolist()
-        print(f"[Sentiment] Analiza {len(texts)} wypowiedzi...")
-        results = []
-        for i in range(0, len(texts), batch_size):
-            batch = texts[i : i + batch_size]
-            preds = sentiment_pipe(batch)
-            results.extend(preds)
-        self.df["sentiment_label"] = [r["label"] for r in results]
-        self.df["sentiment_score"] = [r["score"] for r in results]
-        label_map = {
+        teksty = self.df["text"].tolist()
+        print("Analizuje", len(teksty), "wypowiedzi...")
+
+        wyniki = []
+        for i in range(0, len(teksty), batch_size):
+            batch = teksty[i:i + batch_size]
+            pred = sent(batch)
+            wyniki.extend(pred)
+
+        labelki = []
+        score = []
+        for r in wyniki:
+            labelki.append(r["label"])
+            score.append(r["score"])
+        self.df["sentiment_label"] = labelki
+        self.df["sentiment_score"] = score
+
+        mapa = {
             "LABEL_0": "negative", "LABEL_1": "neutral", "LABEL_2": "positive",
             "NEGATIVE": "negative", "NEUTRAL": "neutral", "POSITIVE": "positive",
             "negative": "negative", "neutral": "neutral", "positive": "positive",
         }
-        self.df["sentiment"] = self.df["sentiment_label"].map(
-            lambda x: label_map.get(x.upper(), x.lower())
-        )
+        out = []
+        for x in self.df["sentiment_label"]:
+            klucz = x.upper()
+            if klucz in mapa:
+                out.append(mapa[klucz])
+            else:
+                out.append(x.lower())
+        self.df["sentiment"] = out
+
         self.df[["chapter_id", "character", "text", "sentiment", "sentiment_score"]].to_csv(
             "data/sentiment_results.csv", index=False
         )
-        print("[Sentiment] Gotowe. Wyniki w data/sentiment_results.csv")
+        print("Sentyment gotowy - dane w data/sentiment_results.csv")
         return self.df
 
-    def run_ner(self, model: str = "en_core_web_sm") -> list[dict]:
+    def ner(self, model="en_core_web_sm"):
         import spacy
-        print(f"[NER] Ładowanie modelu spaCy: {model}")
+        print("Laduje spaCy:", model)
         nlp = spacy.load(model)
-        results = []
-        for _, row in self.df.iterrows():
-            doc = nlp(row["text"])
-            entities = [
-                {
+        wyniki = []
+        for _, wiersz in self.df.iterrows():
+            doc = nlp(wiersz["text"])
+            encje = []
+            for ent in doc.ents:
+                encje.append({
                     "text": ent.text,
                     "label": ent.label_,
                     "start": ent.start_char,
                     "end": ent.end_char,
-                }
-                for ent in doc.ents
-            ]
-            results.append({
-                "chapter_id": row["chapter_id"],
-                "character": row["character"],
-                "line": row["text"],
-                "entities": entities,
+                })
+            wyniki.append({
+                "chapter_id": wiersz["chapter_id"],
+                "character": wiersz["character"],
+                "line": wiersz["text"],
+                "entities": encje,
             })
-        entity_freq: dict[str, dict] = defaultdict(lambda: defaultdict(int))
-        for r in results:
-            for ent in r["entities"]:
-                entity_freq[ent["label"]][ent["text"]] += 1
-        self.ner_results = results
+
+        czestosci = {}
+        for r in wyniki:
+            for e in r["entities"]:
+                label = e["label"]
+                tekst = e["text"]
+                if label not in czestosci:
+                    czestosci[label] = {}
+                if tekst not in czestosci[label]:
+                    czestosci[label][tekst] = 0
+                czestosci[label][tekst] += 1
+
+        self.ner_results = wyniki
         with open("data/ner_results.json", "w", encoding="utf-8") as f:
-            json.dump(results, f, ensure_ascii=False, indent=2)
-        print("\n[NER] Najczęstsze encje:")
-        for label, counts in entity_freq.items():
-            top = sorted(counts.items(), key=lambda x: -x[1])[:5]
-            print(f"  {label}: {top}")
-        return results
+            json.dump(wyniki, f, ensure_ascii=False, indent=2)
 
+        print("\nNajczestsze encje:")
+        for label in czestosci:
+            top = sorted(czestosci[label].items(), key=lambda x: -x[1])[:5]
+            print(" ", label, ":", top)
+        return wyniki
 
-    def character_similarity_matrix(self) -> pd.DataFrame:
+    def podobienstwo(self):
         from sklearn.metrics.pairwise import cosine_similarity
         if self.embeddings is None:
-            raise RuntimeError("Najpierw wywołaj compute_embeddings()")
-        character_centroids: dict[str, np.ndarray] = {}
-        for char in self.df["character"].unique():
-            mask = self.df["character"] == char
-            if mask.sum() < 2:
+            raise RuntimeError("Najpierw zrob embeddingi")
+
+        srednie = {}
+        for postac in self.df["character"].unique():
+            maska = self.df["character"] == postac
+            if maska.sum() < 2:
                 continue
-            char_embs = self.embeddings[mask.values]
-            character_centroids[char] = char_embs.mean(axis=0)
-        chars = list(character_centroids.keys())
-        matrix = np.array([character_centroids[c] for c in chars])
-        sim = cosine_similarity(matrix)
-        sim_df = pd.DataFrame(sim, index=chars, columns=chars)
+            embs = self.embeddings[maska.values]
+            srednie[postac] = embs.mean(axis=0)
+
+        postacie = list(srednie.keys())
+        macierz = []
+        for c in postacie:
+            macierz.append(srednie[c])
+        macierz = np.array(macierz)
+        sim = cosine_similarity(macierz)
+
+        sim_df = pd.DataFrame(sim, index=postacie, columns=postacie)
         sim_df.to_csv("data/character_similarity.csv")
-        print("\n[Similarity] Macierz podobieństwa postaci zapisana.")
+        print("\nMacierz podobienstwa postaci zapisana.")
         return sim_df
 
-
-    def topic_timeline(self) -> pd.DataFrame:
+    def timeline_tematow(self):
         if "topic" not in self.df.columns:
-            raise RuntimeError("Najpierw wywołaj run_bertopic()")
-        timeline = (
+            raise RuntimeError("Najpierw zrob tematy")
+        tl = (
             self.df[self.df["topic"] != -1]
             .groupby(["chapter_id", "topic"])
             .size()
             .reset_index(name="count")
         )
-        timeline.to_csv("data/topic_timeline.csv", index=False)
-        return timeline
+        tl.to_csv("data/topic_timeline.csv", index=False)
+        return tl
 
-    def run_all(self, recompute_embeddings: bool = False):
+    def wszystko(self, recompute_embeddings=False):
         Path("data").mkdir(exist_ok=True)
         if recompute_embeddings or not Path("data/embeddings.npy").exists():
-            self.compute_embeddings()
+            self.zrob_embeddingi()
         else:
-            print("[Pipeline] Wczytywanie istniejących embeddingów...")
-            self.load_embeddings()
-        topic_info = self.run_bertopic(n_topics=10)
-        eval_metrics = self.evaluate_topics()
-        coherence_cv = self.evaluate_topics_coherence()
-        self.run_sentiment()
-        self.run_ner()
-        arc_df = self.character_arc_analysis()
-        style_df = self.speech_style_analysis()
-        sim_df = self.character_similarity_matrix()
-        timeline = self.topic_timeline()
+            print("Wczytuje istniejace embeddingi...")
+            self.wczytaj_embeddingi()
+
+        info = self.tematy(n_topics=10)
+        metryki = self.ocena()
+        coh = self.coherence()
+        self.sentyment()
+        self.ner()
+        arc = self.arc_postaci()
+        st = self.styl()
+        sim = self.podobienstwo()
+        tl = self.timeline_tematow()
+
         self.df.to_csv("data/full_analysis.csv", index=False)
-        print("\n[Pipeline] Kompletna analiza zakończona. Dane w katalogu data/")
+        print("\nGotowe. Dane w katalogu data/")
         return {
             "df": self.df,
-            "topic_info": topic_info,
-            "eval_metrics": eval_metrics,
-            "coherence_cv": coherence_cv,
-            "similarity": sim_df,
-            "timeline": timeline,
-            "character_arcs": arc_df,
-            "speech_style": style_df,
+            "topic_info": info,
+            "eval_metrics": metryki,
+            "coherence_cv": coh,
+            "similarity": sim,
+            "timeline": tl,
+            "character_arcs": arc,
+            "speech_style": st,
         }
 
 
 if __name__ == "__main__":
-    pipeline = NLPPipeline("data/dialogues.json")
-    results = pipeline.run_all(recompute_embeddings=True)
+    a = Analiza("data/dialogues.json")
+    wyniki = a.wszystko(recompute_embeddings=True)

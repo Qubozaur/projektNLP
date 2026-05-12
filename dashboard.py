@@ -8,11 +8,7 @@ import dash
 from dash import dcc, html, Input, Output, State, callback_context, no_update
 import dash_bootstrap_components as dbc
 from dotenv import load_dotenv
-
-try:
-    from openai import OpenAI
-except ImportError:
-    OpenAI = None
+from openai import OpenAI
 
 load_dotenv()
 
@@ -664,6 +660,7 @@ def create_app(data: dict) -> dash.Dash:
                 ("characters", "λ  POSTACI"),
                 ("arc_style",  "λ  ARC & STYL"),
                 ("generator",  "λ  GENERATOR POSTACI"),
+                ("credits",    "λ  CREDITS"),
             ]
         ],
 
@@ -712,7 +709,7 @@ def create_app(data: dict) -> dash.Dash:
 
     app.layout = html.Div([dcc_store, sidebar, content])
 
-    nav_ids = ["nav-overview", "nav-sentiment", "nav-topics", "nav-characters", "nav-arc_style", "nav-generator"]
+    nav_ids = ["nav-overview", "nav-sentiment", "nav-topics", "nav-characters", "nav-arc_style", "nav-generator", "nav-credits"]
 
     @app.callback(
         Output("current-tab", "data"),
@@ -731,6 +728,7 @@ def create_app(data: dict) -> dash.Dash:
             "nav-characters": "characters",
             "nav-arc_style": "arc_style",
             "nav-generator": "generator",
+            "nav-credits": "credits",
         }
         return tab_map.get(triggered_id, "overview")
 
@@ -751,6 +749,8 @@ def create_app(data: dict) -> dash.Dash:
             return render_arc_style(arc_df, style_df)
         elif tab == "generator":
             return render_generator()
+        elif tab == "credits":
+            return render_credits()
         return html.Div("Wybierz sekcję z menu.")
 
     @app.callback(
@@ -768,9 +768,9 @@ def create_app(data: dict) -> dash.Dash:
             return html.Div("Uzupełnij postać i sytuację.", style={"color": HL2_COLORS["negative"]})
 
         try:
-            from character_generator import CharacterGenerator
-            gen = CharacterGenerator(api_key=os.environ.get("OPENAI_API_KEY"), df=df)
-            line = gen.generate(character, situation, sentiment or "neutral")
+            from character_generator import Generator
+            gen = Generator(api_key=os.environ.get("OPENAI_API_KEY"), df=df)
+            line = gen.generuj(character, situation, sentiment or "neutral")
             return html.Div([
                 html.Div(f"[{character.upper()}]", style={
                     "color": CHARACTER_COLORS.get(character, HL2_COLORS["accent"]),
@@ -827,16 +827,16 @@ def create_app(data: dict) -> dash.Dash:
         history.append({"role": "user", "text": user_text})
 
         try:
-            from character_generator import CharacterGenerator
+            from character_generator import Generator
 
-            gen = CharacterGenerator(api_key=os.environ.get("OPENAI_API_KEY"), df=df)
+            gen = Generator(api_key=os.environ.get("OPENAI_API_KEY"), df=df)
             recent_history = history[-8:]
             convo_context = "\n".join(
                 f"{'Player' if msg['role'] == 'user' else character}: {msg['text']}"
                 for msg in recent_history
             )
             situation = f"Conversation so far:\n{convo_context}\n\nReply to the latest Player line naturally."
-            reply = gen.generate(character, situation, sentiment or "neutral")
+            reply = gen.generuj(character, situation, sentiment or "neutral")
             history.append({"role": "assistant", "text": reply})
         except Exception as e:
             history.append({"role": "assistant", "text": f"[Błąd]: {e}"})
@@ -1213,6 +1213,84 @@ def render_arc_style(arc_df, style_df):
 
     return html.Div(content)
 
+
+
+def render_credits():
+    # link do HL2 na Steam
+    steam_box = html.A(
+        html.Div([
+            html.Div("STEAM", style={
+                "fontSize": "22px", "fontWeight": "bold",
+                "color": "#fff", "letterSpacing": "6px",
+            }),
+            html.Div("Half-Life 2 (App 220)", style={
+                "color": "#c8cdd5", "fontSize": "15px", "marginTop": "6px",
+            }),
+            html.Div("store.steampowered.com/app/220", style={
+                "color": HL2_COLORS["accent"], "fontSize": "13px", "marginTop": "8px",
+            }),
+        ], style={
+            "padding": "20px 28px",
+            "background": "#1b2838",
+            "border": f"2px solid {HL2_COLORS['accent']}",
+            "borderRadius": "4px",
+            "display": "inline-block",
+            "boxShadow": "0 0 14px rgba(224,92,0,0.3)",
+        }),
+        href="https://store.steampowered.com/app/220/HalfLife_2/",
+        target="_blank",
+        style={"textDecoration": "none"},
+    )
+
+    # zdjecie zabki (meme z Yakuza Poland)
+    zabka = html.Div([
+        html.Img(src="/assets/zabka.jpg", style={
+            "maxWidth": "100%",
+            "maxHeight": "420px",
+            "border": f"2px solid {HL2_COLORS['accent2']}",
+            "borderRadius": "3px",
+        }),
+    ], style={"marginBottom": "12px", "textAlign": "center"})
+
+    # zdjecie Gierka + napis
+    gierek = html.Div([
+        html.Img(src="/assets/Edward_Gierek_1980.jpg", style={
+            "maxWidth": "100%",
+            "maxHeight": "420px",
+            "border": f"2px solid {HL2_COLORS['accent2']}",
+            "borderRadius": "3px",
+        }),
+        html.Div('"Ja już znam te wasze gierki..."', style={
+            "marginTop": "14px",
+            "fontSize": "20px",
+            "fontStyle": "italic",
+            "color": HL2_COLORS["accent"],
+            "fontFamily": "Courier New",
+            "letterSpacing": "2px",
+            "textShadow": "0 0 12px rgba(224,92,0,0.4)",
+        }),
+    ], style={"textAlign": "center"})
+
+    return html.Div([
+        html.H2("λ  CREDITS", style=TITLE_STYLE),
+        html.Div("Projekt analiza dialogow Half-Life 2",
+                 style={"color": HL2_COLORS["text_dim"], "marginBottom": "32px", "fontSize": "15px",
+                        "borderLeft": f"3px solid {HL2_COLORS['accent2']}", "paddingLeft": "10px"}),
+
+        html.Div("GRA", style=SUBTITLE_STYLE),
+        html.Div(steam_box, style={"marginBottom": "40px"}),
+
+        html.Div("BONUS", style=SUBTITLE_STYLE),
+        html.Div([
+            html.Div(zabka, style={"flex": "1", "minWidth": "0", "paddingRight": "20px"}),
+            html.Div(gierek, style={"flex": "1", "minWidth": "0", "paddingLeft": "20px"}),
+        ], style={
+            "display": "flex",
+            "gap": "20px",
+            "alignItems": "flex-start",
+            "marginBottom": "32px",
+        }),
+    ])
 
 
 def register_callbacks(app, df):
