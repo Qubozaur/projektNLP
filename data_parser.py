@@ -57,6 +57,17 @@ GLOWNE_POSTACIE = {"G-Man", "Barney", "Dr. Kleiner", "Alyx", "Eli", "Dr. Breen",
 
 
 class Dialog:
+    """Jedna wypowiedz postaci wyciagnieta ze skryptu.
+
+    Attributes:
+        chapter_id: Identyfikator rozdzialu, np. "2a".
+        chapter_name: Pelna nazwa rozdzialu z gry.
+        character: Znormalizowana nazwa postaci (po przejsciu przez ALIASY).
+        is_main_character: True jesli postac nalezy do GLOWNE_POSTACIE.
+        text: Tekst wypowiedzi (juz oczyszczony).
+        line_index: Globalny numer linii w skrypcie (kolejnosc wystapienia).
+    """
+
     def __init__(self, chapter_id, chapter_name, character, is_main_character, text, line_index):
         self.chapter_id = chapter_id
         self.chapter_name = chapter_name
@@ -67,12 +78,24 @@ class Dialog:
 
 
 class Stage:
+    """Stage direction (didaskalia), czyli opis sceny w nawiasach okraglych."""
+
     def __init__(self, chapter_id, text):
         self.chapter_id = chapter_id
         self.text = text
 
 
 class Parser:
+    """Parser PDF -> lista obiektow Dialog / Stage.
+
+    Pipeline:
+        1. wczytaj_pdf()         - PDF -> jeden duzy string
+        2. podziel_na_rozdzialy()- string -> dict {chapter_id: tekst}
+        3. _parsuj_rozdzial()    - kazdy rozdzial -> linie dialogowe
+        4. zapisz()              - wynik do data/dialogues.json
+
+    Wygodnie wywolac od razu metode parsuj(), ktora robi 1-3.
+    """
     RE_DIALOG = re.compile(r'^([A-Za-z0-9 ./\-]+?)\s*[-–]\s*(.+)$')
     RE_STAGE = re.compile(r'^\((.+)\)$', re.DOTALL)
     RE_ROZDZIAL = re.compile(r'^\s*(2[a-n])\.\s+(.+?)\s*$', re.IGNORECASE | re.MULTILINE)
@@ -87,6 +110,11 @@ class Parser:
         self.stage_dir = []
 
     def wczytaj_pdf(self):
+        """Wczytuje caly PDF do jednego stringa (self.tekst).
+
+        Returns:
+            str: Polaczony tekst ze wszystkich stron PDFa.
+        """
         with pdfplumber.open(self.pdf_path) as pdf:
             strony = []
             for strona in pdf.pages:
@@ -116,6 +144,13 @@ class Parser:
         return t
 
     def podziel_na_rozdzialy(self):
+        """Dzieli surowy tekst PDF na rozdzialy 2a-2n po naglowkach.
+
+        Pomija spis tresci na poczatku (Table of contents).
+
+        Returns:
+            dict[str, str]: Mapa {chapter_id: tekst rozdzialu}.
+        """
         rozdzialy = {}
         separatory = []
         start = 0
@@ -164,6 +199,18 @@ class Parser:
         return rozdzialy
 
     def _parsuj_rozdzial(self, chapter_id, tekst_rozdzialu, licznik):
+        """Wyciaga z tekstu rozdzialu linie Dialog i Stage.
+
+        Linia dialogowa ma format "Postac - tekst". Wieloliniowe wypowiedzi
+        sa scalane do jednej. Stage directions to wszystko w nawiasach ().
+        Wyniki dopisuje do self.dialogi / self.stage_dir.
+
+        Args:
+            chapter_id: ID rozdzialu, np. "2a".
+            tekst_rozdzialu: Surowy tekst tego rozdzialu.
+            licznik: Lista jednoelementowa z aktualnym numerem linii
+                (uzywana zamiast int, zeby przekazywac przez referencje).
+        """
         nazwa = ROZDZIALY.get(chapter_id, chapter_id)
         linie = tekst_rozdzialu.split('\n')
         i = 0
@@ -227,6 +274,11 @@ class Parser:
         return raw.title().strip()
 
     def parsuj(self):
+        """Pelny pipeline: wczytaj PDF, podziel na rozdzialy, sparsuj wszystko.
+
+        Returns:
+            tuple[list[Dialog], list[Stage]]: Lista dialogow i stage directions.
+        """
         self.wczytaj_pdf()
         rozdzialy = self.podziel_na_rozdzialy()
         licznik = [0]
@@ -238,6 +290,11 @@ class Parser:
         return self.dialogi, self.stage_dir
 
     def zapisz(self, out_path="data/dialogues.json"):
+        """Zapisuje sparsowane dane do pliku JSON.
+
+        Args:
+            out_path: Sciezka docelowa. Domyslnie data/dialogues.json.
+        """
         Path(out_path).parent.mkdir(parents=True, exist_ok=True)
         lista_dial = []
         for d in self.dialogi:

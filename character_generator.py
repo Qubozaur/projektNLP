@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# profile postaci - opis i przyklady linii do promptu
+# profile postaci ich opis i przyklady linii do promptu
 CHARACTER_PROFILES = {
     "G-Man": {
         "description": "Mysterious interdimensional bureaucrat. Speaks in an ominous, slow, deliberately cryptic manner. Uses formal, archaic phrasing. Treats time and reality as commodities. Refers to himself in formal third-person occasionally. Never reveals his true intentions.",
@@ -86,7 +86,17 @@ CHARACTER_PROFILES = {
 
 
 def korpus_postaci(df):
-    # zbiera wszystkie linie kazdej postaci z dataframe
+    """Zbiera wszystkie linie dialogowe dla kazdej postaci.
+
+    Bierze tylko postacie, ktore maja zdefiniowany profil w
+    CHARACTER_PROFILES (czyli te, dla ktorych umiemy generowac).
+
+    Args:
+        df: DataFrame z kolumnami "character" i "text".
+
+    Returns:
+        dict[str, list[str]]: {nazwa_postaci: [linie tej postaci]}.
+    """
     korpus = {}
     for _, wiersz in df.iterrows():
         postac = wiersz["character"]
@@ -98,16 +108,28 @@ def korpus_postaci(df):
 
 
 def statystyki(linie):
+    """Liczy stylometryczne statystyki dla listy linii dialogowych.
+
+    Sluzy do dwoch rzeczy:
+    1. Karmienia promptu LLM "stylometric profile" w _prompt().
+    2. Porownywania oryginalu z wygenerowanymi liniami w porownaj_styl().
+
+    Args:
+        linie: Lista stringow (wypowiedzi postaci).
+
+    Returns:
+        dict: avg_words_per_line, question_ratio, exclamation_ratio,
+            ellipsis_ratio, top_words (top 10), total_lines.
+            Pusty dict jesli linie sa puste.
+    """
     if not linie:
         return {}
 
-    # srednia liczba slow na linie
     suma = 0
     for l in linie:
         suma += len(l.split())
     srednia = suma / len(linie)
 
-    # ile linii z pytajnikiem / wykrzyknikiem / wielokropkiem
     p = 0
     w = 0
     e = 0
@@ -122,7 +144,6 @@ def statystyki(linie):
     ratio_w = w / len(linie)
     ratio_e = e / len(linie)
 
-    # czestotliwosc slow (bez stopwordow i krotkich)
     stop = {"the", "a", "an", "i", "you", "we", "he", "she", "it",
             "to", "of", "and", "in", "is", "have", "that", "this",
             "are", "was", "be", "not", "with", "for", "my", "your"}
@@ -150,16 +171,38 @@ def statystyki(linie):
 
 
 class Generator:
+    """Generuje wypowiedzi w stylu konkretnej postaci z Half-Life 2.
+
+    Pod spodem leci OpenAI Chat Completions. Prompt budowany jest z trzech
+    rzeczy:
+    1. Recznie napisany opis postaci z CHARACTER_PROFILES.
+    2. Przykladowe linie ze skryptu (jesli mamy df).
+    3. Stylometryczne statystyki (jesli mamy df) - srednia dlugosc, udzial
+       pytajnikow itp.
+
+    Bez df nadal dziala, ale slabiej. Bez df ma tylko sam profil + przykladowe linie
+    zaszyte recznie w kodzie.
+    """
 
     def __init__(self, api_key=None, model="gpt-4o-mini", df=None):
+        """Inicjalizuje generator.
+
+        Args:
+            api_key: Klucz OpenAI. Jesli None, brany z env OPENAI_API_KEY.
+            model: Nazwa modelu OpenAI. Domyslnie tani gpt-4o-mini.
+            df: DataFrame z dialogami (z full_analysis.csv). Opcjonalny ale
+                jesli jest podany, prompt bedzie bogatszy o korpus i statystyki.
+
+        Raises:
+            RuntimeError: Jesli klucz OpenAI nie zostal znaleziony.
+        """
         try:
             self.client = OpenAI(api_key=api_key)
         except OpenAIError as e:
             raise RuntimeError(
-                "Brak kluczy OpenAI. Ustaw OPENAI_API_KEY w .env albo podaj api_key recznie."
+                "Brak kluczy OpenAI. Ustaw OPENAI_API_KEY w .env ."
             ) from e
         self.model = model
-        # buduje korpus i statystyki tylko jak dostal df
         if df is not None:
             self.korpus = korpus_postaci(df)
         else:
@@ -169,7 +212,18 @@ class Generator:
             self.stats[postac] = statystyki(self.korpus[postac])
 
     def _prompt(self, postac):
-        # buduje system prompt dla danej postaci
+        """Buduje system prompt dla danej postaci.
+
+        Skleja: opis postaci + style notes + przyklady ze skryptu +
+        statystyki stylometryczne + regulki (nie wychodz z roli, max 1-4
+        linie itp.).
+
+        Args:
+            postac: Nazwa postaci (musi byc w CHARACTER_PROFILES).
+
+        Returns:
+            str: Gotowy system prompt do podstawienia w API call.
+        """
         profil = CHARACTER_PROFILES.get(postac, {})
         st = self.stats.get(postac, {})
         probka = self.korpus.get(postac, [])[:5]
@@ -186,43 +240,57 @@ class Generator:
 
         system = f"""You are a creative writer tasked with generating dialogue in the style of {postac} from Half-Life 2.
 
-CHARACTER PROFILE:
-{opis}
+        CHARACTER PROFILE:
+        {opis}
 
-STYLE NOTES:
-{notki}
+        STYLE NOTES:
+        {notki}
 
-EXAMPLE LINES FROM THE SCRIPT:
-{przyklady_str}
+        EXAMPLE LINES FROM THE SCRIPT:
+        {przyklady_str}
 
-"""
+        """
         if st:
             system += f"""STYLOMETRIC DATA (from corpus analysis):
-- Average words per line: {st.get('avg_words_per_line', '?')}
-- Question frequency: {int(st.get('question_ratio', 0) * 100)}% of lines
-- Exclamation frequency: {int(st.get('exclamation_ratio', 0) * 100)}% of lines
-- Ellipsis usage: {int(st.get('ellipsis_ratio', 0) * 100)}% of lines
-- Characteristic words: {', '.join(st.get('top_words', [])[:6])}
-"""
+                    - Average words per line: {st.get('avg_words_per_line', '?')}
+                    - Question frequency: {int(st.get('question_ratio', 0) * 100)}% of lines
+                    - Exclamation frequency: {int(st.get('exclamation_ratio', 0) * 100)}% of lines
+                    - Ellipsis usage: {int(st.get('ellipsis_ratio', 0) * 100)}% of lines
+                    - Characteristic words: {', '.join(st.get('top_words', [])[:6])}
+                    """
 
         system += """
-RULES:
-1. Stay completely in character. Never break the fourth wall.
-2. Match the stylometric profile above — sentence length, punctuation habits, vocabulary.
-3. Gordon Freeman is always silent; react to him as the character would.
-4. Keep responses concise: 1-4 lines of dialogue maximum.
-5. Do NOT use quotation marks. Output only the spoken words."""
+                RULES:
+                1. Stay completely in character. Never break the fourth wall.
+                2. Match the stylometric profile above — sentence length, punctuation habits, vocabulary.
+                3. Gordon Freeman is always silent; react to him as the character would.
+                4. Keep responses concise: 1-4 lines of dialogue maximum.
+                5. Do NOT use quotation marks. Output only the spoken words.
+                """
 
         return system
 
     def generuj(self, postac, sytuacja, sentyment="neutral", kontekst=""):
+        """Generuje jedna wypowiedz danej postaci w danej sytuacji.
+
+        Args:
+            postac: Nazwa postaci (musi byc w CHARACTER_PROFILES).
+            sytuacja: Krotki opis tego, co sie dzieje (po angielsku).
+            sentyment: Sugerowany ton ("positive", "negative", "neutral").
+            kontekst: Opcjonalny dodatkowy kontekst tematyczny.
+
+        Returns:
+            str: Wygenerowana linia dialogowa (bez cudzyslowow).
+
+        Raises:
+            ValueError: Jesli postac nie ma profilu.
+        """
         if postac not in CHARACTER_PROFILES:
             dostepne = list(CHARACTER_PROFILES.keys())
             raise ValueError("Nieznana postac '" + postac + "'. Dostepne: " + str(dostepne))
 
         system = self._prompt(postac)
 
-        # buduje user prompt
         user = "Situation: " + sytuacja
         if sentyment != "neutral":
             user += "\nTone: " + sentyment
@@ -243,6 +311,19 @@ RULES:
         return wynik.strip()
 
     def generuj_scene(self, postacie, sytuacja, n=4):
+        """Generuje krotka scene dialogowa - n wymian na zmiane.
+
+        Postacie mowia po kolei (round-robin). Kazda kolejna postac widzi
+        poprzednie wypowiedzi w kontekscie, wiec scena ma "ciaglosc".
+
+        Args:
+            postacie: Lista nazw postaci do scene.
+            sytuacja: Krotki opis sytuacji.
+            n: Liczba wymian dialogowych.
+
+        Returns:
+            list[dict]: Lista {"character": str, "line": str}.
+        """
         scena = []
         kontekst = "Scene: " + sytuacja + "\n\n"
 
@@ -257,7 +338,20 @@ RULES:
         return scena
 
     def generuj_wiele(self, zapytania):
-        # generuje wiele linii naraz - przyjmuje liste slownikow
+        """Generuje wiele linii naraz (np. do batch ewaluacji).
+
+        Bledy nie przerywaja petli - zostaja zapisane w polu "status"
+        konkretnego wyniku.
+
+        Args:
+            zapytania: Lista slownikow z kluczami:
+                "character" (str), "situation" (str),
+                "sentiment_hint" (str, opcj.), "topic_context" (str, opcj.).
+
+        Returns:
+            list[dict]: Lista wynikow - kazdy ma generated_line oraz
+                status ("ok" lub "error: ...").
+        """
         wyniki = []
         for z in zapytania:
             try:
@@ -280,7 +374,20 @@ RULES:
         return wyniki
 
     def porownaj_styl(self, postac, wygenerowane):
-        # porownuje statystyki orginalu i wygenerowanego tekstu
+        """Porownuje stylometrie oryginalnych i wygenerowanych linii.
+
+        Sluzy jako prosta forma ewaluacji generatora - im mniejsze diff
+        w avg_words/question_ratio/itp. i im wieksze keyword_overlap,
+        tym lepiej generator naśladuje styl postaci.
+
+        Args:
+            postac: Nazwa postaci (musi miec dane w self.stats).
+            wygenerowane: Lista linii wygenerowanych przez generuj()/itd.
+
+        Returns:
+            dict: Pary _original / _generated / _diff dla kazdej metryki
+                plus keyword_overlap. Lub {"error": ...} gdy brak danych.
+        """
         orig = self.stats.get(postac, {})
         nowe = statystyki(wygenerowane)
 
@@ -295,7 +402,6 @@ RULES:
             out[k + "_generated"] = n
             out[k + "_diff"] = round(abs(o - n), 3)
 
-        # ile top-words sie pokrywa
         slowa_o = set(orig.get("top_words", []))
         slowa_n = set(nowe.get("top_words", []))
         if len(slowa_o) > 0:
@@ -319,10 +425,6 @@ if __name__ == "__main__":
         df=df,
     )
 
-    print("=" * 60)
-    print("GENEROWANIE WYPOWIEDZI W STYLU POSTACI HL2")
-    print("=" * 60)
-
     demo = [
         ("G-Man", "Gordon Freeman has just completed his mission", "neutral"),
         ("Alyx", "Gordon just saved her from a combine soldier", "positive"),
@@ -338,7 +440,6 @@ if __name__ == "__main__":
         linia = gen.generuj(postac, sytuacja, sent)
         print("Wypowiedz:", linia)
 
-    print("\n--- Scena dialogowa ---")
     scena = gen.generuj_scene(
         postacie=["Alyx", "Barney", "Dr. Kleiner"],
         sytuacja="They have just escaped from the Citadel and are regrouping",

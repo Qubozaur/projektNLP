@@ -5,7 +5,27 @@ from pathlib import Path
 
 
 class Analiza:
+    """Pipeline NLP dla dialogow z Half-Life 2.
+
+    Wszystkie metody dzialaja na self.df (DataFrame z dialogami) i zapisuja
+    swoje wyniki do katalogu data/. Mozna uruchamiac pojedyncze kroki albo
+    cala maszynerie metoda wszystko().
+
+    Kolejnosc jest wazna np. tematy wymagaja embeddingow, sentyment musi byc
+    przed arc_postaci itd. Najwygodniej wywolac wszystko() i nie myslec o tym za duzo.
+
+    Attributes:
+        df: DataFrame ze wszystkimi dialogami (kolumny: character, text,
+            chapter_id, ...). Po kolejnych krokach dochodza kolumny
+            topic, sentiment itd.
+        embeddings: Macierz embeddingow (np.ndarray) lub None.
+        topics: Lista przypisan tematow dla kazdej linii lub None.
+        topic_model: Wytrenowany model BERTopic lub None.
+        ner_results: Lista wynikow NER lub [].
+    """
+
     def __init__(self, plik="data/dialogues.json"):
+        """Wczytuje dialogi z JSONa do DataFrame."""
         with open(plik, encoding="utf-8") as f:
             dane = json.load(f)
         self.df = pd.DataFrame(dane["dialogues"])
@@ -15,6 +35,18 @@ class Analiza:
         self.ner_results = []
 
     def zrob_embeddingi(self, model_name="all-MiniLM-L6-v2"):
+        """Liczy embeddingi wszystkich linii dialogowych.
+
+        Uzywa modelu sentence-transformers (domyslnie MiniLM, lekki i szybki).
+        Wynik zapisuje w self.embeddings oraz w pliku data/embeddings.npy
+        (zeby przy nastepnym uruchomieniu nie liczyc od nowa).
+
+        Args:
+            model_name: Nazwa modelu z HuggingFace.
+
+        Returns:
+            np.ndarray: Macierz (n_linii x dim_emb).
+        """
         from sentence_transformers import SentenceTransformer
         print("Laduje model embeddingow:", model_name)
         model = SentenceTransformer(model_name)
@@ -31,10 +63,28 @@ class Analiza:
         return self.embeddings
 
     def wczytaj_embeddingi(self):
+        """Wczytuje embeddingi z cache (data/embeddings.npy)."""
         self.embeddings = np.load("data/embeddings.npy")
         return self.embeddings
 
     def tematy(self, n_topics=10, min_topic_size=3, use_mmr=True):
+        """Wykrywa tematy w dialogach przy pomocy BERTopic.
+
+        Pipeline: UMAP (redukcja wymiarow) -> HDBSCAN (klastrowanie) ->
+        CountVectorizer (top-words per cluster). Tematy zapisuje do
+        kolumny self.df["topic"], a pliki wynikowe do data/.
+
+        Args:
+            n_topics: Docelowa liczba tematow (BERTopic moze zlaczyc nadmiar).
+            min_topic_size: Minimalny rozmiar klastra dla HDBSCAN.
+            use_mmr: Nieuzywany (zostawiony dla kompatybilnosci).
+
+        Returns:
+            pd.DataFrame: Tabelka z info o tematach (Topic, Count, Name).
+
+        Raises:
+            RuntimeError: Jesli nie ma jeszcze embeddingow.
+        """
         from bertopic import BERTopic
         from umap import UMAP
         from hdbscan import HDBSCAN
@@ -108,6 +158,18 @@ class Analiza:
         return info
 
     def ocena(self):
+        """Liczy proste metryki jakosci tematow.
+
+        - topic_diversity: udzial unikalnych slow w top-slowach tematow
+        - mean_intra_topic_coherence: srednia cos. similarity wewnatrz klastra
+        - topic_coverage: % linii przypisanych do jakiegos tematu (nie szum)
+        - n_topics, n_noise_docs: liczba tematow / linii oznaczonych jako szum
+
+        Wynik trafia do data/topic_evaluation.json.
+
+        Returns:
+            dict: Slownik z metrykami (zaokraglone do 4 miejsc).
+        """
         if self.topic_model is None or self.embeddings is None:
             raise RuntimeError("Najpierw zrob tematy i embeddingi")
         from sklearn.metrics.pairwise import cosine_similarity
@@ -168,6 +230,16 @@ class Analiza:
         return metryki
 
     def coherence(self):
+        """Liczy coherence Cv (gensim) dla wykrytych tematow.
+
+        To bardziej klasyczna metryka jakosci niz to z metody ocena().
+        Korzysta z biblioteki gensim. Cv wykorzystuje normalized PMI.
+
+        Wynik trafia do data/topic_coherence_cv.json (srednia + per-temat).
+
+        Returns:
+            dict: {"mean_coherence_cv": float, "per_topic_coherence_cv": dict}.
+        """
         import re
         from gensim.corpora import Dictionary
         from gensim.models.coherencemodel import CoherenceModel
@@ -224,6 +296,21 @@ class Analiza:
         return wynik
 
     def arc_postaci(self):
+        """Buduje luk emocjonalny dla 10 najczesciej mowiacych postaci.
+
+        Dla kazdej pary (postac, rozdzial) liczy sredni sentyment (zmapowany
+        na -1/0/+1) oraz udzial linii pozytywnych/negatywnych. Wymaga, zeby
+        wczesniej zostala wywolana metoda sentyment().
+
+        Wynik trafia do data/character_arcs.csv.
+
+        Returns:
+            pd.DataFrame: Tabelka long-format z kolumnami character,
+                chapter_id, mean_sentiment, n_lines, pos_ratio, neg_ratio.
+
+        Raises:
+            RuntimeError: Jesli w df nie ma kolumny "sentiment".
+        """
         if "sentiment" not in self.df.columns:
             raise RuntimeError("Najpierw zrob sentyment")
 
@@ -255,6 +342,18 @@ class Analiza:
         return arc
 
     def styl(self):
+        """Liczy proste cechy stylometryczne kazdej postaci.
+
+        Dla kazdej postaci z >=3 liniami liczy:
+        - sredia liczba slow na linie
+        - udzial linii z pytajnikiem / wykrzyknikiem / wielokropkiem
+        - bogactwo slownika (unikalne slowa / wszystkie, bez stopwordow)
+
+        Wynik trafia do data/speech_style.csv.
+
+        Returns:
+            pd.DataFrame: Statystyki posortowane po liczbie linii malejaco.
+        """
         import re
         stopwordy = {
             "i", "a", "the", "and", "to", "of", "in", "you", "it", "is", "that",
@@ -317,6 +416,22 @@ class Analiza:
         return styl_df
 
     def sentyment(self, model_name="cardiffnlp/twitter-roberta-base-sentiment-latest", batch_size=16):
+        """Klasyfikuje sentyment kazdej linii dialogowej.
+
+        Korzysta z gotowego modelu RoBERTa z HuggingFace (3 klasy:
+        negative / neutral / positive). Etykiety sa normalizowane do
+        malych liter i zapisywane w kolumnie self.df["sentiment"].
+
+        Wynik trafia do data/sentiment_results.csv.
+
+        Args:
+            model_name: Nazwa modelu z HuggingFace.
+            batch_size: Rozmiar batcha.
+
+        Returns:
+            pd.DataFrame: self.df z dodanymi kolumnami sentiment_label,
+                sentiment_score, sentiment.
+        """
         from transformers import pipeline
         print("Laduje model sentymentu:", model_name)
         sent = pipeline(
@@ -361,10 +476,23 @@ class Analiza:
         self.df[["chapter_id", "character", "text", "sentiment", "sentiment_score"]].to_csv(
             "data/sentiment_results.csv", index=False
         )
-        print("Sentyment gotowy - dane w data/sentiment_results.csv")
+        print("Sentyment gotowy, dane w data/sentiment_results.csv")
         return self.df
 
     def ner(self, model="en_core_web_sm"):
+        """Robi Named Entity Recognition na wszystkich liniach (spaCy).
+
+        Dla kazdej linii zapisuje liste encji (text, label, start, end).
+        Dodatkowo wypisuje 5 najczestszych encji per typ.
+
+        Wynik trafia do data/ner_results.json.
+
+        Args:
+            model: Nazwa modelu spaCy. Domyslnie en_core_web_sm.
+
+        Returns:
+            list[dict]: Lista wpisow {chapter_id, character, line, entities}.
+        """
         import spacy
         print("Laduje spaCy:", model)
         nlp = spacy.load(model)
@@ -408,6 +536,19 @@ class Analiza:
         return wyniki
 
     def podobienstwo(self):
+        """Liczy macierz podobienstwa postaci po srednich embeddingach.
+
+        Dla kazdej postaci usrednia jej embeddingi i liczy cosine sim
+        miedzy postaciami. Wymaga wczesniejszego zrob_embeddingi().
+
+        Wynik trafia do data/character_similarity.csv.
+
+        Returns:
+            pd.DataFrame: Kwadratowa macierz NxN z cos. similarity.
+
+        Raises:
+            RuntimeError: Jesli nie ma embeddingow.
+        """
         from sklearn.metrics.pairwise import cosine_similarity
         if self.embeddings is None:
             raise RuntimeError("Najpierw zrob embeddingi")
@@ -433,6 +574,17 @@ class Analiza:
         return sim_df
 
     def timeline_tematow(self):
+        """Zlicza wystapienia kazdego tematu w kazdym rozdziale.
+
+        Pomija temat -1 (szum z HDBSCAN). Wymaga wczesniejszego tematy().
+        Wynik trafia do data/topic_timeline.csv.
+
+        Returns:
+            pd.DataFrame: Long-format z kolumnami chapter_id, topic, count.
+
+        Raises:
+            RuntimeError: Jesli w df nie ma kolumny "topic".
+        """
         if "topic" not in self.df.columns:
             raise RuntimeError("Najpierw zrob tematy")
         tl = (
@@ -445,6 +597,21 @@ class Analiza:
         return tl
 
     def wszystko(self, recompute_embeddings=False):
+        """Uruchamia caly pipeline po kolei.
+
+        Kolejnosc: embeddingi -> tematy -> ocena -> coherence -> sentyment ->
+        NER -> arc_postaci -> styl -> podobienstwo -> timeline_tematow.
+        Na koniec zapisuje pelny DataFrame do data/full_analysis.csv.
+
+        Args:
+            recompute_embeddings: Jesli True liczy embeddingi od zera,
+                nawet jesli cache istnieje.
+
+        Returns:
+            dict: Slownik ze wszystkimi wynikami (df, topic_info,
+                eval_metrics, coherence_cv, similarity, timeline,
+                character_arcs, speech_style).
+        """
         Path("data").mkdir(exist_ok=True)
         if recompute_embeddings or not Path("data/embeddings.npy").exists():
             self.zrob_embeddingi()
