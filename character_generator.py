@@ -434,11 +434,13 @@ if __name__ == "__main__":
         ("Vortigaunt", "The resistance has won a major battle", "positive"),
     ]
 
+    wygenerowane = {}
     for postac, sytuacja, sent in demo:
         print("\n[" + postac + "]")
         print("Sytuacja:", sytuacja)
         linia = gen.generuj(postac, sytuacja, sent)
         print("Wypowiedz:", linia)
+        wygenerowane.setdefault(postac, []).append(linia)
 
     scena = gen.generuj_scene(
         postacie=["Alyx", "Barney", "Dr. Kleiner"],
@@ -447,3 +449,26 @@ if __name__ == "__main__":
     )
     for w in scena:
         print(w['character'] + ":", w['line'])
+        wygenerowane.setdefault(w['character'], []).append(w['line'])
+
+    etykiety_pl = {
+        "avg_words_per_line": "śr. liczba słów / linię",
+        "question_ratio":     "udział pytań (?)      ",
+        "exclamation_ratio":  "udział wykrzykn. (!)  ",
+        "ellipsis_ratio":     "udział wielokr. (...) ",
+    }
+    print("\n" + "=" * 70)
+    print("PORÓWNANIE STYLU (oryginał vs. wygenerowane)")
+    print("=" * 70)
+    for postac, linie in wygenerowane.items():
+        wynik = gen.porownaj_styl(postac, linie)
+        if "error" in wynik:
+            print(f"\n[{postac}] {wynik['error']}")
+            continue
+        print(f"\n[{postac}]  (liczba wygenerowanych linii = {len(linie)})")
+        for k, label in etykiety_pl.items():
+            o = wynik[k + "_original"]
+            n = wynik[k + "_generated"]
+            d = wynik[k + "_diff"]
+            print(f"  {label}  oryginał={o:<7} wygen.={n:<7} różnica={d}")
+        print(f"  pokrycie słów kluczowych (top 10)  {wynik['keyword_overlap']}")

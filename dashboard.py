@@ -790,6 +790,86 @@ def create_app(data: dict) -> dash.Dash:
             ])
 
     @app.callback(
+        Output("style-compare-output", "children"),
+        Input("btn-style-compare", "n_clicks"),
+        [
+            State("gen-character", "value"),
+            State("gen-situation", "value"),
+            State("gen-sentiment", "value"),
+        ],
+        prevent_initial_call=True,
+    )
+    def compare_style(n_clicks, character, situation, sentiment):
+        if not character or not situation:
+            return html.Div("Uzupełnij postać i sytuację.", style={"color": HL2_COLORS["negative"]})
+
+        try:
+            from character_generator import Generator
+            gen = Generator(api_key=os.environ.get("OPENAI_API_KEY"), df=df)
+            wygenerowane = []
+            for _ in range(5):
+                wygenerowane.append(gen.generuj(character, situation, sentiment or "neutral"))
+
+            wynik = gen.porownaj_styl(character, wygenerowane)
+            if "error" in wynik:
+                return html.Div(wynik["error"], style={"color": HL2_COLORS["negative"]})
+
+            etykiety_pl = {
+                "avg_words_per_line": "średnia liczba słów na linię",
+                "question_ratio": "udział pytań (?)",
+                "exclamation_ratio": "udział wykrzykników (!)",
+                "ellipsis_ratio": "udział wielokropków (...)",
+            }
+            header = html.Tr([
+                html.Th(c, style={"textAlign": "left", "padding": "6px 10px",
+                                  "borderBottom": f"1px solid {HL2_COLORS['grid']}",
+                                  "color": HL2_COLORS["text_dim"], "letterSpacing": "1px"})
+                for c in ["METRYKA", "ORYGINAŁ", "WYGENEROWANE", "RÓŻNICA"]
+            ])
+            rows = [header]
+            for k, label in etykiety_pl.items():
+                rows.append(html.Tr([
+                    html.Td(label, style={"padding": "6px 10px", "color": HL2_COLORS["text"]}),
+                    html.Td(str(wynik[k + "_original"]), style={"padding": "6px 10px"}),
+                    html.Td(str(wynik[k + "_generated"]), style={"padding": "6px 10px"}),
+                    html.Td(str(wynik[k + "_diff"]), style={"padding": "6px 10px",
+                                                             "color": HL2_COLORS["accent"]}),
+                ]))
+
+            preview = html.Div([
+                html.Div("WYGENEROWANE LINIE:", style={"color": HL2_COLORS["text_dim"],
+                                                        "letterSpacing": "1px", "marginTop": "12px",
+                                                        "marginBottom": "6px", "fontSize": "12px"}),
+                html.Ul([html.Li(f'"{l}"', style={"marginBottom": "4px",
+                                                   "color": HL2_COLORS["text"],
+                                                   "fontStyle": "italic"})
+                         for l in wygenerowane],
+                        style={"paddingLeft": "20px"}),
+            ])
+
+            return html.Div([
+                html.Div(f"PORÓWNANIE STYLU — {character}", style={
+                    "color": HL2_COLORS["accent2"], "letterSpacing": "2px",
+                    "fontWeight": "bold", "marginBottom": "10px",
+                }),
+                html.Table(rows, style={
+                    "width": "100%", "borderCollapse": "collapse",
+                    "background": HL2_COLORS["bg"],
+                    "border": f"1px solid {HL2_COLORS['grid']}",
+                }),
+                html.Div(f"pokrycie słów kluczowych (top 10): {wynik['keyword_overlap']}", style={
+                    "marginTop": "10px", "color": HL2_COLORS["accent"],
+                    "letterSpacing": "1px",
+                }),
+                preview,
+            ])
+        except Exception as e:
+            return html.Div([
+                html.Div("Błąd porównania:", style={"color": HL2_COLORS["negative"]}),
+                html.Code(str(e), style={"fontSize": "14px", "color": HL2_COLORS["text_dim"]}),
+            ])
+
+    @app.callback(
         Output("chat-history-store", "data"),
         Output("chat-window", "children"),
         Output("chat-input", "value"),
@@ -1073,14 +1153,23 @@ def render_generator():
             ),
         ], style={"marginBottom": "28px"}),
 
-        html.Button("λ  GENERUJ WYPOWIEDŹ", id="btn-generate", n_clicks=0, style={
-            **BTN_BASE,
-            "background": HL2_COLORS["accent"],
-            "color": "#fff",
-            "padding": "14px 32px",
-            "marginBottom": "24px",
-            "boxShadow": "0 0 12px rgba(224,92,0,0.4)",
-        }),
+        html.Div([
+            html.Button("λ  GENERUJ WYPOWIEDŹ", id="btn-generate", n_clicks=0, style={
+                **BTN_BASE,
+                "background": HL2_COLORS["accent"],
+                "color": "#fff",
+                "padding": "14px 32px",
+                "boxShadow": "0 0 12px rgba(224,92,0,0.4)",
+            }),
+            html.Button("PORÓWNAJ STYL (5 LINII)", id="btn-style-compare", n_clicks=0, style={
+                **BTN_BASE,
+                "background": "transparent",
+                "color": HL2_COLORS["accent2"],
+                "border": f"1px solid {HL2_COLORS['accent2']}",
+                "padding": "14px 24px",
+                "letterSpacing": "1px",
+            }),
+        ], style={"display": "flex", "gap": "12px", "marginBottom": "24px", "flexWrap": "wrap"}),
 
         html.Div(id="generator-output", style={
             "minHeight": "100px",
@@ -1090,6 +1179,11 @@ def render_generator():
             "borderLeft": f"3px solid {HL2_COLORS['accent']}",
             "fontSize": "15px",
             "lineHeight": "1.7",
+        }),
+
+        html.Div(id="style-compare-output", style={
+            "marginTop": "16px",
+            "fontSize": "14px",
         }),
     ], style={
         "flex": "1", "minWidth": "0", "paddingRight": "28px",
